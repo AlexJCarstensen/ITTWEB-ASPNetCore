@@ -52,17 +52,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComponentType.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComponentType.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1480523914240" expanded="true" signature="6:78" ph="..." />
-                <marker date="1480523914240" expanded="true" signature="132:1255" ph="{...}" />
-                <marker date="1480523914240" expanded="true" signature="165:1004" ph="{...}" />
-                <marker date="1480523914240" expanded="true" signature="202:317" ph="{...}" />
-                <marker date="1480523914240" expanded="true" signature="1030:1253" ph="{...}" />
+                <marker date="1480524098327" expanded="true" signature="87:961" ph="{...}" />
+                <marker date="1480524098327" expanded="true" signature="120:959" ph="{...}" />
+                <marker date="1480524098327" expanded="true" signature="157:272" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ESImage.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ESImage.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1480524052396" expanded="true" signature="98:350" ph="{...}" />
+                <marker date="1480524052396" expanded="true" signature="125:348" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -107,17 +118,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationDbContext.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApplicationDbContext.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <marker date="1480523820777" expanded="true" signature="6:272" ph="..." />
-                <marker date="1480523820777" expanded="true" signature="383:976" ph="{...}" />
-                <marker date="1480523820777" expanded="true" signature="557:577" ph="{...}" />
-                <marker date="1480523820777" expanded="true" signature="648:970" ph="{...}" />
-                <marker date="1480523820777" expanded="true" signature="714:960" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
+                <marker date="1480524098331" expanded="true" signature="6:272" ph="..." />
+                <marker date="1480524098331" expanded="true" signature="306:1153" ph="{...}" />
+                <marker date="1480524098331" expanded="true" signature="383:1151" ph="{...}" />
+                <marker date="1480524098331" expanded="true" signature="732:752" ph="{...}" />
+                <marker date="1480524098331" expanded="true" signature="823:1145" ph="{...}" />
+                <marker date="1480524098331" expanded="true" signature="889:1135" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
               </folding>
             </state>
           </provider>
@@ -131,12 +143,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/AccountViewModels/Catagory.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Catagory.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Component.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs" />
       </list>
     </option>
   </component>
@@ -219,28 +231,6 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AccountViewModels" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Data" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
@@ -298,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480520568521</updated>
       <workItem from="1480520572073" duration="1104000" />
-      <workItem from="1480523624262" duration="293000" />
+      <workItem from="1480523624262" duration="474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1397000" />
+    <option name="totallyTimeSpent" value="1578000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,11 +371,12 @@
         <state relative-caret-position="221">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding>
-            <marker date="1480523820777" expanded="true" signature="6:272" ph="..." />
-            <marker date="1480523820777" expanded="true" signature="383:976" ph="{...}" />
-            <marker date="1480523820777" expanded="true" signature="557:577" ph="{...}" />
-            <marker date="1480523820777" expanded="true" signature="648:970" ph="{...}" />
-            <marker date="1480523820777" expanded="true" signature="714:960" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
+            <marker date="1480524098331" expanded="true" signature="6:272" ph="..." />
+            <marker date="1480524098331" expanded="true" signature="306:1153" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="383:1151" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="732:752" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="823:1145" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="889:1135" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
           </folding>
         </state>
       </provider>
@@ -401,20 +392,6 @@
             <marker date="1480520579302" expanded="true" signature="344:464" ph="{...}" />
             <marker date="1480520579302" expanded="true" signature="504:608" ph="{...}" />
             <marker date="1480520579302" expanded="true" signature="646:693" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <marker date="1480523820777" expanded="true" signature="6:272" ph="..." />
-            <marker date="1480523820777" expanded="true" signature="383:976" ph="{...}" />
-            <marker date="1480523820777" expanded="true" signature="557:577" ph="{...}" />
-            <marker date="1480523820777" expanded="true" signature="648:970" ph="{...}" />
-            <marker date="1480523820777" expanded="true" signature="714:960" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
           </folding>
         </state>
       </provider>
@@ -442,6 +419,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ESImage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480524052396" expanded="true" signature="98:350" ph="{...}" />
+            <marker date="1480524052396" expanded="true" signature="125:348" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480524098327" expanded="true" signature="87:961" ph="{...}" />
+            <marker date="1480524098327" expanded="true" signature="120:959" ph="{...}" />
+            <marker date="1480524098327" expanded="true" signature="157:272" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentStatus.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -464,16 +464,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1480523914240" expanded="true" signature="6:78" ph="..." />
-            <marker date="1480523914240" expanded="true" signature="132:1255" ph="{...}" />
-            <marker date="1480523914240" expanded="true" signature="165:1004" ph="{...}" />
-            <marker date="1480523914240" expanded="true" signature="202:317" ph="{...}" />
-            <marker date="1480523914240" expanded="true" signature="1030:1253" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="6:272" ph="..." />
+            <marker date="1480524098331" expanded="true" signature="306:1153" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="383:1151" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="732:752" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="823:1145" ph="{...}" />
+            <marker date="1480524098331" expanded="true" signature="889:1135" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
           </folding>
         </state>
       </provider>

@@ -12,6 +12,9 @@ namespace ITTWEB_ASPNetCore.Data
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Category> Catagories { get; set; }
+        public DbSet<Component> Components { get; set; }
+        public DbSet<ComponentType> ComponentTypes { get; set; }
+        public DbSet<ESImage> EsImages { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
