@@ -38,15 +38,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Category.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1480523820781" expanded="true" signature="87:398" ph="{...}" />
-                <marker date="1480523820781" expanded="true" signature="115:396" ph="{...}" />
-                <marker date="1480523820781" expanded="true" signature="147:223" ph="{...}" />
+                <marker date="1480524444213" expanded="true" signature="87:401" ph="{...}" />
+                <marker date="1480524444213" expanded="true" signature="115:399" ph="{...}" />
+                <marker date="1480524444213" expanded="true" signature="147:226" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -55,12 +55,12 @@
       <file leaf-file-name="ComponentType.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
-                <marker date="1480524098327" expanded="true" signature="87:961" ph="{...}" />
-                <marker date="1480524098327" expanded="true" signature="120:959" ph="{...}" />
-                <marker date="1480524098327" expanded="true" signature="157:272" ph="{...}" />
+                <marker date="1480524444201" expanded="true" signature="87:967" ph="{...}" />
+                <marker date="1480524444201" expanded="true" signature="120:965" ph="{...}" />
+                <marker date="1480524444201" expanded="true" signature="157:278" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -118,18 +118,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationDbContext.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApplicationDbContext.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <marker date="1480524098331" expanded="true" signature="6:272" ph="..." />
-                <marker date="1480524098331" expanded="true" signature="306:1153" ph="{...}" />
-                <marker date="1480524098331" expanded="true" signature="383:1151" ph="{...}" />
-                <marker date="1480524098331" expanded="true" signature="732:752" ph="{...}" />
-                <marker date="1480524098331" expanded="true" signature="823:1145" ph="{...}" />
-                <marker date="1480524098331" expanded="true" signature="889:1135" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
+                <marker date="1480524285842" expanded="true" signature="6:272" ph="..." />
+                <marker date="1480524285842" expanded="true" signature="306:1154" ph="{...}" />
+                <marker date="1480524285842" expanded="true" signature="383:1152" ph="{...}" />
+                <marker date="1480524285842" expanded="true" signature="733:753" ph="{...}" />
+                <marker date="1480524285842" expanded="true" signature="824:1146" ph="{...}" />
+                <marker date="1480524285842" expanded="true" signature="890:1136" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
               </folding>
             </state>
           </provider>
@@ -145,10 +145,10 @@
       <list>
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/AccountViewModels/Catagory.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Catagory.cs" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Component.cs" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs" />
       </list>
     </option>
   </component>
@@ -288,12 +288,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480520568521</updated>
       <workItem from="1480520572073" duration="1104000" />
-      <workItem from="1480523624262" duration="474000" />
+      <workItem from="1480523624262" duration="819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1578000" />
+    <option name="totallyTimeSpent" value="1923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,9 +359,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480523820781" expanded="true" signature="87:398" ph="{...}" />
-            <marker date="1480523820781" expanded="true" signature="115:396" ph="{...}" />
-            <marker date="1480523820781" expanded="true" signature="147:223" ph="{...}" />
+            <marker date="1480524444213" expanded="true" signature="87:401" ph="{...}" />
+            <marker date="1480524444213" expanded="true" signature="115:399" ph="{...}" />
+            <marker date="1480524444213" expanded="true" signature="147:226" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -371,12 +371,12 @@
         <state relative-caret-position="221">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding>
-            <marker date="1480524098331" expanded="true" signature="6:272" ph="..." />
-            <marker date="1480524098331" expanded="true" signature="306:1153" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="383:1151" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="732:752" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="823:1145" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="889:1135" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
+            <marker date="1480524285842" expanded="true" signature="6:272" ph="..." />
+            <marker date="1480524285842" expanded="true" signature="306:1154" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="383:1152" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="733:753" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="824:1146" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="890:1136" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
           </folding>
         </state>
       </provider>
@@ -396,14 +396,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs">
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1480523820781" expanded="true" signature="87:398" ph="{...}" />
-            <marker date="1480523820781" expanded="true" signature="115:396" ph="{...}" />
-            <marker date="1480523820781" expanded="true" signature="147:223" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="6:272" ph="..." />
+            <marker date="1480524285842" expanded="true" signature="306:1154" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="383:1152" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="733:753" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="824:1146" ph="{...}" />
+            <marker date="1480524285842" expanded="true" signature="890:1136" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
           </folding>
         </state>
       </provider>
@@ -419,29 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ESImage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480524052396" expanded="true" signature="98:350" ph="{...}" />
-            <marker date="1480524052396" expanded="true" signature="125:348" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480524098327" expanded="true" signature="87:961" ph="{...}" />
-            <marker date="1480524098327" expanded="true" signature="120:959" ph="{...}" />
-            <marker date="1480524098327" expanded="true" signature="157:272" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentStatus.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -449,6 +429,18 @@
           <folding>
             <marker date="1480523870037" expanded="true" signature="52:251" ph="{...}" />
             <marker date="1480523870037" expanded="true" signature="86:249" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <marker date="1480524444201" expanded="true" signature="87:967" ph="{...}" />
+            <marker date="1480524444201" expanded="true" signature="120:965" ph="{...}" />
+            <marker date="1480524444201" expanded="true" signature="157:278" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -464,17 +456,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ESImage.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1480524098331" expanded="true" signature="6:272" ph="..." />
-            <marker date="1480524098331" expanded="true" signature="306:1153" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="383:1151" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="732:752" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="823:1145" ph="{...}" />
-            <marker date="1480524098331" expanded="true" signature="889:1135" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
+            <marker date="1480524052396" expanded="true" signature="98:350" ph="{...}" />
+            <marker date="1480524052396" expanded="true" signature="125:348" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480524444213" expanded="true" signature="87:401" ph="{...}" />
+            <marker date="1480524444213" expanded="true" signature="115:399" ph="{...}" />
+            <marker date="1480524444213" expanded="true" signature="147:226" ph="{...}" />
           </folding>
         </state>
       </provider>
