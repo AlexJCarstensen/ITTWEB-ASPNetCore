@@ -14,7 +14,7 @@ else
     <div class="list-group">
       @foreach (var category in Model.Categories)
       {
-          <a asp-controller="Home" asp-action="ComponentType" class="list-group-item active">@category.Name</a>
+          <a asp-controller="Home" asp-action="ComponentType" class="list-group-item" asp-route-id="@category.CategoryId" asp-route-title="@category.Name">@category.Name</a>
       }
     </div>
 }

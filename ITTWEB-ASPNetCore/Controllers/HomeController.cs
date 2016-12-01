@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ITTWEB_ASPNetCore.Data;
+using ITTWEB_ASPNetCore.Models.AccountViewModels;
 using ITTWEB_ASPNetCore.ViewModels.CategoryViewModels;
+using ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ITTWEB_ASPNetCore.Controllers
@@ -22,22 +24,29 @@ namespace ITTWEB_ASPNetCore.Controllers
 
         public IActionResult Category()
         {
-            var categories = _context.Catagories.ToList();
+            //var categories = _context.Catagories.ToList();
+            var categories = CategoryMock.GetCategories();
 
-            var viewmodel = new CategoryViewModel
+            var viewModel = new CategoryViewModel
             {
                 Categories = categories
             };
 
 
-            return View(viewmodel);
+            return View(viewModel);
         }
 
-        public IActionResult ComponentType()
+        public IActionResult ComponentType(int id, string title)
         {
-            ViewData["Message"] = "Your contact page.";
+            var category = CategoryMock.GetCategories().SingleOrDefault(t => t.CategoryId == id);
+            var componentTypes = ComponentTypeMock.GetComponentTypes();
+            var viewModel = new ComponentTypeViewModel
+            {
+                Title = title,
+                ComponentTypes = componentTypes
+            };
 
-            return View();
+            return View(viewModel);
         }
         public IActionResult Component()
         {

@@ -1,0 +1,34 @@
+﻿@model ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels.ComponentTypeViewModel
+
+
+<h1>@Model.Title</h1>
+
+
+
+@if (Model.ComponentTypes.Count == 0)
+{
+    <p>No Customers</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Wiki link</th>
+      </tr>
+      </thead>
+      <tbody>
+      @foreach (var componentType in Model.ComponentTypes)
+      {
+          <tr>
+
+            <td><a asp-controller="Home" asp-action="Component">@componentType.ComponentName</a></td>
+            <td><a asp-controller="Home" asp-action="Component">@componentType.Status</a></td>
+            <td><a asp-controller="Home" asp-action="Component">@componentType.WikiLink</a></td>
+          </tr>
+      }
+      </tbody>
+    </table>
+}
