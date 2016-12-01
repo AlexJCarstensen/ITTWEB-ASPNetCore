@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ITTWEB_ASPNetCore.Models.AccountViewModels
 {
@@ -9,5 +10,23 @@ namespace ITTWEB_ASPNetCore.Models.AccountViewModels
         public string ImageMimeType { get; set; }
         public byte[] Thumbnail { get; set; }
         public byte[] ImageData { get; set; }
+    }
+
+    public static class ESImageMock
+    {
+        public static ESImage GetEsImage()
+        {
+            return new ESImage()
+            {
+                ESImageId = 1,
+                ImageData = new byte[10],
+                ImageMimeType = "Test Mock 1",
+                Thumbnail = new byte[10]
+            };
+
+
+
+
+        }
     }
 }
