@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 using ITTWEB_ASPNetCore.Data;
 using ITTWEB_ASPNetCore.Models.AccountViewModels;
@@ -57,6 +58,17 @@ namespace ITTWEB_ASPNetCore.Controllers
             };
 
             return View(viewModel);
+        }
+
+        public IActionResult SaveCategory(string name)
+        {
+            var category = new Category
+            {
+                Name = name
+            };
+
+            //TODO save in db
+            return RedirectToAction("Category", "Home");
         }
 
         public IActionResult Error()

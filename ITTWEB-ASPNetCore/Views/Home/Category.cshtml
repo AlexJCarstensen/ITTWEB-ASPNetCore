@@ -4,7 +4,7 @@
 <h1>Categories</h1>
 
 
-
+<div>
 @if (Model.Categories.Count == 0)
 {
     <p>No Categories</p>
@@ -14,8 +14,29 @@ else
     <div class="list-group">
       @foreach (var category in Model.Categories)
       {
-          <a asp-controller="Home" asp-action="ComponentType" class="list-group-item" asp-route-id="@category.CategoryId" asp-route-title="@category.Name">@category.Name</a>
+          <div class="row">
+            <div class="col-md-4">
+              <a asp-controller="Home" asp-action="ComponentType" class="list-group-item" asp-route-id="@category.CategoryId" asp-route-title="@category.Name">@category.Name</a>
+            </div>
+            <div class="col-md-8">
+               <a class="btn btn-danger right">Delete Category </a>
+            </div>
+          </div>
+
       }
     </div>
 }
 
+  <form asp-controller="Home" asp-action="SaveCategory">
+  <div class="row">
+    <div class="col-md-4">
+      Category Name: <input name="category" type="text"/>
+    </div>
+    <div class="col-md-8">
+      <button class="btn btn-primary" type="submit">Add Category</button>
+  </div>
+    </div>
+  </form>
+
+
+</div>
