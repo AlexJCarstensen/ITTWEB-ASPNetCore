@@ -20,7 +20,21 @@ namespace ITTWEB_ASPNetCore.Models.AccountViewModels
         public string WikiLink { get; set; }
         public string AdminComment { get; set; }
         public virtual ESImage Image { get; set; }
-        public ICollection<Component> Components { get; protected set; }
-        public ICollection<Category> Categories { get; protected set; }
+        public ICollection<Component> Components { get;  set; } // TODO: Protected set when using database
+        public ICollection<Category> Categories { get; set; } //TODO: Protected set when using database
+    }
+
+    public static class ComponentTypeMock
+    {
+        public static List<ComponentType> GetComponentTypes()
+        {
+            return new List<ComponentType>
+            {
+                new ComponentType() {AdminComment = "AdminComment test 1", ComponentInfo = "Info test 1", ComponentName = "Component name 1", ComponentTypeId = 1, Datasheet = "Datasheet 1", Image = ESImageMock.GetEsImage(), ImageUrl = "Image Test URL", Location = "Århus", Manufacturer = "ASE", Status = ComponentTypeStatus.Available, WikiLink = "WIKI TEST", Components = ComponentMock.GetComponents(1)},
+                new ComponentType() {AdminComment = "AdminComment test 2", ComponentInfo = "Info test 2", ComponentName = "Component name 2", ComponentTypeId = 2, Datasheet = "Datasheet 2", Image = ESImageMock.GetEsImage(), ImageUrl = "Image Test URL", Location = "Århus", Manufacturer = "ASE", Status = ComponentTypeStatus.Available, WikiLink = "WIKI TEST", Components = ComponentMock.GetComponents(2)},
+                new ComponentType() {AdminComment = "AdminComment test 3", ComponentInfo = "Info test 3", ComponentName = "Component name 3", ComponentTypeId = 3, Datasheet = "Datasheet 3", Image = ESImageMock.GetEsImage(), ImageUrl = "Image Test URL", Location = "Århus", Manufacturer = "ASE", Status = ComponentTypeStatus.Available, WikiLink = "WIKI TEST", Components = ComponentMock.GetComponents(3)},
+
+            };
+        }
     }
 }
