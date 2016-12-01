@@ -6,12 +6,12 @@ namespace ITTWEB_ASPNetCore.Models.AccountViewModels
     {
         public Category()
         {
-            ComponentTypes = new HashSet<ComponentType>();
+            CategoryComponentTypes = new HashSet<CategoryComponentType>();
         }
 
         public int CategoryId { get; set; }
         public string Name { get; set; }
-        public ICollection<ComponentType> ComponentTypes { get;  set; } //TODO: Protected set when using database
+        public ICollection<CategoryComponentType> CategoryComponentTypes { get;  set; } //TODO: Protected set when using database
     }
 
     public static class CategoryMock
@@ -20,9 +20,9 @@ namespace ITTWEB_ASPNetCore.Models.AccountViewModels
         {
             return new List<Category>
             {
-                new Category() {CategoryId = 1, Name = "Category 1", ComponentTypes = ComponentTypeMock.GetComponentTypes()},
-                new Category() {CategoryId = 2, Name = "Category 2", ComponentTypes = ComponentTypeMock.GetComponentTypes()},
-                new Category() {CategoryId = 3, Name = "Category 3", ComponentTypes = ComponentTypeMock.GetComponentTypes()}
+                new Category() {CategoryId = 1, Name = "Category 1", CategoryComponentTypes = CategoryComponenttypeMock.GetCategoryComponentTypes(1)},
+                new Category() {CategoryId = 2, Name = "Category 2", CategoryComponentTypes = CategoryComponenttypeMock.GetCategoryComponentTypes(2)},
+                new Category() {CategoryId = 3, Name = "Category 3", CategoryComponentTypes = CategoryComponenttypeMock.GetCategoryComponentTypes(3)}
             };
         }
     }

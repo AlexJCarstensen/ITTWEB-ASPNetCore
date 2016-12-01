@@ -15,6 +15,7 @@ namespace ITTWEB_ASPNetCore.Data
         public DbSet<Component> Components { get; set; }
         public DbSet<ComponentType> ComponentTypes { get; set; }
         public DbSet<ESImage> EsImages { get; set; }
+        public DbSet<CategoryComponentType> CategoryComponentTypes { get; set; } 
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

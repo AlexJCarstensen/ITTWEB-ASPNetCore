@@ -7,7 +7,7 @@ namespace ITTWEB_ASPNetCore.Models.AccountViewModels
         public ComponentType()
         {
             Components = new HashSet<Component>();
-            Categories = new HashSet<Category>();
+            CategoryComponentTypes = new HashSet<CategoryComponentType>();
         }
         public long ComponentTypeId { get; set; }
         public string ComponentName { get; set; }
@@ -21,7 +21,7 @@ namespace ITTWEB_ASPNetCore.Models.AccountViewModels
         public string AdminComment { get; set; }
         public virtual ESImage Image { get; set; }
         public ICollection<Component> Components { get;  set; } // TODO: Protected set when using database
-        public ICollection<Category> Categories { get; set; } //TODO: Protected set when using database
+        public ICollection<CategoryComponentType> CategoryComponentTypes { get; set; } //TODO: Protected set when using database
     }
 
     public static class ComponentTypeMock
@@ -34,6 +34,25 @@ namespace ITTWEB_ASPNetCore.Models.AccountViewModels
                 new ComponentType() {AdminComment = "AdminComment test 2", ComponentInfo = "Info test 2", ComponentName = "Component name 2", ComponentTypeId = 2, Datasheet = "http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp", Image = ESImageMock.GetEsImage(), ImageUrl = "Image Test URL", Location = "Århus", Manufacturer = "ASE", Status = ComponentTypeStatus.Available, WikiLink = "WIKI TEST", Components = ComponentMock.GetComponents(2)},
                 new ComponentType() {AdminComment = "AdminComment test 3", ComponentInfo = "Info test 3", ComponentName = "Component name 3", ComponentTypeId = 3, Datasheet = "http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp", Image = ESImageMock.GetEsImage(), ImageUrl = "Image Test URL", Location = "Århus", Manufacturer = "ASE", Status = ComponentTypeStatus.Available, WikiLink = "WIKI TEST", Components = ComponentMock.GetComponents(3)},
 
+            };
+        }
+
+        public static ComponentType GetComponentType(int number)
+        {
+            return new ComponentType()
+            {
+                AdminComment = "AdminComment test " + number,
+                ComponentInfo = "Info test " + number,
+                ComponentName = "Component name " + number,
+                ComponentTypeId = number,
+                Datasheet = "http://www.w3schools.com/bootstrap/bootstrap_grid_system.asp",
+                Image = ESImageMock.GetEsImage(),
+                ImageUrl = "Image Test URL",
+                Location = "Århus",
+                Manufacturer = "ASE",
+                Status = ComponentTypeStatus.Available,
+                WikiLink = "WIKI TEST",
+                Components = ComponentMock.GetComponents(number)
             };
         }
     }

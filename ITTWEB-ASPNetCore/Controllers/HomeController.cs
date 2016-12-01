@@ -40,7 +40,7 @@ namespace ITTWEB_ASPNetCore.Controllers
 
         public IActionResult ComponentType(int id, string title)
         {
-            var category = CategoryMock.GetCategories().SingleOrDefault(t => t.CategoryId == id);
+           
             var componentTypes = ComponentTypeMock.GetComponentTypes();
             var viewModel = new ComponentTypeViewModel
             {
