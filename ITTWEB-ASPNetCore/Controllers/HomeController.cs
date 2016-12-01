@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ITTWEB_ASPNetCore.Data;
+using ITTWEB_ASPNetCore.ViewModels.CategoryViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ITTWEB_ASPNetCore.Controllers
@@ -23,13 +24,21 @@ namespace ITTWEB_ASPNetCore.Controllers
         {
             var categories = _context.Catagories.ToList();
 
-            //viewmodel
+            var viewmodel = new CategoryViewModel
+            {
+                Categories = categories
+            };
 
-            ViewData["Message"] = "Your application description page.";
+
+            return View(viewmodel);
+        }
+
+        public IActionResult ComponentType()
+        {
+            ViewData["Message"] = "Your contact page.";
 
             return View();
         }
-
         public IActionResult Component()
         {
             ViewData["Message"] = "Your contact page.";

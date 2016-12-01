@@ -1,0 +1,10 @@
+﻿using System.Collections.Generic;
+using ITTWEB_ASPNetCore.Models.AccountViewModels;
+
+namespace ITTWEB_ASPNetCore.ViewModels.CategoryViewModels
+{
+    public class CategoryViewModel
+    {
+        public List<Category> Categories { get; set; }
+    }
+}
