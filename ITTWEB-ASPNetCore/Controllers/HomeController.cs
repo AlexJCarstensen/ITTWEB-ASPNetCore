@@ -6,6 +6,7 @@ using ITTWEB_ASPNetCore.Data;
 using ITTWEB_ASPNetCore.Models.AccountViewModels;
 using ITTWEB_ASPNetCore.ViewModels.CategoryViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels;
+using ITTWEB_ASPNetCore.ViewModels.ComponentViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ITTWEB_ASPNetCore.Controllers
@@ -48,11 +49,14 @@ namespace ITTWEB_ASPNetCore.Controllers
 
             return View(viewModel);
         }
-        public IActionResult Component()
+        public IActionResult Component(int id)
         {
-            ViewData["Message"] = "Your contact page.";
+            var viewModel = new ComponentViewModel
+            {
+                ComponentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(t => t.ComponentTypeId == id) 
+            };
 
-            return View();
+            return View(viewModel);
         }
 
         public IActionResult Error()

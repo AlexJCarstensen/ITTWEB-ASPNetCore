@@ -1,7 +1,32 @@
-@{
-    ViewData["Title"] = "About";
-}
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
+@model ITTWEB_ASPNetCore.ViewModels.ComponentViewModel.ComponentViewModel
 
-<p>Use this area to provide additional information.</p>
+<div class="container">
+    <span class="row"></span>
+    <div class="row">
+        <div class="col-md-6">@Model.ComponentType.ComponentName</div>
+        <div class="col-md-3 text-center">Antal: @Model.ComponentType.Components.Count</div>
+        <div class="col-md-3"><a href="@Model.ComponentType.Datasheet" class="btn btn-info" role="button">Datasheet</a>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-8">@Model.ComponentType.ComponentInfo</div>
+        <div class="col-md-4"><img src="@Model.ComponentType.ImageUrl"/>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-6">Kommentarer</div>
+        <div class="col-md-6"></div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-6">
+            @foreach (var component in Model.ComponentType.Components)
+            {
+                <p>@component.UserComment</p>
+            }
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+</div>

@@ -22,11 +22,12 @@ else
       <tbody>
       @foreach (var componentType in Model.ComponentTypes)
       {
-          <tr>
-
-            <td><a asp-controller="Home" asp-action="Component">@componentType.ComponentName</a></td>
-            <td><a asp-controller="Home" asp-action="Component">@componentType.Status</a></td>
-            <td><a asp-controller="Home" asp-action="Component">@componentType.WikiLink</a></td>
+          <tr >
+             
+              <td><a asp-controller="Home" asp-action="Component" asp-route-id="@componentType.ComponentTypeId">@componentType.ComponentName</a></td>
+              <td>@componentType.Status</td>
+              <td>@componentType.WikiLink</td>
+              
           </tr>
       }
       </tbody>
