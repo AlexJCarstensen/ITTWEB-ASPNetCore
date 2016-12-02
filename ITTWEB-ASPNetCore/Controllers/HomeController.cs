@@ -42,10 +42,18 @@ namespace ITTWEB_ASPNetCore.Controllers
 
         //Create
         [HttpPost]
-        public IActionResult CreateCategory(Category category)
+        public IActionResult SaveCategory(Category category)
         {
-            //TODO: create new Category in database
-            //_context.Catagories.Add(category);
+            //if (category.CategoryId == 0)
+            //{
+            //    _context.Catagories.Add(category);
+            //}
+            //else
+            //{
+            //    var categoryInDb = _context.Catagories.Single(c => c.CategoryId == category.CategoryId);
+            //    categoryInDb.Name = category.Name;
+
+            //}
             //_context.SaveChanges();
 
             return RedirectToAction("Category", "Home");
@@ -55,28 +63,24 @@ namespace ITTWEB_ASPNetCore.Controllers
         public IActionResult EditCategory(int id, string title)
         {
 
+            //var category = _context.Catagories.Single(c => c.CategoryId == id);
             var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
 
             return View(category);
         }
 
-        //Save
-        public IActionResult SaveCategory(string name)
-        {
-            
-            var category = new Category
-            {
-                Name = name
-            };
-
-            //TODO: Update Category in database
-            return RedirectToAction("Category", "Home");
-        }
 
         //Delete
-        public IActionResult DeleteCategory(int id)
+        [HttpPost]
+        public IActionResult DeleteCategory(Category category)
         {
             //TODO: Delete Category in database
+            //var categoryInDb = _context.Catagories.Single(c => c.CategoryId == category.CategoryId);
+
+            //_context.Catagories.Remove(categoryInDb);
+
+            //_context.SaveChanges();
+
             return RedirectToAction("Category", "Home");
         }
 
