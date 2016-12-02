@@ -10,6 +10,7 @@ using ITTWEB_ASPNetCore.ViewModels.CategoryViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentViewModel;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ITTWEB_ASPNetCore.Controllers
 {
@@ -94,6 +95,9 @@ namespace ITTWEB_ASPNetCore.Controllers
 
             var componentTypes = category.CategoryComponentTypes.Select(categoryComponentType => categoryComponentType.ComponentType).ToList();
 
+            //var category = _context.Catagories.Include(c => c.CategoryComponentTypes).ThenInclude(comp => comp.ComponentType).Single(c => c.CategoryId == id);
+
+            //var componentTypes = category.CategoryComponentTypes.Select(categoryComponenType => categoryComponenType.ComponentType).ToList();
 
             var viewModel = new ComponentTypeViewModel
             {
