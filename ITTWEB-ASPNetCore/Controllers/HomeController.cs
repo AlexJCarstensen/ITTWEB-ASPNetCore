@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 using ITTWEB_ASPNetCore.Data;
+using ITTWEB_ASPNetCore.Models;
 using ITTWEB_ASPNetCore.Models.AccountViewModels;
 using ITTWEB_ASPNetCore.ViewModels.CategoryViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels;
@@ -38,6 +39,22 @@ namespace ITTWEB_ASPNetCore.Controllers
             return View(viewModel);
         }
 
+        public IActionResult EditCategory(int id, string title)
+        {
+
+            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
+
+            return View(category);
+        }
+
+        public IActionResult SaveCategory(int id, string title)
+        {
+
+            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
+
+            return RedirectToAction("Category", "Home");
+        }
+
         public IActionResult ComponentType(int id, string title)
         {
            
@@ -49,6 +66,13 @@ namespace ITTWEB_ASPNetCore.Controllers
             };
 
             return View(viewModel);
+        }
+        public IActionResult EditComponentType(int id)
+        {
+
+            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
+
+            return View(category);
         }
         public IActionResult Component(int id)
         {

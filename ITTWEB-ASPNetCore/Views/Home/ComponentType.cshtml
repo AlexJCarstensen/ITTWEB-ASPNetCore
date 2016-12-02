@@ -1,4 +1,5 @@
-﻿@model ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels.ComponentTypeViewModel
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels.ComponentTypeViewModel
 
 
 <h1>@Model.Title</h1>
@@ -11,25 +12,58 @@
 }
 else
 {
-    <table class="table table-bordered table-hover">
-      <thead>
-      <tr>
-        <th>Name</th>
-        <th>Status</th>
-        <th>Wiki link</th>
-      </tr>
-      </thead>
-      <tbody>
-      @foreach (var componentType in Model.ComponentTypes)
-      {
-          <tr >
-             
-              <td><a asp-controller="Home" asp-action="Component" asp-route-id="@componentType.ComponentTypeId">@componentType.ComponentName</a></td>
-              <td>@componentType.Status</td>
-              <td>@componentType.WikiLink</td>
-              
-          </tr>
-      }
-      </tbody>
-    </table>
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table table-bordered  table-hover ">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Wiki link</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var componentType in Model.ComponentTypes)
+                {
+
+                    <tr>
+
+                        <td><a asp-controller="Home" asp-action="Component" asp-route-id="@componentType.ComponentTypeId">@componentType.ComponentName</a></td>
+                        <td>@componentType.Status</td>
+                        <td>@componentType.WikiLink</td>
+                    </tr>
+
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-group">
+                <span class="row"></span>
+                @foreach (var componentType in Model.ComponentTypes)
+                {
+
+                    <li class="media-list">
+                        <div class="row">
+                            
+                                <a asp-controller="Home" asp-action="EditComponentType" asp-route-id="@componentType.ComponentTypeId" class="btn btn-info">Edit</a>
+                            
+                            
+                                <a asp-controller="Home" asp-action="Component" asp-route-id="@componentType.ComponentTypeId" class="btn btn-danger">Delete</a>
+                            
+
+                        </div>
+                    </li>
+
+                        
+                    
+                }
+            </ul>
+        </div>
+    </div>
+
+
 }
+
+

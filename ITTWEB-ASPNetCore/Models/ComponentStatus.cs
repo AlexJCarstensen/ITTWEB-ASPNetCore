@@ -1,4 +1,4 @@
-﻿namespace ITTWEB_ASPNetCore.Models.AccountViewModels
+﻿namespace ITTWEB_ASPNetCore.Models
 {
     public enum ComponentStatus
     {

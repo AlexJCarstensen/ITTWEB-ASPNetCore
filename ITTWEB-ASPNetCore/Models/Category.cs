@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ITTWEB_ASPNetCore.Models.AccountViewModels
+namespace ITTWEB_ASPNetCore.Models
 {
     public class Category
     {

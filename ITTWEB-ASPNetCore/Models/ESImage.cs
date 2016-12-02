@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace ITTWEB_ASPNetCore.Models.AccountViewModels
+namespace ITTWEB_ASPNetCore.Models
 {
     public class ESImage
     {
