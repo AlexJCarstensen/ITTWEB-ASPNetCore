@@ -28,8 +28,8 @@ namespace ITTWEB_ASPNetCore.Controllers
         //--------------------Category----------------------------
         public IActionResult Category()
         {
+            var categories = CategoryMock.GetCategories();
             //var categories = _context.Catagories.ToList();
-            var categories = _context.Catagories.ToList();
 
             var viewModel = new CategoryViewModel
             {
@@ -45,8 +45,8 @@ namespace ITTWEB_ASPNetCore.Controllers
         public IActionResult CreateCategory(Category category)
         {
             //TODO: create new Category in database
-            _context.Catagories.Add(category);
-            _context.SaveChanges();
+            //_context.Catagories.Add(category);
+            //_context.SaveChanges();
 
             return RedirectToAction("Category", "Home");
         }
