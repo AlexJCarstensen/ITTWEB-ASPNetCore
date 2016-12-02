@@ -39,31 +39,41 @@ else
             </table>
         </div>
         <div class="col-md-4">
+            <span class="row"></span>
             <ul class="list-group">
-                <span class="row"></span>
+
                 @foreach (var componentType in Model.ComponentTypes)
                 {
-
                     <li class="media-list">
                         <div class="row">
-                            
-                                <a asp-controller="Home" asp-action="EditComponentType" asp-route-id="@componentType.ComponentTypeId" class="btn btn-info">Edit</a>
-                            
-                            
-                                <a asp-controller="Home" asp-action="Component" asp-route-id="@componentType.ComponentTypeId" class="btn btn-danger">Delete</a>
-                            
+
+                            <a asp-controller="Home" asp-action="EditComponentType" asp-route-id="@componentType.ComponentTypeId" class="btn btn-info">Edit</a>
+
+
+                            <a asp-controller="Home" asp-action="DeleteComponentType" asp-route-id="@componentType.ComponentTypeId" class="btn btn-danger">Delete</a>
+
 
                         </div>
                     </li>
-
-                        
-                    
                 }
             </ul>
         </div>
     </div>
 
-
 }
+
+<form asp-controller="Home" asp-action="SaveCategory">
+    <div class="row">
+        <div class="col-md-6">
+            Category Name: <input name="category" type="text" />
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary left" type="submit">Add Category</button>
+        </div>
+    </div>
+</form>
 
 

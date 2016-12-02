@@ -25,10 +25,11 @@ namespace ITTWEB_ASPNetCore.Controllers
             return View();
         }
 
+        //--------------------Category----------------------------
         public IActionResult Category()
         {
             //var categories = _context.Catagories.ToList();
-            var categories = CategoryMock.GetCategories();
+            var categories = _context.Catagories.ToList();
 
             var viewModel = new CategoryViewModel
             {
@@ -39,6 +40,18 @@ namespace ITTWEB_ASPNetCore.Controllers
             return View(viewModel);
         }
 
+        //Create
+        [HttpPost]
+        public IActionResult CreateCategory(Category category)
+        {
+            //TODO: create new Category in database
+            _context.Catagories.Add(category);
+            _context.SaveChanges();
+
+            return RedirectToAction("Category", "Home");
+        }
+
+        //Edit
         public IActionResult EditCategory(int id, string title)
         {
 
@@ -47,33 +60,83 @@ namespace ITTWEB_ASPNetCore.Controllers
             return View(category);
         }
 
-        public IActionResult SaveCategory(int id, string title)
+        //Save
+        public IActionResult SaveCategory(string name)
+        {
+            
+            var category = new Category
+            {
+                Name = name
+            };
+
+            //TODO: Update Category in database
+            return RedirectToAction("Category", "Home");
+        }
+
+        //Delete
+        public IActionResult DeleteCategory(int id)
+        {
+            //TODO: Delete Category in database
+            return RedirectToAction("Category", "Home");
+        }
+
+
+        //---------------ComponentType-------------------------------
+
+        public IActionResult ComponentType(int id)
         {
 
             var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
 
-            return RedirectToAction("Category", "Home");
-        }
+            var componentTypes = category.CategoryComponentTypes.Select(categoryComponentType => categoryComponentType.ComponentType).ToList();
 
-        public IActionResult ComponentType(int id, string title)
-        {
-           
-            var componentTypes = ComponentTypeMock.GetComponentTypes();
+
             var viewModel = new ComponentTypeViewModel
             {
-                Title = title,
+                Title = category.Name,
                 ComponentTypes = componentTypes
             };
 
             return View(viewModel);
         }
-        public IActionResult EditComponentType(int id)
-        {
 
-            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
+        //Create
+        public IActionResult CreateComponentType(string title)
+        {
+            //TODO: Create new ComponentType in Database
+            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == 1);
 
             return View(category);
         }
+
+        //Edit
+        public IActionResult EditComponentType(int id)
+        {
+           
+
+            var componentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(c => c.ComponentTypeId == id);
+
+            return View(componentType);
+        }
+
+        //Save
+        public IActionResult SaveComponentType()
+        {
+            //TODO: Update ComponentType in Database
+            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == 1);
+
+            return RedirectToAction("ComponentType", "Home");
+        }
+
+        //Delete
+        public IActionResult DeleteComponentType(int id)
+        {
+            //TODO: Deletet ComponentType ind database
+            return RedirectToAction("ComponentType", "Home");
+        }
+
+
+        //-----------------------Component----------------------------------
         public IActionResult Component(int id)
         {
             var viewModel = new ComponentViewModel
@@ -84,16 +147,7 @@ namespace ITTWEB_ASPNetCore.Controllers
             return View(viewModel);
         }
 
-        public IActionResult SaveCategory(string name)
-        {
-            var category = new Category
-            {
-                Name = name
-            };
-
-            //TODO save in db
-            return RedirectToAction("Category", "Home");
-        }
+ 
 
         public IActionResult Error()
         {

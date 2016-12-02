@@ -23,7 +23,7 @@
                         <a asp-controller="Home" asp-action="EditCategory" class="btn btn-info" asp-route-id="@category.CategoryId" asp-route-title="@category.Name">Edit</a> 
                     </div>
                     <div class="col-md-7">
-                        <a class="btn btn-danger right">Delete Category </a>
+                        <a asp-controller="Home" asp-action="DeleteCategory" asp-route-id="@category.CategoryId" class="btn btn-danger right">Delete Category</a>
                     </div>
                 </div>
 
@@ -31,10 +31,10 @@
         </div>
     }
 
-    <form asp-controller="Home" asp-action="SaveCategory">
+    <form asp-controller="Home" asp-action="CreateCategory" method="post">
         <div class="row">
             <div class="col-md-4">
-                Category Name: <input name="category" type="text"/>
+                Category Name: <input asp-for="@Model.Category.Name" type="text"/>
             </div>
             <div class="col-md-1">
                 
