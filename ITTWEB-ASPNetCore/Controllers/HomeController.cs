@@ -29,8 +29,8 @@ namespace ITTWEB_ASPNetCore.Controllers
         //--------------------Category----------------------------
         public IActionResult Category()
         {
-            var categories = CategoryMock.GetCategories();
-            //var categories = _context.Catagories.ToList();
+            //var categories = CategoryMock.GetCategories();
+            var categories = _context.Catagories.ToList();
 
             var viewModel = new CategoryViewModel
             {
@@ -45,17 +45,17 @@ namespace ITTWEB_ASPNetCore.Controllers
         [HttpPost]
         public IActionResult SaveCategory(Category category)
         {
-            //if (category.CategoryId == 0)
-            //{
-            //    _context.Catagories.Add(category);
-            //}
-            //else
-            //{
-            //    var categoryInDb = _context.Catagories.Single(c => c.CategoryId == category.CategoryId);
-            //    categoryInDb.Name = category.Name;
+            if (category.CategoryId == 0)
+            {
+                _context.Catagories.Add(category);
+            }
+            else
+            {
+                var categoryInDb = _context.Catagories.Single(c => c.CategoryId == category.CategoryId);
+                categoryInDb.Name = category.Name;
 
-            //}
-            //_context.SaveChanges();
+            }
+            _context.SaveChanges();
 
             return RedirectToAction("Category", "Home");
         }
@@ -64,8 +64,8 @@ namespace ITTWEB_ASPNetCore.Controllers
         public IActionResult EditCategory(int id, string title)
         {
 
-            //var category = _context.Catagories.Single(c => c.CategoryId == id);
-            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
+            var category = _context.Catagories.Single(c => c.CategoryId == id);
+            //var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
 
             return View(category);
         }
@@ -76,11 +76,11 @@ namespace ITTWEB_ASPNetCore.Controllers
         public IActionResult DeleteCategory(Category category)
         {
             //TODO: Delete Category in database
-            //var categoryInDb = _context.Catagories.Single(c => c.CategoryId == category.CategoryId);
+            var categoryInDb = _context.Catagories.Single(c => c.CategoryId == category.CategoryId);
 
-            //_context.Catagories.Remove(categoryInDb);
+            _context.Catagories.Remove(categoryInDb);
 
-            //_context.SaveChanges();
+            _context.SaveChanges();
 
             return RedirectToAction("Category", "Home");
         }
@@ -91,17 +91,17 @@ namespace ITTWEB_ASPNetCore.Controllers
         public IActionResult ComponentType(int id)
         {
 
-            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
+            //var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
 
-            var componentTypes = category.CategoryComponentTypes.Select(categoryComponentType => categoryComponentType.ComponentType).ToList();
+            //var componentTypes = category.CategoryComponentTypes.Select(categoryComponentType => categoryComponentType.ComponentType).ToList();
 
-            //var category = _context.Catagories.Include(c => c.CategoryComponentTypes).ThenInclude(comp => comp.ComponentType).Single(c => c.CategoryId == id);
+            var category = _context.Catagories.Include(c => c.CategoryComponentTypes).ThenInclude(comp => comp.ComponentType).Single(c => c.CategoryId == id);
 
-            //var componentTypes = category.CategoryComponentTypes.Select(categoryComponenType => categoryComponenType.ComponentType).ToList();
+            var componentTypes = category.CategoryComponentTypes.Select(categoryComponenType => categoryComponenType.ComponentType).ToList();
 
             var viewModel = new ComponentTypeViewModel
             {
-                Title = category.Name,
+                Category = category,
                 ComponentTypes = componentTypes
             };
 
@@ -109,12 +109,26 @@ namespace ITTWEB_ASPNetCore.Controllers
         }
 
         //Create
-        public IActionResult CreateComponentType(string title)
+        [HttpPost]
+        public IActionResult SaveComponentType(ComponentTypeViewModel viewModel)
         {
             //TODO: Create new ComponentType in Database
-            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == 1);
 
-            return View(category);
+            var categoryComponentType = new CategoryComponentType();
+
+            categoryComponentType.CategoryId = viewModel.Category.CategoryId;
+
+            categoryComponentType.ComponentType = viewModel.ComponentType;
+
+            _context.CategoryComponentTypes.Add(categoryComponentType);
+
+            _context.SaveChanges();
+
+            
+
+
+
+            return RedirectToAction("Index", "Home");
         }
 
         //Edit

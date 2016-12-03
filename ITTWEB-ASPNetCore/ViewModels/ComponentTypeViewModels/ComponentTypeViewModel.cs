@@ -6,8 +6,10 @@ namespace ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels
 {
     public class ComponentTypeViewModel
     {
-        public string Title { get; set; }
+        public Category Category { get; set; }
         public List<ComponentType> ComponentTypes { get; set; }
+
+        public ComponentType ComponentType { get; set; }
 
     }
 }

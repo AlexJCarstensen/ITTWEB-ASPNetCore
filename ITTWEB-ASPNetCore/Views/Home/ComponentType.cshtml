@@ -2,7 +2,7 @@
 @model ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels.ComponentTypeViewModel
 
 
-<h1>@Model.Title</h1>
+<h1>@Model.Category.Name</h1>
 
 
 
@@ -46,11 +46,13 @@ else
                 {
                     <li class="media-list">
                         <div class="row">
+                            
+                                
+                            <a asp-controller="Home" asp-action="EditComponentType" asp-route-id="@componentType.ComponentTypeId" class="btn btn-danger">Edit</a>
 
-                            <a asp-controller="Home" asp-action="EditComponentType" asp-route-id="@componentType.ComponentTypeId" class="btn btn-info">Edit</a>
-
-
-                            <a asp-controller="Home" asp-action="DeleteComponentType" asp-route-id="@componentType.ComponentTypeId" class="btn btn-danger">Delete</a>
+                            <form asp-controller="Home" asp-action="DeleteComponentType" asp-route-id="@componentType.ComponentTypeId" method="post"> 
+                                <button class="btn btn-danger" type="submit">Delete</button>
+                            </form>
 
 
                         </div>
@@ -62,16 +64,17 @@ else
 
 }
 
-<form asp-controller="Home" asp-action="SaveCategory">
+<form asp-controller="Home" asp-action="SaveComponentType" method="post">
     <div class="row">
         <div class="col-md-6">
-            Category Name: <input name="category" type="text" />
+            Component Type Name: <input asp-for="@Model.ComponentType.ComponentName" type="text" />
         </div>
         <div class="col-md-2">
 
         </div>
         <div class="col-md-4">
-            <button class="btn btn-primary left" type="submit">Add Category</button>
+            <input type="hidden" asp-for="@Model.Category.CategoryId" />
+            <button class="btn btn-primary left" type="submit">Add Component type</button>
         </div>
     </div>
 </form>
