@@ -13,7 +13,7 @@
 else
 {
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <table class="table table-bordered  table-hover ">
                 <thead>
                 <tr>
@@ -32,51 +32,34 @@ else
                         <td><a asp-controller="Home" asp-action="Component" asp-route-id="@componentType.ComponentTypeId">@componentType.ComponentName</a></td>
                         <td>@componentType.Status</td>
                         <td>@componentType.WikiLink</td>
+                      <td >
+                        <a asp-controller="Home" asp-action="EditComponentType" asp-route-componentTypeId="@componentType.ComponentTypeId" asp-route-categoryId="@Model.Category.CategoryId" class="btn btn-info   ">Edit</a>
+                      </td>
+                      <td >
+                        <form asp-controller="Home" asp-action="DeleteComponentType" method="post" >
+                          <input type="hidden" asp-for="@Model.Category.CategoryId"/>
+                          <input type="hidden" asp-for="@componentType.ComponentTypeId"/>
+                          <button class="btn btn-danger " type="submit">Delete</button>
+                        </form>
+                      </td>
                     </tr>
 
                 }
                 </tbody>
             </table>
         </div>
-        <div class="col-md-4">
-            <span class="row"></span>
-            <ul class="list-group">
-
-                @foreach (var componentType in Model.ComponentTypes)
-                {
-                    <li class="media-list">
-                        
-                                
-                            <a asp-controller="Home" asp-action="EditComponentType" asp-route-componentTypeId="@componentType.ComponentTypeId" asp-route-categoryId="@Model.Category.CategoryId" class="btn btn-info">Edit</a>
-
-                            <form asp-controller="Home" asp-action="DeleteComponentType" method="post">
-                                <input type="hidden" asp-for="@Model.Category.CategoryId"/>
-                                <input type="hidden" asp-for="@componentType.ComponentTypeId"/>
-                                <button class="btn btn-danger" type="submit">Delete</button>
-                            </form>
-
-
-                       
-                    </li>
-                }
-            </ul>
-        </div>
-    </div>
+      </div>
 
 }
 
 <form asp-controller="Home" asp-action="SaveComponentType" method="post">
     <div class="row">
-        <div class="col-md-6">
-            Component Type Name: <input asp-for="@Model.ComponentType.ComponentName" type="text" />
+        <div class="col-md-12">
+          Component Type Name: <input asp-for="@Model.ComponentType.ComponentName" type="text" />
+          <input type="hidden" asp-for="@Model.Category.CategoryId" />
+          <button class="btn btn-primary left" type="submit">Add Component type</button>
         </div>
-        <div class="col-md-2">
 
-        </div>
-        <div class="col-md-4">
-            <input type="hidden" asp-for="@Model.Category.CategoryId" />
-            <button class="btn btn-primary left" type="submit">Add Component type</button>
-        </div>
     </div>
 </form>
 
