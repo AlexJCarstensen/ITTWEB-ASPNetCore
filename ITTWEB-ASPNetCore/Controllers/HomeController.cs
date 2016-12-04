@@ -203,16 +203,52 @@ namespace ITTWEB_ASPNetCore.Controllers
             //    ComponentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(t => t.ComponentTypeId == id) 
             //};
 
-            var componentTypeInDb = _context.ComponentTypes.Single(c => c.ComponentTypeId == id);
+            var componentTypeInDb = _context.ComponentTypes.Include(c => c.Components).Single(c => c.ComponentTypeId == id);
 
-            componentTypeInDb.Components = ComponentMock.GetComponents((int) componentTypeInDb.ComponentTypeId);
+            
 
             var viewModel = new ComponentViewModel()
             {
-                ComponentType = componentTypeInDb
+                ComponentType = componentTypeInDb,
+                ComponentCount = componentTypeInDb.Components.Count
             };
 
             return View(viewModel);
+        }
+
+        //Save
+
+        public IActionResult SaveComponent(ComponentViewModel viewModel)
+        {
+            if (viewModel.Component.ComponentId == 0)
+            {
+                viewModel.Component.ComponentTypeId = viewModel.ComponentType.ComponentTypeId;
+
+                viewModel.Component.ComponentNumber = viewModel.ComponentCount + 1;
+
+                _context.Components.Add(viewModel.Component);
+            }
+            else
+            {
+                
+            }
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Component", "Home", new {id = viewModel.ComponentType.ComponentTypeId});
+        }
+
+        //Delete
+        [HttpPost]
+        public IActionResult DeleteComponent(Component component)
+        {
+            var componentInDb = _context.Components.Single(c => c.ComponentId == component.ComponentId);
+
+            _context.Components.Remove(componentInDb);
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Component", "Home", new {id = component.ComponentTypeId});
         }
 
  

@@ -9,6 +9,8 @@ namespace ITTWEB_ASPNetCore.ViewModels.ComponentViewModel
 {
     public class ComponentViewModel
     {
+        public Component Component { get; set; }
         public ComponentType ComponentType { get; set; }
+        public int ComponentCount { get; set; }
     }
 }
