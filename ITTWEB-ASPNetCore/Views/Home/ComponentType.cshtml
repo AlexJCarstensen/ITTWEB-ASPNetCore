@@ -45,8 +45,7 @@ else
                 @foreach (var componentType in Model.ComponentTypes)
                 {
                     <li class="media-list">
-                        <div class="row">
-                            
+                        
                                 
                             <a asp-controller="Home" asp-action="EditComponentType" asp-route-componentTypeId="@componentType.ComponentTypeId" asp-route-categoryId="@Model.Category.CategoryId" class="btn btn-info">Edit</a>
 
@@ -57,7 +56,7 @@ else
                             </form>
 
 
-                        </div>
+                       
                     </li>
                 }
             </ul>
