@@ -47,10 +47,12 @@ namespace ITTWEB_ASPNetCore.Controllers
         {
             if (category.CategoryId == 0)
             {
+                //If creating
                 _context.Catagories.Add(category);
             }
             else
             {
+                //If editing
                 var categoryInDb = _context.Catagories.Single(c => c.CategoryId == category.CategoryId);
                 categoryInDb.Name = category.Name;
 
@@ -114,13 +116,38 @@ namespace ITTWEB_ASPNetCore.Controllers
         {
             //TODO: Create new ComponentType in Database
 
-            var categoryComponentType = new CategoryComponentType();
+            if (viewModel.ComponentType.ComponentTypeId == 0)
+            {
+                //If creating
+                viewModel.ComponentType.Status = ComponentTypeStatus.ReservedAdmin;
 
-            categoryComponentType.CategoryId = viewModel.Category.CategoryId;
+                var categoryComponentType = new CategoryComponentType();
 
-            categoryComponentType.ComponentType = viewModel.ComponentType;
+                categoryComponentType.CategoryId = viewModel.Category.CategoryId;
 
-            _context.CategoryComponentTypes.Add(categoryComponentType);
+                categoryComponentType.ComponentType = viewModel.ComponentType;
+
+                _context.CategoryComponentTypes.Add(categoryComponentType);
+            }
+            else
+            {
+                //If editing
+                var componentTypeInDb =
+                    _context.ComponentTypes.Single(c => c.ComponentTypeId == viewModel.ComponentType.ComponentTypeId);
+
+                componentTypeInDb.ComponentName = viewModel.ComponentType.ComponentName;
+                componentTypeInDb.ComponentInfo = viewModel.ComponentType.ComponentInfo;
+                componentTypeInDb.Location = viewModel.ComponentType.Location;
+                componentTypeInDb.Status = viewModel.ComponentType.Status;
+                componentTypeInDb.Datasheet = viewModel.ComponentType.Datasheet;
+                componentTypeInDb.ImageUrl = viewModel.ComponentType.ImageUrl;
+                componentTypeInDb.Manufacturer = viewModel.ComponentType.Manufacturer;
+                componentTypeInDb.WikiLink = viewModel.ComponentType.WikiLink;
+                componentTypeInDb.AdminComment = viewModel.ComponentType.AdminComment;
+                componentTypeInDb.Image = viewModel.ComponentType.Image;
+            }
+
+            
 
             _context.SaveChanges();
 
@@ -128,33 +155,43 @@ namespace ITTWEB_ASPNetCore.Controllers
 
 
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("ComponentType", "Home", new {id = viewModel.Category.CategoryId});
         }
 
         //Edit
-        public IActionResult EditComponentType(int id)
+        public IActionResult EditComponentType(int componentTypeId, int categoryId)
         {
            
 
-            var componentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(c => c.ComponentTypeId == id);
+            //var componentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(c => c.ComponentTypeId == id);
 
-            return View(componentType);
+            var componentType = _context.ComponentTypes.SingleOrDefault(c => c.ComponentTypeId == componentTypeId);
+            var category = _context.Catagories.Single(c => c.CategoryId == categoryId);
+
+            var viewModel = new EditComponentTypeViewModel()
+            {
+                Category = category,
+                ComponentType = componentType
+            };
+
+            return View(viewModel);
         }
 
-        //Save
-        public IActionResult SaveComponentType()
-        {
-            //TODO: Update ComponentType in Database
-            var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == 1);
-
-            return RedirectToAction("ComponentType", "Home");
-        }
 
         //Delete
-        public IActionResult DeleteComponentType(int id)
+        [HttpPost]
+        public IActionResult DeleteComponentType(EditComponentTypeViewModel viewModel)
         {
             //TODO: Deletet ComponentType ind database
-            return RedirectToAction("ComponentType", "Home");
+            var categoryComponentTypeInDb =
+                _context.CategoryComponentTypes.Single(c => c.ComponentTypeId == viewModel.ComponentType.ComponentTypeId);
+            _context.CategoryComponentTypes.Remove(categoryComponentTypeInDb);
+            var componentTypeInDb =
+                _context.ComponentTypes.Single(c => c.ComponentTypeId == viewModel.ComponentType.ComponentTypeId);
+            _context.SaveChanges();
+            
+
+            return RedirectToAction("ComponentType", "Home", new {id = viewModel.Category.CategoryId});
         }
 
 
