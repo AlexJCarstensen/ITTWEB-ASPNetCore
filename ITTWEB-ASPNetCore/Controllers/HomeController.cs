@@ -198,9 +198,18 @@ namespace ITTWEB_ASPNetCore.Controllers
         //-----------------------Component----------------------------------
         public IActionResult Component(int id)
         {
-            var viewModel = new ComponentViewModel
+            //var viewModel = new ComponentViewModel
+            //{
+            //    ComponentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(t => t.ComponentTypeId == id) 
+            //};
+
+            var componentTypeInDb = _context.ComponentTypes.Single(c => c.ComponentTypeId == id);
+
+            componentTypeInDb.Components = ComponentMock.GetComponents((int) componentTypeInDb.ComponentTypeId);
+
+            var viewModel = new ComponentViewModel()
             {
-                ComponentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(t => t.ComponentTypeId == id) 
+                ComponentType = componentTypeInDb
             };
 
             return View(viewModel);
