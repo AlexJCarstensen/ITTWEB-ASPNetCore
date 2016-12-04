@@ -11,5 +11,7 @@ namespace ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels
 
         public ComponentType ComponentType { get; set; }
 
+        public string SearchText { get; set; }
+
     }
 }
