@@ -216,6 +216,18 @@ namespace ITTWEB_ASPNetCore.Controllers
             return View(viewModel);
         }
 
+        public IActionResult EditComponent(int componentId)
+        {
+            var componentInDb = _context.Components.Single(c => c.ComponentId == componentId);
+
+            var viewModel = new ComponentViewModel()
+            {
+                Component = componentInDb
+            };
+
+            return View(viewModel);
+        }
+
         //Save
 
         public IActionResult SaveComponent(ComponentViewModel viewModel)
@@ -230,12 +242,19 @@ namespace ITTWEB_ASPNetCore.Controllers
             }
             else
             {
-                
+                var componentIndb = _context.Components.Single(c => c.ComponentId == viewModel.Component.ComponentId);
+
+                componentIndb.ComponentNumber = viewModel.Component.ComponentNumber;
+                componentIndb.SerialNo = viewModel.Component.SerialNo;
+                componentIndb.Status = viewModel.Component.Status;
+                componentIndb.AdminComment = viewModel.Component.AdminComment;
+                componentIndb.UserComment = viewModel.Component.UserComment;
+                componentIndb.CurrentLoanInformationId = viewModel.Component.CurrentLoanInformationId;
             }
 
             _context.SaveChanges();
 
-            return RedirectToAction("Component", "Home", new {id = viewModel.ComponentType.ComponentTypeId});
+            return RedirectToAction("Component", "Home", new {id = viewModel.Component.ComponentTypeId});
         }
 
         //Delete

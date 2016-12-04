@@ -1,0 +1,69 @@
+@model ITTWEB_ASPNetCore.ViewModels.ComponentViewModel.ComponentViewModel
+
+
+<h2>EditComponent</h2>
+
+<form asp-controller="Home" asp-action="SaveComponent">
+    <div class="form-horizontal">
+        <h4>Component</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Component.ComponentNumber" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Component.ComponentNumber" class="form-control" />
+                <span asp-validation-for="Component.ComponentNumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Component.SerialNo" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Component.SerialNo" class="form-control" />
+                <span asp-validation-for="Component.SerialNo" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Component.Status" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Component.Status" class="form-control" />
+                <span asp-validation-for="Component.Status" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Component.AdminComment" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Component.AdminComment" class="form-control" />
+                <span asp-validation-for="Component.AdminComment" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Component.UserComment" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Component.UserComment" class="form-control" />
+                <span asp-validation-for="Component.UserComment" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Component.CurrentLoanInformationId" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Component.CurrentLoanInformationId" class="form-control" />
+                <span asp-validation-for="Component.CurrentLoanInformationId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="hidden" asp-for="Component.ComponentId"/>
+                <input type="hidden" asp-for="Component.ComponentTypeId"/>
+                <input type="submit" value="Save" class="btn btn-default"/>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-controller="Home" asp-action="Component" asp-route-id="@Model.Component.ComponentTypeId">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
