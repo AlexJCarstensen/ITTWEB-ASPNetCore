@@ -1,4 +1,4 @@
-﻿namespace ITTWEB_ASPNetCore.Models
+﻿namespace ITTWEB_ASPNetCore.Core.Domain
 {
     public enum ComponentStatus
     {

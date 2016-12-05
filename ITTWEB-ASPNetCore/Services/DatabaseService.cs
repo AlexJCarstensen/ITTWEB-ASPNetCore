@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
+using ITTWEB_ASPNetCore.Core.Domain;
 using ITTWEB_ASPNetCore.Data;
 using ITTWEB_ASPNetCore.Models;
 using ITTWEB_ASPNetCore.Models.AccountViewModels;

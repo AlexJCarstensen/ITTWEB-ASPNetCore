@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ITTWEB_ASPNetCore.Core.Domain;
 using ITTWEB_ASPNetCore.Models;
 
 namespace ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ITTWEB_ASPNetCore.Core.Domain;
 using ITTWEB_ASPNetCore.Models;
 using ITTWEB_ASPNetCore.Models.AccountViewModels;
 
