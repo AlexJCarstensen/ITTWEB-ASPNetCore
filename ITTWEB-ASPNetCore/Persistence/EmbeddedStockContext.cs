@@ -1,14 +1,17 @@
 ﻿using ITTWEB_ASPNetCore.Core.Domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 using Microsoft.Extensions.Configuration;
 
 namespace ITTWEB_ASPNetCore.Persistence
 {
-    public class EmbeddedStockContext : DbContext
+    public class EmbeddedStockContext : IdentityDbContext<ApplicationUser>
     {
         public EmbeddedStockContext(DbContextOptions<EmbeddedStockContext> options)
             : base(options)
         {
+
         }
 
         public DbSet<Category> Categories { get; set; }

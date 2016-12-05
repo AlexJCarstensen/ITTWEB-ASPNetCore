@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ITTWEB_ASPNetCore.Data.Migrations
+namespace ITTWEBASPNetCore.Migrations
 {
     public partial class PopulateCategoryComponentType : Migration
     {
@@ -11,7 +11,6 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
             migrationBuilder.Sql("INSERT INTO CategoryComponentTypes (CategoryId, ComponentTypeId) VALUES (1, 1)");
             migrationBuilder.Sql("INSERT INTO CategoryComponentTypes (CategoryId, ComponentTypeId) VALUES (2, 2)");
             migrationBuilder.Sql("INSERT INTO CategoryComponentTypes (CategoryId, ComponentTypeId) VALUES (2, 3)");
-
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

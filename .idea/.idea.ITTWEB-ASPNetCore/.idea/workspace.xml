@@ -2,10 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="258d0473-7983-4867-b0d0-93e5673b63aa" name="Default" comment="added to homecontroller, moved viewmodels and created one. created view for categories">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205204703_initial.Designer.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205211849_populateCategories.Designer.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220738_PopulateComponentTypes.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220918_PopulateCategoryComponentType.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220959_PopulateComponents.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/EmbeddedStockContextModelSnapshot.cs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161201172839_Initial.Designer.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161202163643_PopulateCategory.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161202225609_add-migration PopulateComponentType.Designer.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161202225609_add-migration PopulateComponentType.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161202231935_PopulateCategoryComponentType.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161204130821_PopulateComponents.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/00000000000000_CreateIdentitySchema.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205211849_populateCategories.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161201172839_Initial.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205204703_initial.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161202163643_PopulateCategory.Designer.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220738_PopulateComponentTypes.Designer.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161202231935_PopulateCategoryComponentType.Designer.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220918_PopulateCategoryComponentType.Designer.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/20161204130821_PopulateComponents.Designer.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220959_PopulateComponents.Designer.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Core/IUnitOfWork.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Core/IUnitOfWork.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/CategoryViewModels/CategoryViewModel.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/CategoryViewModels/CategoryViewModel.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json" />
     </list>
     <ignored path="ITTWEB-ASPNetCore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,6 +44,38 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="SQL Server (Microsoft) - @localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="SQL Server (Microsoft) - @localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ITTWEBComponent" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ITTWEB-ASPNetCore" />
@@ -29,177 +85,142 @@
       <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
               <folding>
-                <marker date="1480587374101" expanded="true" signature="461:2207" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="508:2205" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="621:673" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="710:757" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="798:1096" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="992:1047" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="1162:1552" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="1410:1504" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="1599:1853" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="1673:1805" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="1909:2114" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="1972:2015" ph="{...}" />
-                <marker date="1480587374101" expanded="true" signature="2152:2199" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="6:664" ph="..." />
+                <marker date="1480975604284" expanded="true" signature="705:11924" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="752:11922" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="863:921" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="958:1005" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="1113:1414" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="1310:1366" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="1512:2032" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="1535:1964" ph="/* if (category.CategoryId == 0) ... */" />
+                <marker date="1480975604284" expanded="true" signature="2112:2349" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="2450:2775" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="2473:2707" ph="/* TODO: Delete Category in database ... */" />
+                <marker date="1480975604284" expanded="true" signature="2899:3677" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="3167:3460" ph="/* var category = _context.Catagories.Include(c =&gt; c.CategoryComponentTypes).ThenInclude(comp =&gt; comp.ComponentTy ... */" />
+                <marker date="1480975604284" expanded="true" signature="3529:3629" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="3795:5667" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="3818:5483" ph="/* TODO: Create new ComponentType in Database ... */" />
+                <marker date="1480975604284" expanded="true" signature="5767:6444" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="6028:6223" ph="/* var componentType = _context.ComponentTypes.SingleOrDefault(c =&gt; c.ComponentTypeId == componentTypeId); ... */" />
+                <marker date="1480975604284" expanded="true" signature="6298:6396" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="6569:7207" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="6592:7079" ph="/* TODO: Deletet ComponentType ind database ... */" />
+                <marker date="1480975604284" expanded="true" signature="7333:7928" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="7407:7538" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="7683:7881" ph="/* var viewModel = new ComponentViewModel() ... */" />
+                <marker date="1480975604284" expanded="true" signature="7989:8404" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="8012:8229" ph="/* var componentInDb = _context.Components.Single(c =&gt; c.ComponentId == componentId); ... */" />
+                <marker date="1480975604284" expanded="true" signature="8297:8356" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="8494:9664" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="8517:9547" ph="/* if (viewModel.Component.ComponentId == 0) ... */" />
+                <marker date="1480975604284" expanded="true" signature="9767:10088" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="9790:9981" ph="/* var componentInDb = _context.Components.Single(c =&gt; c.ComponentId == component.ComponentId); ... */" />
+                <marker date="1480975604284" expanded="true" signature="10190:11829" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="10215:11240" ph="/* var category = ... */" />
+                <marker date="1480975604284" expanded="true" signature="11267:11583" ph="/* var componentTypes = ... */" />
+                <marker date="1480975604284" expanded="true" signature="11658:11775" ph="{...}" />
+                <marker date="1480975604284" expanded="true" signature="11869:11916" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.cshtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding>
-                <marker date="1480587684721" expanded="true" signature="97:994" ph="&lt;div.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="103:680" ph="@..." />
-                <marker date="1480587684721" expanded="true" signature="177:678" ph="&lt;div.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="208:667" ph="@..." />
-                <marker date="1480587684721" expanded="true" signature="270:658" ph="&lt;div.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="300:519" ph="&lt;div.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="532:641" ph="&lt;div.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="684:985" ph="&lt;form.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="741:975" ph="&lt;div.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="763:854" ph="&lt;div.../&gt;" />
-                <marker date="1480587684721" expanded="true" signature="859:964" ph="&lt;div.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ESImage.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ESImage.cs">
+      <file leaf-file-name="EmbeddedStockContext.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1480579459498" expanded="true" signature="6:78" ph="..." />
-                <marker date="1480579459498" expanded="true" signature="132:723" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="159:382" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="419:721" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="468:715" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="524:700" ph="{...}" />
+                <marker date="1480973358509" expanded="true" signature="6:173" ph="..." />
+                <marker date="1480973358509" expanded="true" signature="214:752" ph="{...}" />
+                <marker date="1480973358509" expanded="true" signature="291:750" ph="{...}" />
+                <marker date="1480973358509" expanded="true" signature="409:430" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Component.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Component.cs">
+      <file leaf-file-name="20161205220738_PopulateComponentTypes.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220738_PopulateComponentTypes.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="33" />
+              <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
               <folding>
-                <marker date="1480579459498" expanded="true" signature="87:2165" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="116:527" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="566:2163" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="645:2157" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="707:2145" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="757:1181" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="1231:1655" ph="{...}" />
-                <marker date="1480579459498" expanded="true" signature="1705:2129" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="6:141" ph="..." />
+                <marker date="1480975771050" expanded="true" signature="180:11462" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="242:11460" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="318:10785" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="462:1653" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="1932:2263" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="2547:2840" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="3166:3576" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="4186:4500" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="5144:5554" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="6163:6317" ph="{...}" />
+                <marker date="1480975771050" expanded="true" signature="10858:11454" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComponentType.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
+      <file leaf-file-name="20161205220918_PopulateCategoryComponentType.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220918_PopulateCategoryComponentType.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="22" column="102" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="102" />
+            <state relative-caret-position="204">
+              <caret line="12" column="115" selection-start-line="12" selection-start-column="115" selection-end-line="12" selection-end-column="115" />
               <folding>
-                <marker date="1480586129821" expanded="true" signature="87:2605" ph="{...}" />
-                <marker date="1480586129821" expanded="true" signature="120:1031" ph="{...}" />
-                <marker date="1480586129821" expanded="true" signature="157:278" ph="{...}" />
-                <marker date="1480586129821" expanded="true" signature="1074:2603" ph="{...}" />
-                <marker date="1480586129821" expanded="true" signature="1142:2597" ph="{...}" />
-                <marker date="1480586129821" expanded="true" signature="1208:2586" ph="{...}" />
+                <marker date="1480975771018" expanded="true" signature="6:95" ph="..." />
+                <marker date="1480975771018" expanded="true" signature="134:749" ph="{...}" />
+                <marker date="1480975771018" expanded="true" signature="203:747" ph="{...}" />
+                <marker date="1480975771018" expanded="true" signature="279:647" ph="{...}" />
+                <marker date="1480975771018" expanded="true" signature="720:741" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComponentType.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/ComponentType.cshtml">
+      <file leaf-file-name="20161205220959_PopulateComponents.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220959_PopulateComponents.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1480586129825" expanded="true" signature="110:782" ph="@..." />
-                <marker date="1480586129825" expanded="true" signature="187:780" ph="&lt;table.../&gt;" />
-                <marker date="1480586129825" expanded="true" signature="242:360" ph="&lt;thead.../&gt;" />
-                <marker date="1480586129825" expanded="true" signature="256:345" ph="&lt;tr.../&gt;" />
-                <marker date="1480586129825" expanded="true" signature="367:767" ph="&lt;tbody.../&gt;" />
-                <marker date="1480586129825" expanded="true" signature="381:752" ph="@..." />
-                <marker date="1480586129825" expanded="true" signature="452:744" ph="&lt;tr.../&gt;" />
+                <marker date="1480975806166" expanded="true" signature="6:95" ph="..." />
+                <marker date="1480975806166" expanded="true" signature="134:5165" ph="{...}" />
+                <marker date="1480975806166" expanded="true" signature="192:5163" ph="{...}" />
+                <marker date="1480975806166" expanded="true" signature="268:5063" ph="{...}" />
+                <marker date="1480975806166" expanded="true" signature="5136:5157" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComponentTypeViewModel.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/ComponentTypeViewModels/ComponentTypeViewModel.cs">
+      <file leaf-file-name="Category.cshtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="136">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding>
-                <marker date="1480580632488" expanded="true" signature="6:83" ph="..." />
-                <marker date="1480580632488" expanded="true" signature="147:310" ph="{...}" />
-                <marker date="1480580632488" expanded="true" signature="189:308" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_Layout.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Shared/_Layout.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <marker date="1480581733069" expanded="true" signature="16:2997" ph="&lt;html.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="23:854" ph="&lt;head.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="199:387" ph="&lt;environment.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="392:846" ph="&lt;environment.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="855:2989" ph="&lt;body.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="866:1866" ph="&lt;div.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="927:1855" ph="&lt;div.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="963:1473" ph="&lt;div.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="1007:1351" ph="&lt;button.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="1486:1840" ph="&lt;div.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="1541:1763" ph="&lt;ul.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="1871:2041" ph="&lt;div.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="1953:2030" ph="&lt;footer.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="2047:2299" ph="&lt;environment.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="2304:2933" ph="&lt;environment.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="2353:2561" ph="&lt;script.../&gt;" />
-                <marker date="1480581733069" expanded="true" signature="2570:2839" ph="&lt;script.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Component.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1480586136809" expanded="true" signature="75:1068" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="133:460" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="323:449" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="475:662" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="572:651" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="677:790" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="805:1061" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="831:1013" ph="&lt;div.../&gt;" />
-                <marker date="1480586136809" expanded="true" signature="866:998" ph="@..." />
+                <marker date="1480975488198" expanded="true" signature="7:73" ph="..." />
+                <marker date="1480975488198" expanded="true" signature="171:1994" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="181:1512" ph="@..." />
+                <marker date="1480975488198" expanded="true" signature="275:1506" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="312:1491" ph="@..." />
+                <marker date="1480975488198" expanded="true" signature="386:1476" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="424:661" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="682:906" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="927:1453" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="974:1426" ph="&lt;form.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="1518:1985" ph="&lt;form.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="1595:1973" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="1625:1749" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="1762:1820" ph="&lt;div.../&gt;" />
+                <marker date="1480975488198" expanded="true" signature="1833:1958" ph="&lt;div.../&gt;" />
               </folding>
             </state>
           </provider>
@@ -208,12 +229,61 @@
       <file leaf-file-name="CategoryViewModel.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/CategoryViewModels/CategoryViewModel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
-                <marker date="1480579401865" expanded="true" signature="6:83" ph="..." />
-                <marker date="1480579401865" expanded="true" signature="142:248" ph="{...}" />
-                <marker date="1480579401865" expanded="true" signature="179:246" ph="{...}" />
+                <marker date="1480975275313" expanded="true" signature="6:152" ph="..." />
+                <marker date="1480975275313" expanded="true" signature="211:371" ph="{...}" />
+                <marker date="1480975275313" expanded="true" signature="248:369" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUnitOfWork.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Core/IUnitOfWork.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <folding>
+                <marker date="1480974713211" expanded="true" signature="6:56" ph="..." />
+                <marker date="1480974713211" expanded="true" signature="90:283" ph="{...}" />
+                <marker date="1480974713211" expanded="true" signature="139:281" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnitOfWork.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/UnitOfWork.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1480966714936" expanded="true" signature="6:122" ph="..." />
+                <marker date="1480966714936" expanded="true" signature="163:821" ph="{...}" />
+                <marker date="1480966714936" expanded="true" signature="207:819" ph="{...}" />
+                <marker date="1480966714936" expanded="true" signature="326:505" ph="{...}" />
+                <marker date="1480966714936" expanded="true" signature="667:719" ph="{...}" />
+                <marker date="1480966714936" expanded="true" signature="750:813" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-969">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1480975145706" expanded="true" signature="6:588" ph="..." />
+                <marker date="1480975145706" expanded="true" signature="617:3535" ph="{...}" />
+                <marker date="1480975145706" expanded="true" signature="644:3533" ph="{...}" />
+                <marker date="1480975145706" expanded="true" signature="698:1405" ph="{...}" />
+                <marker date="1480975145706" expanded="true" signature="1632:2451" ph="{...}" />
+                <marker date="1480975145706" expanded="true" signature="1668:1843" ph="/* Add framework services. ... */" />
+                <marker date="1480975145706" expanded="true" signature="2669:3527" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -230,12 +300,9 @@
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/AccountViewModels/Catagory.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Catagory.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Component.cs" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Index.cshtml" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/DatabaseService.cs" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/CategoryViewModels/CategoryViewModel.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/CategoryMock.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/wwwroot/css/category.css" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/ComponentTypeViewModels/ComponentTypeViewModel.cs" />
@@ -243,16 +310,28 @@
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Shared/_Layout.cshtml" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Component.cshtml" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0d74bd6b-6ba2-4917-9453-f28be6009b3f/console.sql" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205211653_populateCategories.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205211849_populateCategories.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Core/IUnitOfWork.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/CategoryViewModels/CategoryViewModel.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220738_PopulateComponentTypes.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220918_PopulateCategoryComponentType.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220959_PopulateComponents.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="952" />
+    <option name="y" value="52" />
+    <option name="width" value="1845" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -309,69 +388,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wwwroot" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wwwroot" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Shared" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,7 +428,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ViewModels" />
+              <option name="myItemId" value="Persistence" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,11 +446,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ViewModels" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ComponentTypeViewModels" />
+              <option name="myItemId" value="Migrations" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -451,11 +464,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ViewModels" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CategoryViewModels" />
+              <option name="myItemId" value="Data" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,25 +482,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
+              <option name="myItemId" value="Core" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -513,6 +504,24 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ITTWEB-ASPNetCore" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="References" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
@@ -522,140 +531,14 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../.vs/ITTWEB-ASPNetCore/v14/.suo</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Component.cshtml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/ComponentType.cshtml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/ComponentViewModel/ComponentViewModel.cs</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager" selected=".NET Project.Test">
     <configuration default="true" type="DotNetProject" factoryName=".NET Project">
-      <option name="PROJECT_PATH" value="" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="USE_MONO" value="0" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ITTWEB-ASPNetCore.xproj" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v1.0" />
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/bin/Debug/netcoreapp1.0/ITTWEB-ASPNetCore.dll" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v1.1" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/bin/Debug/netcoreapp1.1/ITTWEB-ASPNetCore.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore" />
       <option name="USE_MONO" value="0" />
@@ -666,8 +549,45 @@
       </envs>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    <configuration default="true" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ITTWEB-ASPNetCore.xproj" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v1.1" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/bin/Debug/netcoreapp1.1/ITTWEB-ASPNetCore.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Production" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ITTWEB-ASPNetCore.xproj" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v1.1" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/bin/Debug/netcoreapp1.1/ITTWEB-ASPNetCore.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Production" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Test" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.Default" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -689,6 +609,7 @@
       <workItem from="1480525651451" duration="1453000" />
       <workItem from="1480527186937" duration="4000" />
       <workItem from="1480577409411" duration="9371000" />
+      <workItem from="1480968037529" duration="7449000" />
     </task>
     <task id="LOCAL-00001" summary="added to homecontroller, moved viewmodels and created one. created view for categories">
       <created>1480579440920</created>
@@ -708,7 +629,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13677000" />
+    <option name="totallyTimeSpent" value="21126000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,30 +641,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="952" extended-state="6" />
+    <frame x="65" y="52" width="1845" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15363881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979014" sideWeight="0.50189704" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3116531" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15718158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39979014" sideWeight="0.498103" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -755,157 +676,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="added some views" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Shared/_Layout.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480581733069" expanded="true" signature="16:2997" ph="&lt;html.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="23:854" ph="&lt;head.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="199:387" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="392:846" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="855:2989" ph="&lt;body.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="866:1866" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="927:1855" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="963:1473" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1007:1351" ph="&lt;button.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1486:1840" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1541:1763" ph="&lt;ul.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1871:2041" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1953:2030" ph="&lt;footer.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2047:2299" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2304:2933" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2353:2561" ph="&lt;script.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2570:2839" ph="&lt;script.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <marker date="1480587374101" expanded="true" signature="461:2207" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="508:2205" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="621:673" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="710:757" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="798:1096" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="992:1047" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1162:1552" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1410:1504" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1599:1853" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1673:1805" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1909:2114" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1972:2015" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="2152:2199" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480587684721" expanded="true" signature="97:994" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="103:680" ph="@..." />
-            <marker date="1480587684721" expanded="true" signature="177:678" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="208:667" ph="@..." />
-            <marker date="1480587684721" expanded="true" signature="270:658" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="300:519" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="532:641" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="684:985" ph="&lt;form.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="741:975" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="763:854" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="859:964" ph="&lt;div.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Index.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/DatabaseService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480577394990" expanded="true" signature="0:3521" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="105:1717" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="138:206" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="545:625" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="940:1020" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1496:1576" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1633:1713" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1731:2662" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1775:1882" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1942:2049" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2096:2268" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2164:2260" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2320:2427" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2486:2658" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2554:2650" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2681:2844" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2706:2840" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2729:2832" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2865:2972" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2995:3071" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3023:3067" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3094:3225" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3113:3221" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="3241:3454" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3470:3519" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/IEmailSender.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/ISmsSender.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/MessageServices.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +693,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1480970690587" expanded="true" signature="6:309" ph="..." />
+            <marker date="1480970690587" expanded="true" signature="343:1312" ph="{...}" />
+            <marker date="1480970690587" expanded="true" signature="346:1310" ph="/* public class ApplicationDbContext : IdentityDbContext&lt;ApplicationUser&gt; ... */" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,175 +705,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480581733069" expanded="true" signature="16:2997" ph="&lt;html.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="23:854" ph="&lt;head.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="199:387" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="392:846" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="855:2989" ph="&lt;body.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="866:1866" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="927:1855" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="963:1473" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1007:1351" ph="&lt;button.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1486:1840" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1541:1763" ph="&lt;ul.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1871:2041" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1953:2030" ph="&lt;footer.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2047:2299" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2304:2933" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2353:2561" ph="&lt;script.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2570:2839" ph="&lt;script.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding>
-            <marker date="1480587374101" expanded="true" signature="461:2207" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="508:2205" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="621:673" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="710:757" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="798:1096" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="992:1047" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1162:1552" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1410:1504" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1599:1853" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1673:1805" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1909:2114" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1972:2015" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="2152:2199" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480587684721" expanded="true" signature="97:994" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="103:680" ph="@..." />
-            <marker date="1480587684721" expanded="true" signature="177:678" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="208:667" ph="@..." />
-            <marker date="1480587684721" expanded="true" signature="270:658" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="300:519" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="532:641" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="684:985" ph="&lt;form.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="741:975" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="763:854" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="859:964" ph="&lt;div.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Index.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/DatabaseService.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480577394990" expanded="true" signature="0:3521" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="105:1717" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="138:206" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="545:625" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="940:1020" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1496:1576" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1633:1713" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1731:2662" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1775:1882" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1942:2049" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2096:2268" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2164:2260" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2320:2427" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2486:2658" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2554:2650" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2681:2844" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2706:2840" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2729:2832" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2865:2972" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2995:3071" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3023:3067" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3094:3225" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3113:3221" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="3241:3454" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3470:3519" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/IEmailSender.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/ISmsSender.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/MessageServices.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Shared/_Layout.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480581733069" expanded="true" signature="16:2997" ph="&lt;html.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="23:854" ph="&lt;head.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="199:387" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="392:846" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="855:2989" ph="&lt;body.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="866:1866" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="927:1855" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="963:1473" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1007:1351" ph="&lt;button.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1486:1840" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1541:1763" ph="&lt;ul.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1871:2041" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1953:2030" ph="&lt;footer.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2047:2299" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2304:2933" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2353:2561" ph="&lt;script.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2570:2839" ph="&lt;script.../&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,35 +714,57 @@
         <state relative-caret-position="187">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding>
-            <marker date="1480587374101" expanded="true" signature="461:2207" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="508:2205" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="621:673" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="710:757" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="798:1096" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="992:1047" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1162:1552" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1410:1504" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1599:1853" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1673:1805" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1909:2114" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1972:2015" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="2152:2199" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="6:664" ph="..." />
+            <marker date="1480975604284" expanded="true" signature="705:11924" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="752:11922" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="863:921" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="958:1005" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1113:1414" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1310:1366" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1512:2032" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1535:1964" ph="/* if (category.CategoryId == 0) ... */" />
+            <marker date="1480975604284" expanded="true" signature="2112:2349" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="2450:2775" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="2473:2707" ph="/* TODO: Delete Category in database ... */" />
+            <marker date="1480975604284" expanded="true" signature="2899:3677" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="3167:3460" ph="/* var category = _context.Catagories.Include(c =&gt; c.CategoryComponentTypes).ThenInclude(comp =&gt; comp.ComponentTy ... */" />
+            <marker date="1480975604284" expanded="true" signature="3529:3629" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="3795:5667" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="3818:5483" ph="/* TODO: Create new ComponentType in Database ... */" />
+            <marker date="1480975604284" expanded="true" signature="5767:6444" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="6028:6223" ph="/* var componentType = _context.ComponentTypes.SingleOrDefault(c =&gt; c.ComponentTypeId == componentTypeId); ... */" />
+            <marker date="1480975604284" expanded="true" signature="6298:6396" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="6569:7207" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="6592:7079" ph="/* TODO: Deletet ComponentType ind database ... */" />
+            <marker date="1480975604284" expanded="true" signature="7333:7928" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="7407:7538" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="7683:7881" ph="/* var viewModel = new ComponentViewModel() ... */" />
+            <marker date="1480975604284" expanded="true" signature="7989:8404" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="8012:8229" ph="/* var componentInDb = _context.Components.Single(c =&gt; c.ComponentId == componentId); ... */" />
+            <marker date="1480975604284" expanded="true" signature="8297:8356" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="8494:9664" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="8517:9547" ph="/* if (viewModel.Component.ComponentId == 0) ... */" />
+            <marker date="1480975604284" expanded="true" signature="9767:10088" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="9790:9981" ph="/* var componentInDb = _context.Components.Single(c =&gt; c.ComponentId == component.ComponentId); ... */" />
+            <marker date="1480975604284" expanded="true" signature="10190:11829" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="10215:11240" ph="/* var category = ... */" />
+            <marker date="1480975604284" expanded="true" signature="11267:11583" ph="/* var componentTypes = ... */" />
+            <marker date="1480975604284" expanded="true" signature="11658:11775" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="11869:11916" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs" />
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
+          <folding>
+            <marker date="1480970690587" expanded="true" signature="6:309" ph="..." />
+            <marker date="1480970690587" expanded="true" signature="343:1312" ph="{...}" />
+            <marker date="1480970690587" expanded="true" signature="346:1310" ph="/* public class ApplicationDbContext : IdentityDbContext&lt;ApplicationUser&gt; ... */" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1151,19 +789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/IEmailSender.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,7 +807,232 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/DatabaseService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/AccountViewModels/ExternalLoginConfirmationViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/CategoryMock.cs" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/wwwroot/css/category.css" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentStatus.cs" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentTypeStatus.cs" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ESImage.cs" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/ComponentTypeViewModels/ComponentTypeViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Shared/_Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/ComponentType.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Component.cs" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs" />
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Component.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/Migrations/ApplicationDbContextModelSnapshot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0d74bd6b-6ba2-4917-9453-f28be6009b3f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480520579314" expanded="true" signature="6:101" ph="..." />
+            <marker date="1480520579314" expanded="true" signature="103:289" ph="/* General Information about an assembly is controlled through the following ... */" />
+            <marker date="1480520579314" expanded="true" signature="611:819" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480703068246" expanded="true" signature="0:303" ph="{...}" />
+            <marker date="1480703068246" expanded="true" signature="25:139" ph="{...}" />
+            <marker date="1480703068246" expanded="true" signature="154:301" ph="{...}" />
+            <marker date="1480703068246" expanded="true" signature="200:297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480520566803" expanded="true" signature="0:206" ph="{...}" />
+            <marker date="1480520566803" expanded="true" signature="70:204" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480520566999" expanded="true" signature="258:503" ph="{...}" />
+            <marker date="1480520566999" expanded="true" signature="542:581" ph="{...}" />
+            <marker date="1480520566999" expanded="true" signature="622:662" ph="{...}" />
+            <marker date="1480520566999" expanded="true" signature="746:912" ph="{...}" />
+            <marker date="1480520566999" expanded="true" signature="949:1103" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480520566951" expanded="true" signature="0:229" ph="{...}" />
+            <marker date="1480520566951" expanded="true" signature="95:227" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480520579314" expanded="true" signature="6:149" ph="..." />
+            <marker date="1480520579314" expanded="true" signature="178:552" ph="{...}" />
+            <marker date="1480520579314" expanded="true" signature="205:550" ph="{...}" />
+            <marker date="1480520579314" expanded="true" signature="258:544" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <marker date="1480970184338" expanded="true" signature="0:3632" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="105:1752" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="138:206" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="545:625" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="943:1023" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="1434:1514" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="1569:1639" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="1766:2773" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="1810:1917" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="1977:2084" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="2131:2303" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="2199:2295" ph="[...]" />
+            <marker date="1480970184338" expanded="true" signature="2431:2538" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="2597:2769" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="2665:2761" ph="[...]" />
+            <marker date="1480970184338" expanded="true" signature="2792:2955" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="2817:2951" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="2840:2943" ph="[...]" />
+            <marker date="1480970184338" expanded="true" signature="2976:3083" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="3106:3182" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="3134:3178" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="3205:3336" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="3224:3332" ph="[...]" />
+            <marker date="1480970184338" expanded="true" signature="3352:3565" ph="{...}" />
+            <marker date="1480970184338" expanded="true" signature="3581:3630" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205211653_populateCategories.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2209">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205211653_populateCategories.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205211849_populateCategories.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <marker date="1480972787842" expanded="true" signature="6:95" ph="..." />
+            <marker date="1480972787842" expanded="true" signature="134:647" ph="{...}" />
+            <marker date="1480972787842" expanded="true" signature="192:645" ph="{...}" />
+            <marker date="1480972787842" expanded="true" signature="268:545" ph="{...}" />
+            <marker date="1480972787842" expanded="true" signature="618:639" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Data/ApplicationDbContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480970690587" expanded="true" signature="6:309" ph="..." />
+            <marker date="1480970690587" expanded="true" signature="343:1312" ph="{...}" />
+            <marker date="1480970690587" expanded="true" signature="346:1310" ph="/* public class ApplicationDbContext : IdentityDbContext&lt;ApplicationUser&gt; ... */" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,282 +1044,189 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/DatabaseService.cs">
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Core/IUnitOfWork.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/project.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
-            <marker date="1480577394990" expanded="true" signature="0:3521" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="105:1717" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="138:206" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="545:625" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="940:1020" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1496:1576" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1633:1713" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1731:2662" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1775:1882" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="1942:2049" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2096:2268" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2164:2260" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2320:2427" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2486:2658" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2554:2650" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2681:2844" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2706:2840" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2729:2832" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="2865:2972" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="2995:3071" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3023:3067" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3094:3225" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3113:3221" ph="[...]" />
-            <marker date="1480577394990" expanded="true" signature="3241:3454" ph="{...}" />
-            <marker date="1480577394990" expanded="true" signature="3470:3519" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/AccountViewModels/ExternalLoginConfirmationViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <marker date="1480577394982" expanded="true" signature="6:141" ph="..." />
-            <marker date="1480577394982" expanded="true" signature="195:347" ph="{...}" />
-            <marker date="1480577394982" expanded="true" signature="249:345" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Services/CategoryMock.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/wwwroot/css/category.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Category.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480579459498" expanded="true" signature="87:1007" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="115:432" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="147:226" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="470:999" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="529:993" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="590:982" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentStatus.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480577394982" expanded="true" signature="52:251" ph="{...}" />
-            <marker date="1480577394982" expanded="true" signature="86:249" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentTypeStatus.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480577394986" expanded="true" signature="52:145" ph="{...}" />
-            <marker date="1480577394986" expanded="true" signature="90:143" ph="{...}" />
+            <marker date="1480974713211" expanded="true" signature="6:56" ph="..." />
+            <marker date="1480974713211" expanded="true" signature="90:283" ph="{...}" />
+            <marker date="1480974713211" expanded="true" signature="139:281" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/CategoryViewModels/CategoryViewModel.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
-            <marker date="1480579401865" expanded="true" signature="6:83" ph="..." />
-            <marker date="1480579401865" expanded="true" signature="142:248" ph="{...}" />
-            <marker date="1480579401865" expanded="true" signature="179:246" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ESImage.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480579459498" expanded="true" signature="6:78" ph="..." />
-            <marker date="1480579459498" expanded="true" signature="132:723" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="159:382" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="419:721" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="468:715" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="524:700" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/ViewModels/ComponentTypeViewModels/ComponentTypeViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <marker date="1480580632488" expanded="true" signature="6:83" ph="..." />
-            <marker date="1480580632488" expanded="true" signature="147:310" ph="{...}" />
-            <marker date="1480580632488" expanded="true" signature="189:308" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Shared/_Layout.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <marker date="1480581733069" expanded="true" signature="16:2997" ph="&lt;html.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="23:854" ph="&lt;head.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="199:387" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="392:846" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="855:2989" ph="&lt;body.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="866:1866" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="927:1855" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="963:1473" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1007:1351" ph="&lt;button.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1486:1840" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1541:1763" ph="&lt;ul.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1871:2041" ph="&lt;div.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="1953:2030" ph="&lt;footer.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2047:2299" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2304:2933" ph="&lt;environment.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2353:2561" ph="&lt;script.../&gt;" />
-            <marker date="1480581733069" expanded="true" signature="2570:2839" ph="&lt;script.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/ComponentType.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480586129825" expanded="true" signature="110:782" ph="@..." />
-            <marker date="1480586129825" expanded="true" signature="187:780" ph="&lt;table.../&gt;" />
-            <marker date="1480586129825" expanded="true" signature="242:360" ph="&lt;thead.../&gt;" />
-            <marker date="1480586129825" expanded="true" signature="256:345" ph="&lt;tr.../&gt;" />
-            <marker date="1480586129825" expanded="true" signature="367:767" ph="&lt;tbody.../&gt;" />
-            <marker date="1480586129825" expanded="true" signature="381:752" ph="@..." />
-            <marker date="1480586129825" expanded="true" signature="452:744" ph="&lt;tr.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/Component.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <marker date="1480579459498" expanded="true" signature="87:2165" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="116:527" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="566:2163" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="645:2157" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="707:2145" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="757:1181" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="1231:1655" ph="{...}" />
-            <marker date="1480579459498" expanded="true" signature="1705:2129" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Models/ComponentType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="22" column="102" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="102" />
-          <folding>
-            <marker date="1480586129821" expanded="true" signature="87:2605" ph="{...}" />
-            <marker date="1480586129821" expanded="true" signature="120:1031" ph="{...}" />
-            <marker date="1480586129821" expanded="true" signature="157:278" ph="{...}" />
-            <marker date="1480586129821" expanded="true" signature="1074:2603" ph="{...}" />
-            <marker date="1480586129821" expanded="true" signature="1142:2597" ph="{...}" />
-            <marker date="1480586129821" expanded="true" signature="1208:2586" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Component.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480586136809" expanded="true" signature="75:1068" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="133:460" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="323:449" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="475:662" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="572:651" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="677:790" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="805:1061" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="831:1013" ph="&lt;div.../&gt;" />
-            <marker date="1480586136809" expanded="true" signature="866:998" ph="@..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <marker date="1480587374101" expanded="true" signature="461:2207" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="508:2205" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="621:673" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="710:757" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="798:1096" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="992:1047" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1162:1552" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1410:1504" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1599:1853" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1673:1805" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1909:2114" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="1972:2015" ph="{...}" />
-            <marker date="1480587374101" expanded="true" signature="2152:2199" ph="{...}" />
+            <marker date="1480975275313" expanded="true" signature="6:152" ph="..." />
+            <marker date="1480975275313" expanded="true" signature="211:371" ph="{...}" />
+            <marker date="1480975275313" expanded="true" signature="248:369" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Home/Category.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
-            <marker date="1480587684721" expanded="true" signature="97:994" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="103:680" ph="@..." />
-            <marker date="1480587684721" expanded="true" signature="177:678" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="208:667" ph="@..." />
-            <marker date="1480587684721" expanded="true" signature="270:658" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="300:519" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="532:641" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="684:985" ph="&lt;form.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="741:975" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="763:854" ph="&lt;div.../&gt;" />
-            <marker date="1480587684721" expanded="true" signature="859:964" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="7:73" ph="..." />
+            <marker date="1480975488198" expanded="true" signature="171:1994" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="181:1512" ph="@..." />
+            <marker date="1480975488198" expanded="true" signature="275:1506" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="312:1491" ph="@..." />
+            <marker date="1480975488198" expanded="true" signature="386:1476" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="424:661" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="682:906" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="927:1453" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="974:1426" ph="&lt;form.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="1518:1985" ph="&lt;form.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="1595:1973" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="1625:1749" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="1762:1820" ph="&lt;div.../&gt;" />
+            <marker date="1480975488198" expanded="true" signature="1833:1958" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220738_PopulateComponentTypes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding>
+            <marker date="1480975771050" expanded="true" signature="6:141" ph="..." />
+            <marker date="1480975771050" expanded="true" signature="180:11462" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="242:11460" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="318:10785" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="462:1653" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="1932:2263" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="2547:2840" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="3166:3576" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="4186:4500" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="5144:5554" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="6163:6317" ph="{...}" />
+            <marker date="1480975771050" expanded="true" signature="10858:11454" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220918_PopulateCategoryComponentType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="115" selection-start-line="12" selection-start-column="115" selection-end-line="12" selection-end-column="115" />
+          <folding>
+            <marker date="1480975771018" expanded="true" signature="6:95" ph="..." />
+            <marker date="1480975771018" expanded="true" signature="134:749" ph="{...}" />
+            <marker date="1480975771018" expanded="true" signature="203:747" ph="{...}" />
+            <marker date="1480975771018" expanded="true" signature="279:647" ph="{...}" />
+            <marker date="1480975771018" expanded="true" signature="720:741" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Migrations/20161205220959_PopulateComponents.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480975806166" expanded="true" signature="6:95" ph="..." />
+            <marker date="1480975806166" expanded="true" signature="134:5165" ph="{...}" />
+            <marker date="1480975806166" expanded="true" signature="192:5163" ph="{...}" />
+            <marker date="1480975806166" expanded="true" signature="268:5063" ph="{...}" />
+            <marker date="1480975806166" expanded="true" signature="5136:5157" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+          <folding>
+            <marker date="1480975604284" expanded="true" signature="6:664" ph="..." />
+            <marker date="1480975604284" expanded="true" signature="705:11924" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="752:11922" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="863:921" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="958:1005" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1113:1414" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1310:1366" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1512:2032" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="1535:1964" ph="/* if (category.CategoryId == 0) ... */" />
+            <marker date="1480975604284" expanded="true" signature="2112:2349" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="2450:2775" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="2473:2707" ph="/* TODO: Delete Category in database ... */" />
+            <marker date="1480975604284" expanded="true" signature="2899:3677" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="3167:3460" ph="/* var category = _context.Catagories.Include(c =&gt; c.CategoryComponentTypes).ThenInclude(comp =&gt; comp.ComponentTy ... */" />
+            <marker date="1480975604284" expanded="true" signature="3529:3629" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="3795:5667" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="3818:5483" ph="/* TODO: Create new ComponentType in Database ... */" />
+            <marker date="1480975604284" expanded="true" signature="5767:6444" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="6028:6223" ph="/* var componentType = _context.ComponentTypes.SingleOrDefault(c =&gt; c.ComponentTypeId == componentTypeId); ... */" />
+            <marker date="1480975604284" expanded="true" signature="6298:6396" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="6569:7207" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="6592:7079" ph="/* TODO: Deletet ComponentType ind database ... */" />
+            <marker date="1480975604284" expanded="true" signature="7333:7928" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="7407:7538" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="7683:7881" ph="/* var viewModel = new ComponentViewModel() ... */" />
+            <marker date="1480975604284" expanded="true" signature="7989:8404" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="8012:8229" ph="/* var componentInDb = _context.Components.Single(c =&gt; c.ComponentId == componentId); ... */" />
+            <marker date="1480975604284" expanded="true" signature="8297:8356" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="8494:9664" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="8517:9547" ph="/* if (viewModel.Component.ComponentId == 0) ... */" />
+            <marker date="1480975604284" expanded="true" signature="9767:10088" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="9790:9981" ph="/* var componentInDb = _context.Components.Single(c =&gt; c.ComponentId == component.ComponentId); ... */" />
+            <marker date="1480975604284" expanded="true" signature="10190:11829" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="10215:11240" ph="/* var category = ... */" />
+            <marker date="1480975604284" expanded="true" signature="11267:11583" ph="/* var componentTypes = ... */" />
+            <marker date="1480975604284" expanded="true" signature="11658:11775" ph="{...}" />
+            <marker date="1480975604284" expanded="true" signature="11869:11916" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480973358509" expanded="true" signature="6:173" ph="..." />
+            <marker date="1480973358509" expanded="true" signature="214:752" ph="{...}" />
+            <marker date="1480973358509" expanded="true" signature="291:750" ph="{...}" />
+            <marker date="1480973358509" expanded="true" signature="409:430" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/UnitOfWork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480966714936" expanded="true" signature="6:122" ph="..." />
+            <marker date="1480966714936" expanded="true" signature="163:821" ph="{...}" />
+            <marker date="1480966714936" expanded="true" signature="207:819" ph="{...}" />
+            <marker date="1480966714936" expanded="true" signature="326:505" ph="{...}" />
+            <marker date="1480966714936" expanded="true" signature="667:719" ph="{...}" />
+            <marker date="1480966714936" expanded="true" signature="750:813" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480975145706" expanded="true" signature="6:588" ph="..." />
+            <marker date="1480975145706" expanded="true" signature="617:3535" ph="{...}" />
+            <marker date="1480975145706" expanded="true" signature="644:3533" ph="{...}" />
+            <marker date="1480975145706" expanded="true" signature="698:1405" ph="{...}" />
+            <marker date="1480975145706" expanded="true" signature="1632:2451" ph="{...}" />
+            <marker date="1480975145706" expanded="true" signature="1668:1843" ph="/* Add framework services. ... */" />
+            <marker date="1480975145706" expanded="true" signature="2669:3527" ph="{...}" />
           </folding>
         </state>
       </provider>

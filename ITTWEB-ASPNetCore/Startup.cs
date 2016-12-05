@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ITTWEB_ASPNetCore.Core;
 using ITTWEB_ASPNetCore.Core.Domain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,8 +32,12 @@ namespace ITTWEB_ASPNetCore
                 // For more details on using the user secret store see https://go.microsoft.com/fwlink/?LinkID=532709
                 builder.AddUserSecrets();
             }
+            else
+            {
+                builder.AddUserSecrets();
 
-            builder.AddUserSecrets();
+            }
+
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
@@ -45,14 +50,13 @@ namespace ITTWEB_ASPNetCore
         {
             
             // Add framework services.
-            services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(Configuration["ConnectionString"]));
+//            services.AddDbContext<ApplicationDbContext>(options =>
+//                    options.UseSqlServer(Configuration["ConnectionString"]));
             services.AddDbContext<EmbeddedStockContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionString"]));
 
-            services.AddSingleton(_ => Configuration);
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<EmbeddedStockContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
@@ -60,6 +64,7 @@ namespace ITTWEB_ASPNetCore
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
         }
 

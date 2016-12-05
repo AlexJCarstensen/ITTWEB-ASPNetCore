@@ -12,6 +12,7 @@ using ITTWEB_ASPNetCore.Persistence;
 using ITTWEB_ASPNetCore.ViewModels.CategoryViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentViewModel;
+using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Remotion.Linq.Clauses;
@@ -20,9 +21,11 @@ namespace ITTWEB_ASPNetCore.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController()
+
+        private readonly IUnitOfWork _unitOfWork;
+        public HomeController(IUnitOfWork unitOfWork)
         {
-            
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
@@ -32,19 +35,13 @@ namespace ITTWEB_ASPNetCore.Controllers
         //--------------------Category----------------------------
         public IActionResult Category()
         {
-            var categories = CategoryMock.GetCategories();
-            using (var unitOfWork = new UnitOfWork(new EmbeddedStockContext()))
-            {
-                
-            }
-
-            //var categories = _unitOfWo;
+            //var categories = CategoryMock.GetCategories();
+            var categories = _unitOfWork.Categories.GetAll();
 
             var viewModel = new CategoryViewModel
             {
-                Categories = categories
+                Categories =  categories
             };
-
 
             return View(viewModel);
         }

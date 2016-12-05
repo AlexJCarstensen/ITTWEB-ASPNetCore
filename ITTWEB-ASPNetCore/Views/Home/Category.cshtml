@@ -1,3 +1,4 @@
+@using System.Linq
 @using Microsoft.EntityFrameworkCore.Metadata.Internal
 @model ITTWEB_ASPNetCore.ViewModels.CategoryViewModels.CategoryViewModel
 
@@ -6,7 +7,7 @@
 
 
 <div>
-    @if (Model.Categories.Count == 0)
+    @if (!Model.Categories.Any())
     {
         <p>No Categories</p>
     }

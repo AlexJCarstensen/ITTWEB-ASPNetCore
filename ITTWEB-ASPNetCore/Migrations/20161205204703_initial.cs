@@ -3,23 +3,14 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace ITTWEB_ASPNetCore.Data.Migrations
+namespace ITTWEBASPNetCore.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-           
-           
-
-           
-
-           
-
-           
-
             migrationBuilder.CreateTable(
-                name: "Catagories",
+                name: "Categories",
                 columns: table => new
                 {
                     CategoryId = table.Column<int>(nullable: false)
@@ -28,7 +19,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Catagories", x => x.CategoryId);
+                    table.PrimaryKey("PK_Categories", x => x.CategoryId);
                 });
 
             migrationBuilder.CreateTable(
@@ -75,6 +66,32 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "CategoryComponentTypes",
+                columns: table => new
+                {
+                    CategoryComponentTypeId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    CategoryId = table.Column<int>(nullable: false),
+                    ComponentTypeId = table.Column<long>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CategoryComponentTypes", x => x.CategoryComponentTypeId);
+                    table.ForeignKey(
+                        name: "FK_CategoryComponentTypes_Categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
+                        principalColumn: "CategoryId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_CategoryComponentTypes_ComponentTypes_ComponentTypeId",
+                        column: x => x.ComponentTypeId,
+                        principalTable: "ComponentTypes",
+                        principalColumn: "ComponentTypeId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Components",
                 columns: table => new
                 {
@@ -99,35 +116,15 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "CategoryComponentTypes",
-                columns: table => new
-                {
-                    CategoryComponentTypeId = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    CategoryId = table.Column<int>(nullable: false),
-                    ComponentTypeId = table.Column<long>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CategoryComponentTypes", x => x.CategoryComponentTypeId);
-                    table.ForeignKey(
-                        name: "FK_CategoryComponentTypes_Catagories_CategoryId",
-                        column: x => x.CategoryId,
-                        principalTable: "Catagories",
-                        principalColumn: "CategoryId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_CategoryComponentTypes_ComponentTypes_ComponentTypeId",
-                        column: x => x.ComponentTypeId,
-                        principalTable: "ComponentTypes",
-                        principalColumn: "ComponentTypeId",
-                        onDelete: ReferentialAction.Cascade);
-                });
+            migrationBuilder.CreateIndex(
+                name: "IX_CategoryComponentTypes_CategoryId",
+                table: "CategoryComponentTypes",
+                column: "CategoryId");
 
-           
-
-           
+            migrationBuilder.CreateIndex(
+                name: "IX_CategoryComponentTypes_ComponentTypeId",
+                table: "CategoryComponentTypes",
+                column: "ComponentTypeId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Components_ComponentTypeId",
@@ -138,61 +135,24 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                 name: "IX_ComponentTypes_ImageESImageId",
                 table: "ComponentTypes",
                 column: "ImageESImageId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_CategoryComponentTypes_CategoryId",
-                table: "CategoryComponentTypes",
-                column: "CategoryId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_CategoryComponentTypes_ComponentTypeId",
-                table: "CategoryComponentTypes",
-                column: "ComponentTypeId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Components");
-
-            migrationBuilder.DropTable(
                 name: "CategoryComponentTypes");
 
             migrationBuilder.DropTable(
-                name: "Catagories");
+                name: "Components");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "ComponentTypes");
 
             migrationBuilder.DropTable(
                 name: "EsImages");
-
-            
-
-            
-
-            migrationBuilder.AlterColumn<int>(
-                name: "Id",
-                table: "AspNetUserClaims",
-                nullable: false,
-                oldClrType: typeof(int))
-                .OldAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            migrationBuilder.AlterColumn<int>(
-                name: "Id",
-                table: "AspNetRoleClaims",
-                nullable: false,
-                oldClrType: typeof(int))
-                .OldAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_AspNetUserRoles_UserId",
-                table: "AspNetUserRoles",
-                column: "UserId");
-
-           
-
-           
         }
     }
 }

@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using ITTWEB_ASPNetCore.Data;
-using ITTWEB_ASPNetCore.Models;
+using ITTWEB_ASPNetCore.Persistence;
+using ITTWEB_ASPNetCore.Core.Domain;
 
-namespace ITTWEB_ASPNetCore.Data.Migrations
+namespace ITTWEBASPNetCore.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20161202231935_PopulateCategoryComponentType")]
+    [DbContext(typeof(EmbeddedStockContext))]
+    [Migration("20161205220918_PopulateCategoryComponentType")]
     partial class PopulateCategoryComponentType
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -18,7 +18,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.ApplicationUser", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -68,7 +68,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.Category", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd();
@@ -77,10 +77,10 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Catagories");
+                    b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.CategoryComponentType", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.CategoryComponentType", b =>
                 {
                     b.Property<int>("CategoryComponentTypeId")
                         .ValueGeneratedOnAdd();
@@ -98,7 +98,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                     b.ToTable("CategoryComponentTypes");
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.Component", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.Component", b =>
                 {
                     b.Property<long>("ComponentId")
                         .ValueGeneratedOnAdd();
@@ -124,7 +124,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                     b.ToTable("Components");
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.ComponentType", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ComponentType", b =>
                 {
                     b.Property<long>("ComponentTypeId")
                         .ValueGeneratedOnAdd();
@@ -156,7 +156,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                     b.ToTable("ComponentTypes");
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.ESImage", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ESImage", b =>
                 {
                     b.Property<long>("ESImageId")
                         .ValueGeneratedOnAdd();
@@ -280,30 +280,30 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.CategoryComponentType", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.CategoryComponentType", b =>
                 {
-                    b.HasOne("ITTWEB_ASPNetCore.Models.Category", "Category")
+                    b.HasOne("ITTWEB_ASPNetCore.Core.Domain.Category", "Category")
                         .WithMany("CategoryComponentTypes")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("ITTWEB_ASPNetCore.Models.ComponentType", "ComponentType")
+                    b.HasOne("ITTWEB_ASPNetCore.Core.Domain.ComponentType", "ComponentType")
                         .WithMany("CategoryComponentTypes")
                         .HasForeignKey("ComponentTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.Component", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.Component", b =>
                 {
-                    b.HasOne("ITTWEB_ASPNetCore.Models.ComponentType")
+                    b.HasOne("ITTWEB_ASPNetCore.Core.Domain.ComponentType")
                         .WithMany("Components")
                         .HasForeignKey("ComponentTypeId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("ITTWEB_ASPNetCore.Models.ComponentType", b =>
+            modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ComponentType", b =>
                 {
-                    b.HasOne("ITTWEB_ASPNetCore.Models.ESImage", "Image")
+                    b.HasOne("ITTWEB_ASPNetCore.Core.Domain.ESImage", "Image")
                         .WithMany()
                         .HasForeignKey("ImageESImageId");
                 });
@@ -318,7 +318,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("ITTWEB_ASPNetCore.Models.ApplicationUser")
+                    b.HasOne("ITTWEB_ASPNetCore.Core.Domain.ApplicationUser")
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -326,7 +326,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("ITTWEB_ASPNetCore.Models.ApplicationUser")
+                    b.HasOne("ITTWEB_ASPNetCore.Core.Domain.ApplicationUser")
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -339,7 +339,7 @@ namespace ITTWEB_ASPNetCore.Data.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("ITTWEB_ASPNetCore.Models.ApplicationUser")
+                    b.HasOne("ITTWEB_ASPNetCore.Core.Domain.ApplicationUser")
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
