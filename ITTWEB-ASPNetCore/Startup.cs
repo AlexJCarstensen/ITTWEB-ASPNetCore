@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using ITTWEB_ASPNetCore.Data;
 using ITTWEB_ASPNetCore.Models;
+using ITTWEB_ASPNetCore.Persistence;
 using ITTWEB_ASPNetCore.Services;
 
 namespace ITTWEB_ASPNetCore
@@ -46,16 +47,15 @@ namespace ITTWEB_ASPNetCore
             // Add framework services.
             services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionString"]));
+            services.AddDbContext<EmbeddedStockContext>(options =>
+                    options.UseSqlServer(Configuration["ConnectionString"]));
 
-
-
+            services.AddSingleton(_ => Configuration);
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
-            services.AddSingleton(_ => Configuration);
-            var t = Configuration["ConnectionString"];
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
@@ -82,7 +82,6 @@ namespace ITTWEB_ASPNetCore
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            var s = Configuration["TestDb"];
 
             app.UseStaticFiles();
 

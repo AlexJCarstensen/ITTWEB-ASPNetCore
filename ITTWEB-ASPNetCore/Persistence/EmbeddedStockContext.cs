@@ -6,10 +6,9 @@ namespace ITTWEB_ASPNetCore.Persistence
 {
     public class EmbeddedStockContext : DbContext
     {
-        private readonly IConfigurationRoot _config;
-        public EmbeddedStockContext(IConfigurationRoot config) : base()
+        public EmbeddedStockContext(DbContextOptions<EmbeddedStockContext> options)
+            : base(options)
         {
-            _config = config;
         }
 
         public DbSet<Category> Categories { get; set; }

@@ -8,6 +8,7 @@ using ITTWEB_ASPNetCore.Core.Domain;
 using ITTWEB_ASPNetCore.Data;
 using ITTWEB_ASPNetCore.Models;
 using ITTWEB_ASPNetCore.Models.AccountViewModels;
+using ITTWEB_ASPNetCore.Persistence;
 using ITTWEB_ASPNetCore.ViewModels.CategoryViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels;
 using ITTWEB_ASPNetCore.ViewModels.ComponentViewModel;
@@ -19,10 +20,8 @@ namespace ITTWEB_ASPNetCore.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IUnitOfWork _unitOfWork;
-        public HomeController(IUnitOfWork unitOfWork)
+        public HomeController()
         {
-            _unitOfWork = unitOfWork;
             
         }
         public IActionResult Index()
@@ -34,7 +33,10 @@ namespace ITTWEB_ASPNetCore.Controllers
         public IActionResult Category()
         {
             var categories = CategoryMock.GetCategories();
-           
+            using (var unitOfWork = new UnitOfWork(new EmbeddedStockContext()))
+            {
+                
+            }
 
             //var categories = _unitOfWo;
 
