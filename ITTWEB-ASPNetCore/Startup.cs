@@ -31,6 +31,8 @@ namespace ITTWEB_ASPNetCore
                 builder.AddUserSecrets();
             }
 
+            builder.AddUserSecrets();
+
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -40,24 +42,32 @@ namespace ITTWEB_ASPNetCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             // Add framework services.
             services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                    options.UseSqlServer(Configuration["ConnectionString"]));
+
+
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
+            services.AddSingleton(_ => Configuration);
+            var t = Configuration["ConnectionString"];
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+
+            
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
@@ -71,6 +81,8 @@ namespace ITTWEB_ASPNetCore
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            var s = Configuration["TestDb"];
 
             app.UseStaticFiles();
 

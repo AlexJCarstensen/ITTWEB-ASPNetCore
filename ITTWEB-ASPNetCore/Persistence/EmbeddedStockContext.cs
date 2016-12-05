@@ -1,13 +1,15 @@
 ﻿using ITTWEB_ASPNetCore.Core.Domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace ITTWEB_ASPNetCore.Persistence
 {
     public class EmbeddedStockContext : DbContext
     {
-        public EmbeddedStockContext() : base()
+        private readonly IConfigurationRoot _config;
+        public EmbeddedStockContext(IConfigurationRoot config) : base()
         {
-           
+            _config = config;
         }
 
         public DbSet<Category> Categories { get; set; }
