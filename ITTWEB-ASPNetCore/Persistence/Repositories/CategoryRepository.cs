@@ -17,6 +17,7 @@ namespace ITTWEB_ASPNetCore.Persistence.Repositories
         {
             return
                 EmbeddedStockContext.Categories.Include(c => c.CategoryComponentTypes)
+                    .ThenInclude(comp => comp.ComponentType)
                     .SingleOrDefault(c => c.CategoryId == id);
         }
     }
