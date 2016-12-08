@@ -19,6 +19,7 @@ namespace ITTWEB_ASPNetCore.Persistence
         public ICategoryRepository Categories { get; set; }
         public IComponentTypeRepository ComponentTypes { get; set; }
         public IComponentRepository Components { get; set; }
+        public ICategoryComponentTypeRepository CategoryComponentTypes { get; set; }
 
         public void Dispose()
         {

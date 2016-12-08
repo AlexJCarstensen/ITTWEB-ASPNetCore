@@ -50,40 +50,40 @@ namespace ITTWEB_ASPNetCore.Controllers
         {
             //TODO: Create new ComponentType in Database
 
-            //            if (viewModel.ComponentType.ComponentTypeId == 0)
-            //            {
-            //                //If creating
-            //                viewModel.ComponentType.Status = ComponentTypeStatus.ReservedAdmin;
-            //
-            //                var categoryComponentType = new CategoryComponentType();
-            //
-            //                categoryComponentType.CategoryId = viewModel.Category.CategoryId;
-            //
-            //                categoryComponentType.ComponentType = viewModel.ComponentType;
-            //
-            //                _unitOfWork.CategoryComponentTypes.Add(categoryComponentType);
-            //            }
-            //            else
-            //            {
-            //                //If editing
-            //                var componentTypeInDb =
-            //                    _context.ComponentTypes.Single(c => c.ComponentTypeId == viewModel.ComponentType.ComponentTypeId);
-            //
-            //                componentTypeInDb.ComponentName = viewModel.ComponentType.ComponentName;
-            //                componentTypeInDb.ComponentInfo = viewModel.ComponentType.ComponentInfo;
-            //                componentTypeInDb.Location = viewModel.ComponentType.Location;
-            //                componentTypeInDb.Status = viewModel.ComponentType.Status;
-            //                componentTypeInDb.Datasheet = viewModel.ComponentType.Datasheet;
-            //                componentTypeInDb.ImageUrl = viewModel.ComponentType.ImageUrl;
-            //                componentTypeInDb.Manufacturer = viewModel.ComponentType.Manufacturer;
-            //                componentTypeInDb.WikiLink = viewModel.ComponentType.WikiLink;
-            //                componentTypeInDb.AdminComment = viewModel.ComponentType.AdminComment;
-            //                componentTypeInDb.Image = viewModel.ComponentType.Image;
-            //            }
-            //
-            //
-            //
-            //            _context.SaveChanges();
+            if (viewModel.ComponentType.ComponentTypeId == 0)
+            {
+                //If creating
+                viewModel.ComponentType.Status = ComponentTypeStatus.ReservedAdmin;
+
+                var categoryComponentType = new CategoryComponentType();
+
+                categoryComponentType.CategoryId = viewModel.Category.CategoryId;
+
+                categoryComponentType.ComponentType = viewModel.ComponentType;
+
+                _unitOfWork.CategoryComponentTypes.Add(categoryComponentType);
+            }
+            else
+            {
+                //If editing
+                var componentTypeInDb =
+                    _unitOfWork.ComponentTypes.Get(viewModel.ComponentType.ComponentTypeId);
+
+                componentTypeInDb.ComponentName = viewModel.ComponentType.ComponentName;
+                componentTypeInDb.ComponentInfo = viewModel.ComponentType.ComponentInfo;
+                componentTypeInDb.Location = viewModel.ComponentType.Location;
+                componentTypeInDb.Status = viewModel.ComponentType.Status;
+                componentTypeInDb.Datasheet = viewModel.ComponentType.Datasheet;
+                componentTypeInDb.ImageUrl = viewModel.ComponentType.ImageUrl;
+                componentTypeInDb.Manufacturer = viewModel.ComponentType.Manufacturer;
+                componentTypeInDb.WikiLink = viewModel.ComponentType.WikiLink;
+                componentTypeInDb.AdminComment = viewModel.ComponentType.AdminComment;
+                componentTypeInDb.Image = viewModel.ComponentType.Image;
+            }
+
+
+
+            _unitOfWork.Complete();
 
 
 

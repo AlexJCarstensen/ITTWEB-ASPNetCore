@@ -11,5 +11,7 @@ namespace ITTWEB_ASPNetCore.Core
 
         IComponentRepository Components { get; }
 
+        ICategoryComponentTypeRepository CategoryComponentTypes { get; }
+
     }
 }
