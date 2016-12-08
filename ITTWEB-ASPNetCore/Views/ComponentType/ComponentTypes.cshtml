@@ -7,7 +7,7 @@
     </div>
     <div class="col-md-3">
         <span class="row"></span>
-        <form asp-controller="Home" asp-action="SearchComponentType">
+        <form asp-controller="ComponentType" asp-action="SearchComponentType">
             <input type="text" asp-for="@Model.SearchText"/>
             <input type="hidden" asp-for="@Model.Category.CategoryId"/>
             <button type="submit" class="btn btn-success">Search!</button>
@@ -39,14 +39,14 @@ else
 
                     <tr>
 
-                        <td><a asp-controller="Home" asp-action="Component" asp-route-id="@componentType.ComponentTypeId">@componentType.ComponentName</a></td>
+                        <td><a asp-controller="Component" asp-action="Component" asp-route-id="@componentType.ComponentTypeId">@componentType.ComponentName</a></td>
                         <td>@componentType.Status</td>
                         <td>@componentType.WikiLink</td>
                       <td >
-                        <a asp-controller="Home" asp-action="EditComponentType" asp-route-componentTypeId="@componentType.ComponentTypeId" asp-route-categoryId="@Model.Category.CategoryId" class="btn btn-info   ">Edit</a>
+                        <a asp-controller="ComponentType" asp-action="EditComponentType" asp-route-componentTypeId="@componentType.ComponentTypeId" asp-route-categoryId="@Model.Category.CategoryId" class="btn btn-info   ">Edit</a>
                       </td>
                       <td >
-                        <form asp-controller="Home" asp-action="DeleteComponentType" method="post" >
+                        <form asp-controller="ComponentType" asp-action="DeleteComponentType" method="post" >
                           <input type="hidden" asp-for="@Model.Category.CategoryId"/>
                           <input type="hidden" asp-for="@componentType.ComponentTypeId"/>
                           <button class="btn btn-danger " type="submit">Delete</button>
@@ -62,7 +62,7 @@ else
 
 }
 
-<form asp-controller="Home" asp-action="SaveComponentType" method="post">
+<form asp-controller="ComponentType" asp-action="SaveComponentType" method="post">
     <div class="row">
         <div class="col-md-12">
           Component Type Name: <input asp-for="@Model.ComponentType.ComponentName" type="text" />

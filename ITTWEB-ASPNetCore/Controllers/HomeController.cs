@@ -288,54 +288,7 @@ namespace ITTWEB_ASPNetCore.Controllers
         }
 
 
-        //Search
-        public IActionResult SearchComponentType(ComponentTypeViewModel viewModel)
-        {
-
-
-            //var category =
-            //    _context.Catagories.Include(cType => cType.CategoryComponentTypes).ThenInclude(d => d.ComponentType)
-            //        .Single(c => c.CategoryId == viewModel.Category.CategoryId);
-
-            //IEnumerable<CategoryComponentType> searchResult;
-
-            //if (!string.IsNullOrWhiteSpace(viewModel.SearchText))
-            //{
-            //   searchResult =
-            //   from cType in category.CategoryComponentTypes
-            //   where cType.ComponentType.ComponentName.ToLower().Contains(viewModel.SearchText.ToLower())
-            //        || cType.ComponentType.WikiLink.ToLower().Contains(viewModel.SearchText.ToLower())
-            //        || cType.ComponentType.Status.ToString().ToLower().Contains(viewModel.SearchText.ToLower())
-
-            //   select cType;
-            //}
-            //else
-            //{
-            //    searchResult =
-            //        from cType in category.CategoryComponentTypes
-            //        select cType;
-            //}
-           
-
-
-            //var componentTypes =
-            //    searchResult.Select(categoryComponenType => categoryComponenType.ComponentType).ToList();
-
-            //var returnViewModel = new ComponentTypeViewModel
-            //{
-            //    Category = category,
-            //    ComponentTypes = componentTypes
-            //};
-
-            var returnViewModel = new ComponentTypeViewModel
-            {
-                Category = new Category(),
-                ComponentTypes = new List<ComponentType>()
-            };
-
-            return View(returnViewModel);
-        }
- 
+       
 
         public IActionResult Error()
         {

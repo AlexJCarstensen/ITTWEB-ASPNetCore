@@ -35,7 +35,7 @@ namespace ITTWEB_ASPNetCore
                 builder.AddUserSecrets();
 
             }
-
+            
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
