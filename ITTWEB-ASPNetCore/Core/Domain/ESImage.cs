@@ -4,7 +4,7 @@ namespace ITTWEB_ASPNetCore.Core.Domain
 {
     public class ESImage
     {
-        public long ESImageId { get; set; }
+        public int ESImageId { get; set; }
         [MaxLength(128)]
         public string ImageMimeType { get; set; }
         public byte[] Thumbnail { get; set; }

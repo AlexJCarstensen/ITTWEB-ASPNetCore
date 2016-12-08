@@ -9,5 +9,7 @@ namespace ITTWEB_ASPNetCore.Core
         ICategoryRepository Categories { get; }
         IComponentTypeRepository ComponentTypes { get; }
 
+        IComponentRepository Components { get; }
+
     }
 }

@@ -86,7 +86,7 @@ namespace ITTWEBASPNetCore.Migrations
 
                     b.Property<int>("CategoryId");
 
-                    b.Property<long>("ComponentTypeId");
+                    b.Property<int>("ComponentTypeId");
 
                     b.HasKey("CategoryComponentTypeId");
 
@@ -99,16 +99,16 @@ namespace ITTWEBASPNetCore.Migrations
 
             modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.Component", b =>
                 {
-                    b.Property<long>("ComponentId")
+                    b.Property<int>("ComponentId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("AdminComment");
 
                     b.Property<int>("ComponentNumber");
 
-                    b.Property<long>("ComponentTypeId");
+                    b.Property<int>("ComponentTypeId");
 
-                    b.Property<long?>("CurrentLoanInformationId");
+                    b.Property<int?>("CurrentLoanInformationId");
 
                     b.Property<string>("SerialNo");
 
@@ -125,7 +125,7 @@ namespace ITTWEBASPNetCore.Migrations
 
             modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ComponentType", b =>
                 {
-                    b.Property<long>("ComponentTypeId")
+                    b.Property<int>("ComponentTypeId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("AdminComment");
@@ -136,7 +136,7 @@ namespace ITTWEBASPNetCore.Migrations
 
                     b.Property<string>("Datasheet");
 
-                    b.Property<long?>("ImageESImageId");
+                    b.Property<int?>("ImageESImageId");
 
                     b.Property<string>("ImageUrl");
 
@@ -157,7 +157,7 @@ namespace ITTWEBASPNetCore.Migrations
 
             modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ESImage", b =>
                 {
-                    b.Property<long>("ESImageId")
+                    b.Property<int>("ESImageId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<byte[]>("ImageData");

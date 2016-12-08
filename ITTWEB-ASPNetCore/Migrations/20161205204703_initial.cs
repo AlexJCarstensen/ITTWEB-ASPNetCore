@@ -26,7 +26,7 @@ namespace ITTWEBASPNetCore.Migrations
                 name: "EsImages",
                 columns: table => new
                 {
-                    ESImageId = table.Column<long>(nullable: false)
+                    ESImageId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     ImageData = table.Column<byte[]>(nullable: true),
                     ImageMimeType = table.Column<string>(maxLength: 128, nullable: true),
@@ -41,13 +41,13 @@ namespace ITTWEBASPNetCore.Migrations
                 name: "ComponentTypes",
                 columns: table => new
                 {
-                    ComponentTypeId = table.Column<long>(nullable: false)
+                    ComponentTypeId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     AdminComment = table.Column<string>(nullable: true),
                     ComponentInfo = table.Column<string>(nullable: true),
                     ComponentName = table.Column<string>(nullable: true),
                     Datasheet = table.Column<string>(nullable: true),
-                    ImageESImageId = table.Column<long>(nullable: true),
+                    ImageESImageId = table.Column<int>(nullable: true),
                     ImageUrl = table.Column<string>(nullable: true),
                     Location = table.Column<string>(nullable: true),
                     Manufacturer = table.Column<string>(nullable: true),
@@ -72,7 +72,7 @@ namespace ITTWEBASPNetCore.Migrations
                     CategoryComponentTypeId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     CategoryId = table.Column<int>(nullable: false),
-                    ComponentTypeId = table.Column<long>(nullable: false)
+                    ComponentTypeId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -95,12 +95,12 @@ namespace ITTWEBASPNetCore.Migrations
                 name: "Components",
                 columns: table => new
                 {
-                    ComponentId = table.Column<long>(nullable: false)
+                    ComponentId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     AdminComment = table.Column<string>(nullable: true),
                     ComponentNumber = table.Column<int>(nullable: false),
-                    ComponentTypeId = table.Column<long>(nullable: false),
-                    CurrentLoanInformationId = table.Column<long>(nullable: true),
+                    ComponentTypeId = table.Column<int>(nullable: false),
+                    CurrentLoanInformationId = table.Column<int>(nullable: true),
                     SerialNo = table.Column<string>(nullable: true),
                     Status = table.Column<int>(nullable: false),
                     UserComment = table.Column<string>(nullable: true)

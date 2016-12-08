@@ -11,7 +11,7 @@ namespace ITTWEB_ASPNetCore.Core.Domain
         public int CategoryId { get; set; }
         public Category Category { get; set; }
 
-        public long ComponentTypeId { get; set; }
+        public int ComponentTypeId { get; set; }
         public ComponentType ComponentType { get; set; }
     }
 

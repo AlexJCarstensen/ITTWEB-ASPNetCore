@@ -10,6 +10,7 @@ namespace ITTWEB_ASPNetCore.Core.Domain
             CategoryComponentTypes = new HashSet<CategoryComponentType>();
         }
 
+        
         public int CategoryId { get; set; }
         public string Name { get; set; }
         public ICollection<CategoryComponentType> CategoryComponentTypes { get;  set; } //TODO: Protected set when using database
