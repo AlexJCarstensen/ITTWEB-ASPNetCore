@@ -37,7 +37,7 @@ namespace ITTWEBASPNetCore.Migrations
 
                     b.Property<int>("CategoryId");
 
-                    b.Property<int>("ComponentTypeId");
+                    b.Property<long>("ComponentTypeId");
 
                     b.HasKey("CategoryComponentTypeId");
 
@@ -50,16 +50,16 @@ namespace ITTWEBASPNetCore.Migrations
 
             modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.Component", b =>
                 {
-                    b.Property<int>("ComponentId")
+                    b.Property<long>("ComponentId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("AdminComment");
 
                     b.Property<int>("ComponentNumber");
 
-                    b.Property<int>("ComponentTypeId");
+                    b.Property<long>("ComponentTypeId");
 
-                    b.Property<int?>("CurrentLoanInformationId");
+                    b.Property<long?>("CurrentLoanInformationId");
 
                     b.Property<string>("SerialNo");
 
@@ -76,7 +76,7 @@ namespace ITTWEBASPNetCore.Migrations
 
             modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ComponentType", b =>
                 {
-                    b.Property<int>("ComponentTypeId")
+                    b.Property<long>("ComponentTypeId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("AdminComment");
@@ -87,7 +87,7 @@ namespace ITTWEBASPNetCore.Migrations
 
                     b.Property<string>("Datasheet");
 
-                    b.Property<int?>("ImageESImageId");
+                    b.Property<long?>("ImageESImageId");
 
                     b.Property<string>("ImageUrl");
 
@@ -108,7 +108,7 @@ namespace ITTWEBASPNetCore.Migrations
 
             modelBuilder.Entity("ITTWEB_ASPNetCore.Core.Domain.ESImage", b =>
                 {
-                    b.Property<int>("ESImageId")
+                    b.Property<long>("ESImageId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<byte[]>("ImageData");
