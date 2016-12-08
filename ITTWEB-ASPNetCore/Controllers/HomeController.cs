@@ -5,7 +5,6 @@ using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 using ITTWEB_ASPNetCore.Core;
 using ITTWEB_ASPNetCore.Core.Domain;
-using ITTWEB_ASPNetCore.Data;
 using ITTWEB_ASPNetCore.Models;
 using ITTWEB_ASPNetCore.Models.AccountViewModels;
 using ITTWEB_ASPNetCore.Persistence;

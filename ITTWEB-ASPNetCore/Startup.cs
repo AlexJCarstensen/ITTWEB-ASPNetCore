@@ -11,8 +11,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using ITTWEB_ASPNetCore.Data;
-using ITTWEB_ASPNetCore.Models;
 using ITTWEB_ASPNetCore.Persistence;
 using ITTWEB_ASPNetCore.Services;
 
