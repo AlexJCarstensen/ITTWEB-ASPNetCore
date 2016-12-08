@@ -46,11 +46,11 @@
                             <p>@component.Status</p>
                         </div>
                         <div class="col-md-2">
-                            <a asp-controller="Home" asp-action="EditComponent" asp-route-componentId="@component.ComponentId" class="btn btn-info">Edit</a>
+                            <a asp-controller="Component" asp-action="EditComponent" asp-route-componentId="@component.ComponentId" class="btn btn-info">Edit</a>
                         </div>
                         <div class="col-md-2">
 
-                            <form asp-controller="Home" asp-action="DeleteComponent" method="post">
+                            <form asp-controller="Component" asp-action="DeleteComponent" method="post">
                                 <input type="hidden" asp-for="@component.ComponentId"/>
                                 <input type="hidden" asp-for="@component.ComponentTypeId"/>
                                 <button class="btn btn-danger" type="submit">Delete</button>
@@ -60,7 +60,7 @@
                     </div>
                 }
             </ul>
-            <form asp-controller="Home" asp-action="SaveComponent" method="post">
+            <form asp-controller="Component" asp-action="SaveComponent" method="post">
                 <div class="row">
                     <div class="col-md-5">
                         <input type="hidden" asp-for="@Model.ComponentType.ComponentTypeId"/>

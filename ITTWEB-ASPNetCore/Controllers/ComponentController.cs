@@ -14,7 +14,7 @@ namespace ITTWEB_ASPNetCore.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        public IActionResult Component(int id)
+        public IActionResult Components(int id)
         {
 //            var viewModel = new ComponentViewModel
 //            {
@@ -71,7 +71,7 @@ namespace ITTWEB_ASPNetCore.Controllers
 
             _unitOfWork.Complete();
 
-            return RedirectToAction("Component", "Home", new {id = viewModel.Component.ComponentTypeId});
+            return RedirectToAction("Component", "Component", new {id = viewModel.Component.ComponentTypeId});
         }
 
         //Delete
@@ -80,13 +80,13 @@ namespace ITTWEB_ASPNetCore.Controllers
         {
             //TODO make this for repository
 
-            //var componentInDb = _context.Components.Single(c => c.ComponentId == component.ComponentId);
+            var componentInDb = _unitOfWork.Components.Get(component.ComponentId);
 
-            //_context.Components.Remove(componentInDb);
+            _unitOfWork.Components.Remove(componentInDb);
 
-            //_context.SaveChanges();
+            _unitOfWork.Complete();
 
-            return RedirectToAction("Component", "Home", new {id = component.ComponentTypeId});
+            return RedirectToAction("Component", "Component", new {id = component.ComponentTypeId});
         }
     }
 }

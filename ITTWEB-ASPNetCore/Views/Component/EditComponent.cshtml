@@ -3,7 +3,7 @@
 
 <h2>EditComponent</h2>
 
-<form asp-controller="Home" asp-action="SaveComponent">
+<form asp-controller="Component" asp-action="SaveComponent">
     <div class="form-horizontal">
         <h4>Component</h4>
         <hr />
@@ -61,7 +61,7 @@
 </form>
 
 <div>
-    <a asp-controller="Home" asp-action="Component" asp-route-id="@Model.Component.ComponentTypeId">Back to List</a>
+    <a asp-controller="Component" asp-action="Components" asp-route-id="@Model.Component.ComponentTypeId">Back to List</a>
 </div>
 
 @section Scripts {
