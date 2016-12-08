@@ -5,7 +5,7 @@
 
 <h2>Edit</h2>
 
-<form asp-controller="Home" asp-action="SaveComponentType" method="post">
+<form asp-controller="ComponentType" asp-action="SaveComponentType" method="post">
     <div class="form-horizontal">
         <h4>@Model.ComponentType.ComponentName</h4>
         <hr />
@@ -84,7 +84,7 @@
 </form>
 
 <div>
-    <a asp-action="ComponentType" asp-route-id="@Model.Category.CategoryId">Back to List</a>
+    <a asp-action="ComponentTypes" asp-route-id="@Model.Category.CategoryId">Back to List</a>
 </div>
 
 @section Scripts {
