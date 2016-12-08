@@ -8,6 +8,7 @@ namespace ITTWEB_ASPNetCore.Core
         int Complete();
         ICategoryRepository Categories { get; }
         IComponentTypeRepository ComponentTypes { get; }
+        IComponentRepository Components { get; }
 
     }
 }

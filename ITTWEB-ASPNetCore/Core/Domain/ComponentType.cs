@@ -10,7 +10,7 @@ namespace ITTWEB_ASPNetCore.Core.Domain
             Components = new HashSet<Component>();
             CategoryComponentTypes = new HashSet<CategoryComponentType>();
         }
-        public long ComponentTypeId { get; set; }
+        public int ComponentTypeId { get; set; }
         public string ComponentName { get; set; }
         public string ComponentInfo { get; set; }
         public string Location { get; set; }

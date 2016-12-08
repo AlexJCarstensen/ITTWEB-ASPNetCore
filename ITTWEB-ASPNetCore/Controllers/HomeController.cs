@@ -32,65 +32,10 @@ namespace ITTWEB_ASPNetCore.Controllers
         }
 
         //--------------------Category----------------------------
-        public IActionResult Category()
-        {
-            //var categories = CategoryMock.GetCategories();
-            var categories = _unitOfWork.Categories.GetAll();
 
-            var viewModel = new CategoryViewModel
-            {
-                Categories =  categories
-            };
-
-            return View(viewModel);
-        }
 
         //Create
-        [HttpPost]
-        public IActionResult SaveCategory(Category category)
-        {
-            if (category.CategoryId == 0)
-            {
-               //If creating
-               _unitOfWork.Categories.Add(category);
-            }
-            else
-            {
-               //If editing
-               var categoryInDb = _unitOfWork.Categories.Get(category.CategoryId);
-               //var categoryInDb = _unitOfWork.Categories.Single(c => c.CategoryId == category.CategoryId);
-               categoryInDb.Name = category.Name;
 
-            }
-            _unitOfWork.Complete();
-
-            return RedirectToAction("Category", "Home");
-        }
-
-        //Edit
-        public IActionResult EditCategory(int id, string title)
-        {
-
-            var category = _unitOfWork.Categories.SingleOrDefault(c => c.CategoryId == id);
-            //var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == id);
-
-            return View(category);
-        }
-
-
-        //Delete
-        [HttpPost]
-        public IActionResult DeleteCategory(Category category)
-        {
-            //TODO: Delete Category in database
-            var categoryInDb = _unitOfWork.Categories.SingleOrDefault(c => c.CategoryId == category.CategoryId);
-
-            _unitOfWork.Categories.Remove(categoryInDb);
-
-            _unitOfWork.Complete();
-
-            return RedirectToAction("Category", "Home");
-        }
 
 
         //---------------ComponentType-------------------------------
@@ -202,90 +147,7 @@ namespace ITTWEB_ASPNetCore.Controllers
 
 
         //-----------------------Component----------------------------------
-        public IActionResult Component(int id)
-        {
-//            var viewModel = new ComponentViewModel
-//            {
-//                ComponentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(t => t.ComponentTypeId == id)
-//            };
 
-            var componentTypeInDb = _unitOfWork.ComponentTypes.SingleOrDefault(t => t.ComponentTypeId == id);
-
-
-
-            var viewModel = new ComponentViewModel()
-            {
-                ComponentType = componentTypeInDb,
-                ComponentCount = componentTypeInDb.Components.Count
-            };
-
-            return View(viewModel);
-        }
-
-        public IActionResult EditComponent(int componentId)
-        {
-            //TODO make this for repository
-//            var componentInDb = _uni.Components.Single(c => c.ComponentId == componentId);
-//
-//            var viewModel = new ComponentViewModel()
-//            {
-//                Component = componentInDb
-//            };
-
-
-            var viewModel = new ComponentViewModel()
-            {
-                Component = new Component()
-            };
-
-            return View(viewModel);
-        }
-
-        //Save
-
-        public IActionResult SaveComponent(ComponentViewModel viewModel)
-        {
-            //TODO make this for repository
-
-            //if (viewModel.Component.ComponentId == 0)
-            //{
-            //    viewModel.Component.ComponentTypeId = viewModel.ComponentType.ComponentTypeId;
-
-            //    viewModel.Component.ComponentNumber = viewModel.ComponentCount + 1;
-
-            //    _context.Components.Add(viewModel.Component);
-            //}
-            //else
-            //{
-            //    var componentIndb = _context.Components.Single(c => c.ComponentId == viewModel.Component.ComponentId);
-
-            //    componentIndb.ComponentNumber = viewModel.Component.ComponentNumber;
-            //    componentIndb.SerialNo = viewModel.Component.SerialNo;
-            //    componentIndb.Status = viewModel.Component.Status;
-            //    componentIndb.AdminComment = viewModel.Component.AdminComment;
-            //    componentIndb.UserComment = viewModel.Component.UserComment;
-            //    componentIndb.CurrentLoanInformationId = viewModel.Component.CurrentLoanInformationId;
-            //}
-
-            //_context.SaveChanges();
-
-            return RedirectToAction("Component", "Home", new {id = viewModel.Component.ComponentTypeId});
-        }
-
-        //Delete
-        [HttpPost]
-        public IActionResult DeleteComponent(Component component)
-        {
-            //TODO make this for repository
-
-            //var componentInDb = _context.Components.Single(c => c.ComponentId == component.ComponentId);
-
-            //_context.Components.Remove(componentInDb);
-
-            //_context.SaveChanges();
-
-            return RedirectToAction("Component", "Home", new {id = component.ComponentTypeId});
-        }
 
 
         //Search

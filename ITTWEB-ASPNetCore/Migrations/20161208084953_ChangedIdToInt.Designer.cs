@@ -9,9 +9,10 @@ using ITTWEB_ASPNetCore.Core.Domain;
 namespace ITTWEBASPNetCore.Migrations
 {
     [DbContext(typeof(EmbeddedStockContext))]
-    partial class EmbeddedStockContextModelSnapshot : ModelSnapshot
+    [Migration("20161208084953_ChangedIdToInt")]
+    partial class ChangedIdToInt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
