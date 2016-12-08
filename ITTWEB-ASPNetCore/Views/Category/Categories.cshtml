@@ -1,0 +1,54 @@
+@using System.Linq
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model ITTWEB_ASPNetCore.ViewModels.CategoryViewModels.CategoryViewModel
+
+
+<h1>Categories</h1>
+
+
+<div>
+    @if (!Model.Categories.Any())
+    {
+        <p>No Categories</p>
+    }
+    else
+    {
+        <div class="list-group">
+            @foreach (var category in Model.Categories)
+            {
+                <div class="row">
+                    <div class="col-md-4">
+                        <a asp-controller="ComponentType" asp-action="ComponentTypes" class="list-group-item" asp-route-id="@category.CategoryId" asp-route-title="@category.Name">@category.Name</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a asp-controller="Category" asp-action="EditCategory" class="btn btn-info" asp-route-id="@category.CategoryId" asp-route-title="@category.Name">Edit</a>
+                    </div>
+                    <div class="col-md-7">
+                        <form asp-controller="Category" asp-action="DeleteCategory" method="post">
+                            <input type="hidden" asp-for="@category.CategoryId"/>
+                            <button class="btn btn-danger" type="submit">Delete Category</button>
+                            @*<a asp-controller="Home" asp-action="DeleteCategory" asp-route-id="@category.CategoryId" class="btn btn-danger right">Delete Category</a>*@
+                        </form>
+                    </div>
+                </div>
+
+            }
+        </div>
+    }
+
+    <form asp-controller="Category" asp-action="SaveCategory" method="post">
+        <div class="row">
+            <div class="col-md-4">
+                Category Name: <input asp-for="@Model.Category.Name" type="text"/>
+            </div>
+            <div class="col-md-1">
+                
+            </div>
+            <div class="col-md-7">
+                <button class="btn btn-primary" type="submit">Add Category</button>
+            </div>
+        </div>
+    </form>
+
+
+</div>
