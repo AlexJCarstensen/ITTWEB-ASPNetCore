@@ -54,7 +54,7 @@ namespace ITTWEB_ASPNetCore
 //            services.AddDbContext<ApplicationDbContext>(options =>
 //                    options.UseSqlServer(Configuration["ConnectionString"]));
             services.AddDbContext<EmbeddedStockContext>(options =>
-                    options.UseSqlServer(Configuration["ConnectionString"]));
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<EmbeddedStockContext>()
