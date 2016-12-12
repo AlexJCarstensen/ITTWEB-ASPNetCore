@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="258d0473-7983-4867-b0d0-93e5673b63aa" name="Default" comment="added to homecontroller, moved viewmodels and created one. created view for categories">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json" />
     </list>
     <ignored path="ITTWEB-ASPNetCore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -177,16 +177,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appsettings.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="appsettings.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="22" />
+              <caret line="2" column="283" selection-start-line="2" selection-start-column="283" selection-end-line="2" selection-end-column="283" />
               <folding>
-                <marker date="1481548446776" expanded="true" signature="0:302" ph="{...}" />
-                <marker date="1481548446776" expanded="true" signature="25:139" ph="{...}" />
-                <marker date="1481548446776" expanded="true" signature="154:300" ph="{...}" />
-                <marker date="1481548446776" expanded="true" signature="200:297" ph="{...}" />
+                <marker date="1481558746395" expanded="true" signature="0:478" ph="{...}" />
+                <marker date="1481558746395" expanded="true" signature="25:315" ph="{...}" />
+                <marker date="1481558746395" expanded="true" signature="330:476" ph="{...}" />
+                <marker date="1481558746395" expanded="true" signature="376:473" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -205,11 +205,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="56" column="98" selection-start-line="56" selection-start-column="98" selection-end-line="56" selection-end-column="98" />
+            <state relative-caret-position="4">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <marker date="1481558328694" expanded="true" signature="6:632" ph="..." />
                 <marker date="1481558328694" expanded="true" signature="661:4039" ph="{...}" />
@@ -302,7 +302,6 @@
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/ComponentType/SearchComponentType.cshtml" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentController.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/CategoryController.cs" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/ComponentType/ComponentTypes.cshtml" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/Repositories/ComponentTypeRepository.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/Repositories/CategoryRepository.cs" />
@@ -311,6 +310,7 @@
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentTypeController.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/global.json" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json" />
       </list>
     </option>
   </component>
@@ -453,7 +453,7 @@
       <workItem from="1481181403620" duration="928000" />
       <workItem from="1481190190819" duration="1475000" />
       <workItem from="1481192401815" duration="539000" />
-      <workItem from="1481541663945" duration="15135000" />
+      <workItem from="1481541663945" duration="15552000" />
     </task>
     <task id="LOCAL-00001" summary="added to homecontroller, moved viewmodels and created one. created view for categories">
       <created>1480579440920</created>
@@ -473,7 +473,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40800000" />
+    <option name="totallyTimeSpent" value="41217000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1209,23 +1209,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="22" />
-          <folding>
-            <marker date="1481548446776" expanded="true" signature="0:302" ph="{...}" />
-            <marker date="1481548446776" expanded="true" signature="25:139" ph="{...}" />
-            <marker date="1481548446776" expanded="true" signature="154:300" ph="{...}" />
-            <marker date="1481548446776" expanded="true" signature="200:297" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="56" column="98" selection-start-line="56" selection-start-column="98" selection-end-line="56" selection-end-column="98" />
+        <state relative-caret-position="4">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <marker date="1481558328694" expanded="true" signature="6:632" ph="..." />
             <marker date="1481558328694" expanded="true" signature="661:4039" ph="{...}" />
@@ -1236,6 +1223,19 @@
             <marker date="1481558328694" expanded="true" signature="2746:4031" ph="{...}" />
             <marker date="1481558328694" expanded="true" signature="3250:3606" ph="{...}" />
             <marker date="1481558328694" expanded="true" signature="3490:3573" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="283" selection-start-line="2" selection-start-column="283" selection-end-line="2" selection-end-column="283" />
+          <folding>
+            <marker date="1481558746395" expanded="true" signature="0:478" ph="{...}" />
+            <marker date="1481558746395" expanded="true" signature="25:315" ph="{...}" />
+            <marker date="1481558746395" expanded="true" signature="330:476" ph="{...}" />
+            <marker date="1481558746395" expanded="true" signature="376:473" ph="{...}" />
           </folding>
         </state>
       </provider>
