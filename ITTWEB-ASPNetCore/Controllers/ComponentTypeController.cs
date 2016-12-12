@@ -92,19 +92,21 @@ namespace ITTWEB_ASPNetCore.Controllers
         }
 
         //Edit
-        public IActionResult EditComponentType(int componentTypeId, int categoryId)
+        public async Task<IActionResult> EditComponentType(int componentTypeId, int categoryId)
         {
             //TODO Make Async!!
             //var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == categoryId);
             // var componentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(c => c.ComponentTypeId == componentTypeId);
 
-            var componentType = _unitOfWork.ComponentTypes.SingleOrDefault(c => c.ComponentTypeId == componentTypeId);
-            var category = _unitOfWork.Categories.SingleOrDefault(c => c.CategoryId == categoryId);
+            var componentType =  Task.Run(() =>_unitOfWork.ComponentTypes.SingleOrDefault(c => c.ComponentTypeId == componentTypeId));
+            var category = Task.Run(() =>_unitOfWork.Categories.SingleOrDefault(c => c.CategoryId == categoryId));
 
+
+            await Task.WhenAll(componentType, category);
             var viewModel = new EditComponentTypeViewModel()
             {
-                Category = category,
-                ComponentType = componentType
+                Category = category.Result,
+                ComponentType = componentType.Result
             };
 
             return View(viewModel);
@@ -116,61 +118,55 @@ namespace ITTWEB_ASPNetCore.Controllers
         public IActionResult DeleteComponentType(EditComponentTypeViewModel viewModel)
         {
             //TODO: Deletet ComponentType ind database
-            //var categoryComponentTypeInDb =
-            //    _context.CategoryComponentTypes.Single(c => c.ComponentTypeId == viewModel.ComponentType.ComponentTypeId);
-            //_context.CategoryComponentTypes.Remove(categoryComponentTypeInDb);
-            //var componentTypeInDb =
-            //    _context.ComponentTypes.Single(c => c.ComponentTypeId == viewModel.ComponentType.ComponentTypeId);
-            //_context.SaveChanges();
+//            var categoryComponentTypeInDb =
+//                _unitOfWork.CategoryComponentTypes.SingleOrDefault(viewModel.Category.CategoryId);
+//            _unitOfWork.CategoryComponentTypes.Remove(categoryComponentTypeInDb);
+            var componentTypeInDb =
+                _unitOfWork.ComponentTypes.Get(viewModel.ComponentType.ComponentTypeId);
+            _unitOfWork.ComponentTypes.Remove(componentTypeInDb);
+            _unitOfWork.Complete();
 
 
             return RedirectToAction("ComponentTypes", "ComponentType", new { id = viewModel.Category.CategoryId });
         }
 
-        //Search
         public IActionResult SearchComponentType(ComponentTypeViewModel viewModel)
         {
 
 
-            //var category =
-            //    _context.Catagories.Include(cType => cType.CategoryComponentTypes).ThenInclude(d => d.ComponentType)
-            //        .Single(c => c.CategoryId == viewModel.Category.CategoryId);
+            var category =
+                _unitOfWork.Categories.GetCategoryWithComponentTypes(viewModel.Category.CategoryId);
 
-            //IEnumerable<CategoryComponentType> searchResult;
+            IEnumerable<CategoryComponentType> searchResult;
 
-            //if (!string.IsNullOrWhiteSpace(viewModel.SearchText))
-            //{
-            //   searchResult =
-            //   from cType in category.CategoryComponentTypes
-            //   where cType.ComponentType.ComponentName.ToLower().Contains(viewModel.SearchText.ToLower())
-            //        || cType.ComponentType.WikiLink.ToLower().Contains(viewModel.SearchText.ToLower())
-            //        || cType.ComponentType.Status.ToString().ToLower().Contains(viewModel.SearchText.ToLower())
+            if (!string.IsNullOrWhiteSpace(viewModel.SearchText))
+            {
+               searchResult =
+               from cType in category.CategoryComponentTypes
+               where cType.ComponentType.ComponentName.ToLower().Contains(viewModel.SearchText.ToLower())
+                    || cType.ComponentType.WikiLink.ToLower().Contains(viewModel.SearchText.ToLower())
+                    || cType.ComponentType.Status.ToString().ToLower().Contains(viewModel.SearchText.ToLower())
 
-            //   select cType;
-            //}
-            //else
-            //{
-            //    searchResult =
-            //        from cType in category.CategoryComponentTypes
-            //        select cType;
-            //}
-
+               select cType;
+            }
+            else
+            {
+                searchResult =
+                    from cType in category.CategoryComponentTypes
+                    select cType;
+            }
 
 
-            //var componentTypes =
-            //    searchResult.Select(categoryComponenType => categoryComponenType.ComponentType).ToList();
 
-            //var returnViewModel = new ComponentTypeViewModel
-            //{
-            //    Category = category,
-            //    ComponentTypes = componentTypes
-            //};
+            var componentTypes =
+                searchResult.Select(categoryComponenType => categoryComponenType.ComponentType).ToList();
 
             var returnViewModel = new ComponentTypeViewModel
             {
-                Category = new Category(),
-                ComponentTypes = new List<ComponentType>()
+                Category = category,
+                ComponentTypes = componentTypes
             };
+
 
             return View(returnViewModel);
         }

@@ -16,7 +16,7 @@ namespace ITTWEB_ASPNetCore.Persistence.Repositories
         public Category GetCategoryWithComponentTypes(int id)
         {
             return
-                EmbeddedStockContext.Categories.Include(c => c.CategoryComponentTypes)
+                EmbeddedStockContext.Categories.AsNoTracking().Include(c => c.CategoryComponentTypes)
                     .ThenInclude(comp => comp.ComponentType)
                     .SingleOrDefault(c => c.CategoryId == id);
         }

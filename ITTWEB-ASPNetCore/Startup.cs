@@ -13,6 +13,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using ITTWEB_ASPNetCore.Persistence;
 using ITTWEB_ASPNetCore.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Primitives;
+using Microsoft.Net.Http.Headers;
 
 namespace ITTWEB_ASPNetCore
 {
@@ -87,16 +90,17 @@ namespace ITTWEB_ASPNetCore
 
             app.UseStaticFiles(new StaticFileOptions()
             {
-                OnPrepareResponse = context =>
+                OnPrepareResponse = (context) =>
                 {
-                    context.Context.Response.Headers["Cache-Control"] =
-                        "private, max-age=43200";
+                    var headers = context.Context.Response.GetTypedHeaders();
+                    headers.CacheControl = new CacheControlHeaderValue()
+                    {
+                        MaxAge = TimeSpan.FromSeconds(60),
 
-                    context.Context.Response.Headers["Expires"] =
-                        DateTime.UtcNow.AddHours(12).ToString("R");
+                    };
                 }
             });
-           // app.UseStaticFiles();
+            //app.UseStaticFiles();
 
             app.UseIdentity();
 
