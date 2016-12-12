@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="258d0473-7983-4867-b0d0-93e5673b63aa" name="Default" comment="added to homecontroller, moved viewmodels and created one. created view for categories">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Component/Component.cshtml" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Component/Components.cshtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/CategoryController.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/CategoryController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentController.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentTypeController.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentTypeController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" />
     </list>
     <ignored path="ITTWEB-ASPNetCore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -179,19 +175,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="474">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
               <folding>
-                <marker date="1481190094562" expanded="true" signature="6:526" ph="..." />
-                <marker date="1481190094562" expanded="true" signature="555:3485" ph="{...}" />
-                <marker date="1481190094562" expanded="true" signature="582:3483" ph="{...}" />
-                <marker date="1481190094562" expanded="true" signature="636:1355" ph="{...}" />
-                <marker date="1481190094562" expanded="true" signature="1582:2401" ph="{...}" />
-                <marker date="1481190094562" expanded="true" signature="1618:1793" ph="/* Add framework services. ... */" />
-                <marker date="1481190094562" expanded="true" signature="2619:3477" ph="{...}" />
+                <marker date="1481544653906" expanded="true" signature="6:526" ph="..." />
+                <marker date="1481544653906" expanded="true" signature="555:3911" ph="{...}" />
+                <marker date="1481544653906" expanded="true" signature="582:3909" ph="{...}" />
+                <marker date="1481544653906" expanded="true" signature="636:1355" ph="{...}" />
+                <marker date="1481544653906" expanded="true" signature="1582:2401" ph="{...}" />
+                <marker date="1481544653906" expanded="true" signature="1618:1793" ph="/* Add framework services. ... */" />
+                <marker date="1481544653906" expanded="true" signature="2619:3903" ph="{...}" />
+                <marker date="1481544653906" expanded="true" signature="3123:3478" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -234,7 +231,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComponentController.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComponentController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-306">
@@ -319,7 +316,6 @@
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/Repositories/CategoryRepository.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/103a449a-51ce-42a3-8594-88b4ff29bca6/console.sql" />
-        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Component/Component.cshtml" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Views/Component/EditComponent.cshtml" />
@@ -329,6 +325,7 @@
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/CategoryController.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentController.cs" />
         <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/ComponentTypeController.cs" />
+        <option value="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs" />
       </list>
     </option>
   </component>
@@ -393,91 +390,7 @@
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ComponentType" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Component" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Category" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore (1 project)" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ITTWEB-ASPNetCore" />
-              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
+              <option name="myItemId" value="wwwroot" />
               <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,7 +486,7 @@
       <workItem from="1481181403620" duration="928000" />
       <workItem from="1481190190819" duration="1475000" />
       <workItem from="1481192401815" duration="539000" />
-      <workItem from="1481541663945" duration="1578000" />
+      <workItem from="1481541663945" duration="2698000" />
     </task>
     <task id="LOCAL-00001" summary="added to homecontroller, moved viewmodels and created one. created view for categories">
       <created>1480579440920</created>
@@ -593,7 +506,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27243000" />
+    <option name="totallyTimeSpent" value="28363000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -612,7 +525,7 @@
       <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979014" sideWeight="0.50189704" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1014,22 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481190094562" expanded="true" signature="6:526" ph="..." />
-            <marker date="1481190094562" expanded="true" signature="555:3485" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="582:3483" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="636:1355" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="1582:2401" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="1618:1793" ph="/* Add framework services. ... */" />
-            <marker date="1481190094562" expanded="true" signature="2619:3477" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Controllers/HomeController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1164,6 +1061,23 @@
             <marker date="1481542797379" expanded="true" signature="1298:1355" ph="{...}" />
             <marker date="1481542797379" expanded="true" signature="1478:2645" ph="{...}" />
             <marker date="1481542797379" expanded="true" signature="2748:3094" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+          <folding>
+            <marker date="1481544653906" expanded="true" signature="6:526" ph="..." />
+            <marker date="1481544653906" expanded="true" signature="555:3911" ph="{...}" />
+            <marker date="1481544653906" expanded="true" signature="582:3909" ph="{...}" />
+            <marker date="1481544653906" expanded="true" signature="636:1355" ph="{...}" />
+            <marker date="1481544653906" expanded="true" signature="1582:2401" ph="{...}" />
+            <marker date="1481544653906" expanded="true" signature="1618:1793" ph="/* Add framework services. ... */" />
+            <marker date="1481544653906" expanded="true" signature="2619:3903" ph="{...}" />
+            <marker date="1481544653906" expanded="true" signature="3123:3478" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -85,8 +85,18 @@ namespace ITTWEB_ASPNetCore
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                OnPrepareResponse = context =>
+                {
+                    context.Context.Response.Headers["Cache-Control"] =
+                        "private, max-age=43200";
 
-            app.UseStaticFiles();
+                    context.Context.Response.Headers["Expires"] =
+                        DateTime.UtcNow.AddHours(12).ToString("R");
+                }
+            });
+           // app.UseStaticFiles();
 
             app.UseIdentity();
 
