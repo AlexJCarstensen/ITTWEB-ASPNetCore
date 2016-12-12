@@ -1,10 +1,12 @@
 ﻿using ITTWEB_ASPNetCore.Core;
 using ITTWEB_ASPNetCore.Core.Domain;
 using ITTWEB_ASPNetCore.ViewModels.ComponentViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ITTWEB_ASPNetCore.Controllers
 {
+    [Authorize]
     public class ComponentController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -13,7 +15,7 @@ namespace ITTWEB_ASPNetCore.Controllers
         {
             _unitOfWork = unitOfWork;
         }
-
+        [AllowAnonymous]
         public IActionResult Components(int id)
         {
 //            var viewModel = new ComponentViewModel

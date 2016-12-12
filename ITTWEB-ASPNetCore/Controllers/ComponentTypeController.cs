@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using ITTWEB_ASPNetCore.Core;
 using ITTWEB_ASPNetCore.Core.Domain;
 using ITTWEB_ASPNetCore.ViewModels.ComponentTypeViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ITTWEB_ASPNetCore.Controllers
 {
+    [Authorize]
     public class ComponentTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -18,11 +20,8 @@ namespace ITTWEB_ASPNetCore.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
 
+        [AllowAnonymous]
         public IActionResult ComponentTypes(int id)
         {
 
