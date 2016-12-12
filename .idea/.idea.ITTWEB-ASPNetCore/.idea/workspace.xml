@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs" description="        {&#10;            base.OnModelCreating(builder..." line="23" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="258d0473-7983-4867-b0d0-93e5673b63aa" name="Default" comment="added to homecontroller, moved viewmodels and created one. created view for categories">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../ITTWEB-ASPNetCore/global.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="258d0473-7983-4867-b0d0-93e5673b63aa" name="Default" comment="added to homecontroller, moved viewmodels and created one. created view for categories" />
     <ignored path="ITTWEB-ASPNetCore.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -229,8 +226,8 @@
       <file leaf-file-name="global.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/global.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="34" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="34" />
+            <state relative-caret-position="34">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="8" />
               <folding>
                 <marker date="1481557180072" expanded="true" signature="0:102" ph="{...}" />
                 <marker date="1481557180072" expanded="true" signature="48:100" ph="{...}" />
@@ -467,7 +464,7 @@
       <workItem from="1481181403620" duration="928000" />
       <workItem from="1481190190819" duration="1475000" />
       <workItem from="1481192401815" duration="539000" />
-      <workItem from="1481541663945" duration="13993000" />
+      <workItem from="1481541663945" duration="14311000" />
     </task>
     <task id="LOCAL-00001" summary="added to homecontroller, moved viewmodels and created one. created view for categories">
       <created>1480579440920</created>
@@ -487,7 +484,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39658000" />
+    <option name="totallyTimeSpent" value="39976000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1245,8 +1242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../ITTWEB-ASPNetCore/global.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="34" />
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="8" />
           <folding>
             <marker date="1481557180072" expanded="true" signature="0:102" ph="{...}" />
             <marker date="1481557180072" expanded="true" signature="48:100" ph="{...}" />
