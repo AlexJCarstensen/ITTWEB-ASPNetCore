@@ -60,7 +60,7 @@ namespace ITTWEB_ASPNetCore.Controllers
         }
 
         //TODO works with HttpPost
-        [HttpDelete]
+        [HttpPost]
         public IActionResult DeleteCategory(Category category)
         {
             var categoryInDb = _unitOfWork.Categories.Get(category.CategoryId);
