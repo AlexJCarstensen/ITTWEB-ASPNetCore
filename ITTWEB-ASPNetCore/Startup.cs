@@ -35,7 +35,7 @@ namespace ITTWEB_ASPNetCore
             }
             else
             {
-                builder.AddUserSecrets();
+                //builder.AddUserSecrets();
 
             }
             
