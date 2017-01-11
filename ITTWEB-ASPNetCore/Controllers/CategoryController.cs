@@ -48,7 +48,7 @@ namespace ITTWEB_ASPNetCore.Controllers
             }
             _unitOfWork.Complete();
 
-            return RedirectToAction("Category", "Category");
+            return RedirectToAction("Categories", "Category");
         }
 
         public IActionResult EditCategory(int id)
@@ -69,7 +69,7 @@ namespace ITTWEB_ASPNetCore.Controllers
 
             _unitOfWork.Complete();
 
-            return RedirectToAction("Category", "Category");
+            return RedirectToAction("Categories", "Category");
         }
 
     }

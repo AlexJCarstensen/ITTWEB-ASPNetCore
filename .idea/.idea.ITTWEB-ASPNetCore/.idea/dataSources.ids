@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="SQL Server (Microsoft) - @localhost" uuid="7300e72e-a71b-4201-a2bf-3f78d790b3c5">
+    <database-info product="Microsoft SQL Server" version="14.00.1" jdbc-version="4.0" driver-name="Microsoft JDBC Driver 4.0 for SQL Server" driver-version="4.0.2206.100">
+      <extra-name-characters>$#@</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <database-model serializer="dbm" rdbms="MSSQL" format-version="2.6">
+      <database id="1" name="master">
+        <object-id>1</object-id>
+        <visible>1</visible>
+      </database>
+      <database id="2" name="tempdb">
+        <object-id>2</object-id>
+      </database>
+      <database id="3" name="model">
+        <object-id>3</object-id>
+      </database>
+      <database id="4" name="msdb">
+        <object-id>4</object-id>
+      </database>
+      <database id="5" name="ITTWEBComponent">
+        <object-id>5</object-id>
+        <visible>1</visible>
+      </database>
+      <schema id="6" parent="1" name="dbo">
+        <object-id>1</object-id>
+        <visible>1</visible>
+        <introspection-timestamp>2016-12-12.15:22:08.007</introspection-timestamp>
+      </schema>
+      <schema id="7" parent="1" name="guest">
+        <object-id>2</object-id>
+      </schema>
+      <schema id="8" parent="1" name="INFORMATION_SCHEMA">
+        <object-id>3</object-id>
+      </schema>
+      <schema id="9" parent="1" name="sys">
+        <object-id>4</object-id>
+      </schema>
+      <schema id="10" parent="1" name="db_owner">
+        <object-id>16384</object-id>
+      </schema>
+      <schema id="11" parent="1" name="db_accessadmin">
+        <object-id>16385</object-id>
+      </schema>
+      <schema id="12" parent="1" name="db_securityadmin">
+        <object-id>16386</object-id>
+      </schema>
+      <schema id="13" parent="1" name="db_ddladmin">
+        <object-id>16387</object-id>
+      </schema>
+      <schema id="14" parent="1" name="db_backupoperator">
+        <object-id>16389</object-id>
+      </schema>
+      <schema id="15" parent="1" name="db_datareader">
+        <object-id>16390</object-id>
+      </schema>
+      <schema id="16" parent="1" name="db_datawriter">
+        <object-id>16391</object-id>
+      </schema>
+      <schema id="17" parent="1" name="db_denydatareader">
+        <object-id>16392</object-id>
+      </schema>
+      <schema id="18" parent="1" name="db_denydatawriter">
+        <object-id>16393</object-id>
+      </schema>
+      <schema id="19" parent="5" name="dbo">
+        <object-id>1</object-id>
+        <visible>1</visible>
+        <introspection-timestamp>2016-12-12.15:22:08.083</introspection-timestamp>
+      </schema>
+      <schema id="20" parent="5" name="guest">
+        <object-id>2</object-id>
+      </schema>
+      <schema id="21" parent="5" name="INFORMATION_SCHEMA">
+        <object-id>3</object-id>
+      </schema>
+      <schema id="22" parent="5" name="sys">
+        <object-id>4</object-id>
+      </schema>
+      <schema id="23" parent="5" name="db_owner">
+        <object-id>16384</object-id>
+      </schema>
+      <schema id="24" parent="5" name="db_accessadmin">
+        <object-id>16385</object-id>
+      </schema>
+      <schema id="25" parent="5" name="db_securityadmin">
+        <object-id>16386</object-id>
+      </schema>
+      <schema id="26" parent="5" name="db_ddladmin">
+        <object-id>16387</object-id>
+      </schema>
+      <schema id="27" parent="5" name="db_backupoperator">
+        <object-id>16389</object-id>
+      </schema>
+      <schema id="28" parent="5" name="db_datareader">
+        <object-id>16390</object-id>
+      </schema>
+      <schema id="29" parent="5" name="db_datawriter">
+        <object-id>16391</object-id>
+      </schema>
+      <schema id="30" parent="5" name="db_denydatareader">
+        <object-id>16392</object-id>
+      </schema>
+      <schema id="31" parent="5" name="db_denydatawriter">
+        <object-id>16393</object-id>
+      </schema>
+      <table id="32" parent="6" name="MSreplication_options">
+        <object-id>1787153412</object-id>
+        <created-timestamp>2016-11-01.21:31:02.467</created-timestamp>
+        <modified-timestamp>2016-11-01.21:31:25.653</modified-timestamp>
+      </table>
+      <table id="33" parent="6" name="spt_fallback_db">
+        <object-id>117575457</object-id>
+        <created-timestamp>2003-04-08.09:18:01.557</created-timestamp>
+        <modified-timestamp>2016-11-01.21:31:25.573</modified-timestamp>
+      </table>
+      <table id="34" parent="6" name="spt_fallback_dev">
+        <object-id>133575514</object-id>
+        <created-timestamp>2003-04-08.09:18:02.870</created-timestamp>
+        <modified-timestamp>2016-11-01.21:31:25.590</modified-timestamp>
+      </table>
+      <table id="35" parent="6" name="spt_fallback_usg">
+        <object-id>149575571</object-id>
+        <created-timestamp>2003-04-08.09:18:04.180</created-timestamp>
+        <modified-timestamp>2016-11-01.21:31:25.610</modified-timestamp>
+      </table>
+      <table id="36" parent="6" name="spt_monitor">
+        <object-id>1483152329</object-id>
+        <created-timestamp>2016-11-01.21:29:34.923</created-timestamp>
+        <modified-timestamp>2016-11-01.21:31:25.633</modified-timestamp>
+      </table>
+      <view id="37" parent="6" name="spt_values">
+        <object-id>1467152272</object-id>
+        <created-timestamp>2016-11-01.21:29:34.870</created-timestamp>
+        <modified-timestamp>2016-11-01.21:29:34.917</modified-timestamp>
+      </view>
+      <routine id="38" parent="6" name="sp_MScleanupmergepublisher">
+        <object-id>1819153526</object-id>
+        <created-timestamp>2016-11-01.21:31:02.563</created-timestamp>
+        <modified-timestamp>2016-11-01.21:31:25.690</modified-timestamp>
+        <routine-kind>PROCEDURE</routine-kind>
+        <type>PROC</type>
+      </routine>
+      <routine id="39" parent="6" name="sp_MSrepl_startup">
+        <object-id>1803153469</object-id>
+        <created-timestamp>2016-11-01.21:31:02.537</created-timestamp>
+        <modified-timestamp>2016-11-01.21:31:25.673</modified-timestamp>
+        <routine-kind>PROCEDURE</routine-kind>
+        <type>PROC</type>
+      </routine>
+      <table id="40" parent="19" name="__EFMigrationsHistory">
+        <object-id>885578193</object-id>
+        <created-timestamp>2016-12-08.11:10:19.497</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.497</modified-timestamp>
+      </table>
+      <table id="41" parent="19" name="AspNetRoleClaims">
+        <object-id>1333579789</object-id>
+        <created-timestamp>2016-12-08.11:10:19.743</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.767</modified-timestamp>
+      </table>
+      <table id="42" parent="19" name="AspNetRoles">
+        <object-id>1173579219</object-id>
+        <created-timestamp>2016-12-08.11:10:19.730</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.760</modified-timestamp>
+      </table>
+      <table id="43" parent="19" name="AspNetUserClaims">
+        <object-id>1237579447</object-id>
+        <created-timestamp>2016-12-08.11:10:19.740</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.770</modified-timestamp>
+      </table>
+      <table id="44" parent="19" name="AspNetUserLogins">
+        <object-id>1285579618</object-id>
+        <created-timestamp>2016-12-08.11:10:19.740</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.770</modified-timestamp>
+      </table>
+      <table id="45" parent="19" name="AspNetUserRoles">
+        <object-id>1381579960</object-id>
+        <created-timestamp>2016-12-08.11:10:19.747</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.770</modified-timestamp>
+      </table>
+      <table id="46" parent="19" name="AspNetUsers">
+        <object-id>1141579105</object-id>
+        <created-timestamp>2016-12-08.11:10:19.730</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.753</modified-timestamp>
+      </table>
+      <table id="47" parent="19" name="AspNetUserTokens">
+        <object-id>1205579333</object-id>
+        <created-timestamp>2016-12-08.11:10:19.733</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.733</modified-timestamp>
+      </table>
+      <table id="48" parent="19" name="Categories">
+        <object-id>917578307</object-id>
+        <created-timestamp>2016-12-08.11:10:19.647</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.657</modified-timestamp>
+      </table>
+      <table id="49" parent="19" name="CategoryComponentTypes">
+        <object-id>1029578706</object-id>
+        <created-timestamp>2016-12-08.11:10:19.657</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.663</modified-timestamp>
+      </table>
+      <table id="50" parent="19" name="Components">
+        <object-id>1093578934</object-id>
+        <created-timestamp>2016-12-08.11:10:19.657</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.663</modified-timestamp>
+      </table>
+      <table id="51" parent="19" name="ComponentTypes">
+        <object-id>981578535</object-id>
+        <created-timestamp>2016-12-08.11:10:19.650</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.663</modified-timestamp>
+      </table>
+      <table id="52" parent="19" name="EsImages">
+        <object-id>949578421</object-id>
+        <created-timestamp>2016-12-08.11:10:19.647</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.650</modified-timestamp>
+      </table>
+      <column id="53" parent="32" name="optname">
+        <mandatory>1</mandatory>
+        <data-type>sysname|0</data-type>
+      </column>
+      <column id="54" parent="32" name="value">
+        <mandatory>1</mandatory>
+        <data-type>bit|0</data-type>
+      </column>
+      <column id="55" parent="32" name="major_version">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="56" parent="32" name="minor_version">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="57" parent="32" name="revision">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="58" parent="32" name="install_failures">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="59" parent="33" name="xserver_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="60" parent="33" name="xdttm_ins">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="61" parent="33" name="xdttm_last_ins_upd">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="62" parent="33" name="xfallback_dbid">
+        <data-type>smallint|0</data-type>
+      </column>
+      <column id="63" parent="33" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="64" parent="33" name="dbid">
+        <mandatory>1</mandatory>
+        <data-type>smallint|0</data-type>
+      </column>
+      <column id="65" parent="33" name="status">
+        <mandatory>1</mandatory>
+        <data-type>smallint|0</data-type>
+      </column>
+      <column id="66" parent="33" name="version">
+        <mandatory>1</mandatory>
+        <data-type>smallint|0</data-type>
+      </column>
+      <column id="67" parent="34" name="xserver_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="68" parent="34" name="xdttm_ins">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="69" parent="34" name="xdttm_last_ins_upd">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="70" parent="34" name="xfallback_low">
+        <data-type>int|0</data-type>
+      </column>
+      <column id="71" parent="34" name="xfallback_drive">
+        <data-type>char(2)|0</data-type>
+      </column>
+      <column id="72" parent="34" name="low">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="73" parent="34" name="high">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="74" parent="34" name="status">
+        <mandatory>1</mandatory>
+        <data-type>smallint|0</data-type>
+      </column>
+      <column id="75" parent="34" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="76" parent="34" name="phyname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(127)|0</data-type>
+      </column>
+      <column id="77" parent="35" name="xserver_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="78" parent="35" name="xdttm_ins">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="79" parent="35" name="xdttm_last_ins_upd">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="80" parent="35" name="xfallback_vstart">
+        <data-type>int|0</data-type>
+      </column>
+      <column id="81" parent="35" name="dbid">
+        <mandatory>1</mandatory>
+        <data-type>smallint|0</data-type>
+      </column>
+      <column id="82" parent="35" name="segmap">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="83" parent="35" name="lstart">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="84" parent="35" name="sizepg">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="85" parent="35" name="vstart">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="86" parent="36" name="lastrun">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="87" parent="36" name="cpu_busy">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="88" parent="36" name="io_busy">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="89" parent="36" name="idle">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="90" parent="36" name="pack_received">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="91" parent="36" name="pack_sent">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="92" parent="36" name="connections">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="93" parent="36" name="pack_errors">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="94" parent="36" name="total_read">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="95" parent="36" name="total_write">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="96" parent="36" name="total_errors">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="97" parent="37" name="name">
+        <data-type>nvarchar(35)|0</data-type>
+      </column>
+      <column id="98" parent="37" name="number">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="99" parent="37" name="type">
+        <mandatory>1</mandatory>
+        <data-type>nchar(3)|0</data-type>
+      </column>
+      <column id="100" parent="37" name="low">
+        <data-type>int|0</data-type>
+      </column>
+      <column id="101" parent="37" name="high">
+        <data-type>int|0</data-type>
+      </column>
+      <column id="102" parent="37" name="status">
+        <data-type>int|0</data-type>
+      </column>
+      <column id="103" parent="40" name="MigrationId">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(150)|0</data-type>
+      </column>
+      <column id="104" parent="40" name="ProductVersion">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(32)|0</data-type>
+      </column>
+      <index id="105" parent="40" name="PK___EFMigrationsHistory">
+        <columns>MigrationId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <key id="106" parent="40" name="PK___EFMigrationsHistory">
+        <object-id>901578250</object-id>
+        <created-timestamp>2016-12-08.11:10:19.507</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.507</modified-timestamp>
+        <columns>MigrationId</columns>
+        <underlying-index>PK___EFMigrationsHistory</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="107" parent="41" name="Id">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="108" parent="41" name="ClaimType">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="109" parent="41" name="ClaimValue">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="110" parent="41" name="RoleId">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <index id="111" parent="41" name="PK_AspNetRoleClaims">
+        <columns>Id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="112" parent="41" name="IX_AspNetRoleClaims_RoleId">
+        <columns>RoleId</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <key id="113" parent="41" name="PK_AspNetRoleClaims">
+        <object-id>1349579846</object-id>
+        <created-timestamp>2016-12-08.11:10:19.743</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.743</modified-timestamp>
+        <columns>Id</columns>
+        <underlying-index>PK_AspNetRoleClaims</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="114" parent="41" name="FK_AspNetRoleClaims_AspNetRoles_RoleId">
+        <object-id>1365579903</object-id>
+        <created-timestamp>2016-12-08.11:10:19.743</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.743</modified-timestamp>
+        <columns>RoleId</columns>
+        <ref-key>~.AspNetRoles.PK_AspNetRoles</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="115" parent="42" name="Id">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="116" parent="42" name="ConcurrencyStamp">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="117" parent="42" name="Name">
+        <data-type>nvarchar(256)|0</data-type>
+      </column>
+      <column id="118" parent="42" name="NormalizedName">
+        <data-type>nvarchar(256)|0</data-type>
+      </column>
+      <index id="119" parent="42" name="PK_AspNetRoles">
+        <columns>Id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="120" parent="42" name="RoleNameIndex">
+        <columns>NormalizedName</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <position>2</position>
+      </index>
+      <key id="121" parent="42" name="PK_AspNetRoles">
+        <object-id>1189579276</object-id>
+        <created-timestamp>2016-12-08.11:10:19.730</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.730</modified-timestamp>
+        <columns>Id</columns>
+        <underlying-index>PK_AspNetRoles</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="122" parent="43" name="Id">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="123" parent="43" name="ClaimType">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="124" parent="43" name="ClaimValue">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="125" parent="43" name="UserId">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <index id="126" parent="43" name="PK_AspNetUserClaims">
+        <columns>Id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="127" parent="43" name="IX_AspNetUserClaims_UserId">
+        <columns>UserId</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <key id="128" parent="43" name="PK_AspNetUserClaims">
+        <object-id>1253579504</object-id>
+        <created-timestamp>2016-12-08.11:10:19.740</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.740</modified-timestamp>
+        <columns>Id</columns>
+        <underlying-index>PK_AspNetUserClaims</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="129" parent="43" name="FK_AspNetUserClaims_AspNetUsers_UserId">
+        <object-id>1269579561</object-id>
+        <created-timestamp>2016-12-08.11:10:19.740</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.740</modified-timestamp>
+        <columns>UserId</columns>
+        <ref-key>~.AspNetUsers.PK_AspNetUsers</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="130" parent="44" name="LoginProvider">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="131" parent="44" name="ProviderKey">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="132" parent="44" name="ProviderDisplayName">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="133" parent="44" name="UserId">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <index id="134" parent="44" name="PK_AspNetUserLogins">
+        <columns>LoginProvider
+ProviderKey</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="135" parent="44" name="IX_AspNetUserLogins_UserId">
+        <columns>UserId</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <key id="136" parent="44" name="PK_AspNetUserLogins">
+        <object-id>1301579675</object-id>
+        <created-timestamp>2016-12-08.11:10:19.740</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.740</modified-timestamp>
+        <columns>LoginProvider
+ProviderKey</columns>
+        <underlying-index>PK_AspNetUserLogins</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="137" parent="44" name="FK_AspNetUserLogins_AspNetUsers_UserId">
+        <object-id>1317579732</object-id>
+        <created-timestamp>2016-12-08.11:10:19.743</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.743</modified-timestamp>
+        <columns>UserId</columns>
+        <ref-key>~.AspNetUsers.PK_AspNetUsers</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="138" parent="45" name="UserId">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="139" parent="45" name="RoleId">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <index id="140" parent="45" name="PK_AspNetUserRoles">
+        <columns>UserId
+RoleId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="141" parent="45" name="IX_AspNetUserRoles_RoleId">
+        <columns>RoleId</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <key id="142" parent="45" name="PK_AspNetUserRoles">
+        <object-id>1397580017</object-id>
+        <created-timestamp>2016-12-08.11:10:19.747</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.747</modified-timestamp>
+        <columns>UserId
+RoleId</columns>
+        <underlying-index>PK_AspNetUserRoles</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="143" parent="45" name="FK_AspNetUserRoles_AspNetUsers_UserId">
+        <object-id>1429580131</object-id>
+        <created-timestamp>2016-12-08.11:10:19.747</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.747</modified-timestamp>
+        <columns>UserId</columns>
+        <ref-key>~.AspNetUsers.PK_AspNetUsers</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="144" parent="45" name="FK_AspNetUserRoles_AspNetRoles_RoleId">
+        <object-id>1413580074</object-id>
+        <created-timestamp>2016-12-08.11:10:19.747</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.747</modified-timestamp>
+        <columns>RoleId</columns>
+        <ref-key>~.AspNetRoles.PK_AspNetRoles</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="145" parent="46" name="Id">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="146" parent="46" name="AccessFailedCount">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="147" parent="46" name="ConcurrencyStamp">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="148" parent="46" name="Email">
+        <data-type>nvarchar(256)|0</data-type>
+      </column>
+      <column id="149" parent="46" name="EmailConfirmed">
+        <mandatory>1</mandatory>
+        <data-type>bit|0</data-type>
+      </column>
+      <column id="150" parent="46" name="LockoutEnabled">
+        <mandatory>1</mandatory>
+        <data-type>bit|0</data-type>
+      </column>
+      <column id="151" parent="46" name="LockoutEnd">
+        <data-type>datetimeoffset|0</data-type>
+      </column>
+      <column id="152" parent="46" name="NormalizedEmail">
+        <data-type>nvarchar(256)|0</data-type>
+      </column>
+      <column id="153" parent="46" name="NormalizedUserName">
+        <data-type>nvarchar(256)|0</data-type>
+      </column>
+      <column id="154" parent="46" name="PasswordHash">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="155" parent="46" name="PhoneNumber">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="156" parent="46" name="PhoneNumberConfirmed">
+        <mandatory>1</mandatory>
+        <data-type>bit|0</data-type>
+      </column>
+      <column id="157" parent="46" name="SecurityStamp">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="158" parent="46" name="TwoFactorEnabled">
+        <mandatory>1</mandatory>
+        <data-type>bit|0</data-type>
+      </column>
+      <column id="159" parent="46" name="UserName">
+        <data-type>nvarchar(256)|0</data-type>
+      </column>
+      <index id="160" parent="46" name="PK_AspNetUsers">
+        <columns>Id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="161" parent="46" name="EmailIndex">
+        <columns>NormalizedEmail</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <index id="162" parent="46" name="UserNameIndex">
+        <columns>NormalizedUserName</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <position>3</position>
+      </index>
+      <key id="163" parent="46" name="PK_AspNetUsers">
+        <object-id>1157579162</object-id>
+        <created-timestamp>2016-12-08.11:10:19.730</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.730</modified-timestamp>
+        <columns>Id</columns>
+        <underlying-index>PK_AspNetUsers</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="164" parent="47" name="UserId">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="165" parent="47" name="LoginProvider">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="166" parent="47" name="Name">
+        <mandatory>1</mandatory>
+        <data-type>nvarchar(450)|0</data-type>
+      </column>
+      <column id="167" parent="47" name="Value">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <index id="168" parent="47" name="PK_AspNetUserTokens">
+        <columns>UserId
+LoginProvider
+Name</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <key id="169" parent="47" name="PK_AspNetUserTokens">
+        <object-id>1221579390</object-id>
+        <created-timestamp>2016-12-08.11:10:19.733</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.733</modified-timestamp>
+        <columns>UserId
+LoginProvider
+Name</columns>
+        <underlying-index>PK_AspNetUserTokens</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="170" parent="48" name="CategoryId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+        <sequence-identity>1(4)</sequence-identity>
+      </column>
+      <column id="171" parent="48" name="Name">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <index id="172" parent="48" name="PK_Categories">
+        <columns>CategoryId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <key id="173" parent="48" name="PK_Categories">
+        <object-id>933578364</object-id>
+        <created-timestamp>2016-12-08.11:10:19.647</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.647</modified-timestamp>
+        <columns>CategoryId</columns>
+        <underlying-index>PK_Categories</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="174" parent="49" name="CategoryComponentTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+        <sequence-identity>1(4)</sequence-identity>
+      </column>
+      <column id="175" parent="49" name="CategoryId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="176" parent="49" name="ComponentTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <index id="177" parent="49" name="PK_CategoryComponentTypes">
+        <columns>CategoryComponentTypeId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="178" parent="49" name="IX_CategoryComponentTypes_CategoryId">
+        <columns>CategoryId</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <index id="179" parent="49" name="IX_CategoryComponentTypes_ComponentTypeId">
+        <columns>ComponentTypeId</columns>
+        <desc-columns></desc-columns>
+        <position>3</position>
+      </index>
+      <key id="180" parent="49" name="PK_CategoryComponentTypes">
+        <object-id>1045578763</object-id>
+        <created-timestamp>2016-12-08.11:10:19.657</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.657</modified-timestamp>
+        <columns>CategoryComponentTypeId</columns>
+        <underlying-index>PK_CategoryComponentTypes</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="181" parent="49" name="FK_CategoryComponentTypes_Categories_CategoryId">
+        <object-id>1061578820</object-id>
+        <created-timestamp>2016-12-08.11:10:19.657</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.657</modified-timestamp>
+        <columns>CategoryId</columns>
+        <ref-key>~.Categories.PK_Categories</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="182" parent="49" name="FK_CategoryComponentTypes_ComponentTypes_ComponentTypeId">
+        <object-id>1077578877</object-id>
+        <created-timestamp>2016-12-08.11:10:19.657</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.657</modified-timestamp>
+        <columns>ComponentTypeId</columns>
+        <ref-key>~.ComponentTypes.PK_ComponentTypes</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="183" parent="50" name="ComponentId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+        <sequence-identity>1(10)</sequence-identity>
+      </column>
+      <column id="184" parent="50" name="AdminComment">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="185" parent="50" name="ComponentNumber">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="186" parent="50" name="ComponentTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="187" parent="50" name="CurrentLoanInformationId">
+        <data-type>int|0</data-type>
+      </column>
+      <column id="188" parent="50" name="SerialNo">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="189" parent="50" name="Status">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="190" parent="50" name="UserComment">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <index id="191" parent="50" name="PK_Components">
+        <columns>ComponentId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="192" parent="50" name="IX_Components_ComponentTypeId">
+        <columns>ComponentTypeId</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <key id="193" parent="50" name="PK_Components">
+        <object-id>1109578991</object-id>
+        <created-timestamp>2016-12-08.11:10:19.660</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.660</modified-timestamp>
+        <columns>ComponentId</columns>
+        <underlying-index>PK_Components</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="194" parent="50" name="FK_Components_ComponentTypes_ComponentTypeId">
+        <object-id>1125579048</object-id>
+        <created-timestamp>2016-12-08.11:10:19.660</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.660</modified-timestamp>
+        <columns>ComponentTypeId</columns>
+        <ref-key>~.ComponentTypes.PK_ComponentTypes</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="195" parent="51" name="ComponentTypeId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+        <sequence-identity>1(4)</sequence-identity>
+      </column>
+      <column id="196" parent="51" name="AdminComment">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="197" parent="51" name="ComponentInfo">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="198" parent="51" name="ComponentName">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="199" parent="51" name="Datasheet">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="200" parent="51" name="ImageESImageId">
+        <data-type>int|0</data-type>
+      </column>
+      <column id="201" parent="51" name="ImageUrl">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="202" parent="51" name="Location">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="203" parent="51" name="Manufacturer">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <column id="204" parent="51" name="Status">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+      </column>
+      <column id="205" parent="51" name="WikiLink">
+        <data-type>nvarchar(max)|0</data-type>
+      </column>
+      <index id="206" parent="51" name="PK_ComponentTypes">
+        <columns>ComponentTypeId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <index id="207" parent="51" name="IX_ComponentTypes_ImageESImageId">
+        <columns>ImageESImageId</columns>
+        <desc-columns></desc-columns>
+        <position>2</position>
+      </index>
+      <key id="208" parent="51" name="PK_ComponentTypes">
+        <object-id>997578592</object-id>
+        <created-timestamp>2016-12-08.11:10:19.650</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.650</modified-timestamp>
+        <columns>ComponentTypeId</columns>
+        <underlying-index>PK_ComponentTypes</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="209" parent="51" name="FK_ComponentTypes_EsImages_ImageESImageId">
+        <object-id>1013578649</object-id>
+        <created-timestamp>2016-12-08.11:10:19.650</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.650</modified-timestamp>
+        <columns>ImageESImageId</columns>
+        <ref-key>~.EsImages.PK_EsImages</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="210" parent="52" name="ESImageId">
+        <mandatory>1</mandatory>
+        <data-type>int|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="211" parent="52" name="ImageData">
+        <data-type>varbinary|0</data-type>
+      </column>
+      <column id="212" parent="52" name="ImageMimeType">
+        <data-type>nvarchar(128)|0</data-type>
+      </column>
+      <column id="213" parent="52" name="Thumbnail">
+        <data-type>varbinary|0</data-type>
+      </column>
+      <index id="214" parent="52" name="PK_EsImages">
+        <columns>ESImageId</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <clustering>1</clustering>
+        <position>1</position>
+      </index>
+      <key id="215" parent="52" name="PK_EsImages">
+        <object-id>965578478</object-id>
+        <created-timestamp>2016-12-08.11:10:19.650</created-timestamp>
+        <modified-timestamp>2016-12-08.11:10:19.650</modified-timestamp>
+        <columns>ESImageId</columns>
+        <underlying-index>PK_EsImages</underlying-index>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

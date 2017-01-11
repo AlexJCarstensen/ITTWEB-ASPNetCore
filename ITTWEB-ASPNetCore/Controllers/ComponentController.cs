@@ -73,7 +73,7 @@ namespace ITTWEB_ASPNetCore.Controllers
 
             _unitOfWork.Complete();
 
-            return RedirectToAction("Component", "Component", new {id = viewModel.Component.ComponentTypeId});
+            return RedirectToAction("Components", "Component", new {id = viewModel.Component.ComponentTypeId});
         }
 
         //Delete
@@ -88,7 +88,7 @@ namespace ITTWEB_ASPNetCore.Controllers
 
             _unitOfWork.Complete();
 
-            return RedirectToAction("Component", "Component", new {id = component.ComponentTypeId});
+            return RedirectToAction("Components", "Component", new {id = component.ComponentTypeId});
         }
     }
 }
