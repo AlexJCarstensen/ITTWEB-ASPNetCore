@@ -23,7 +23,7 @@ namespace ITTWEB_ASPNetCore.Controllers
 //                ComponentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(t => t.ComponentTypeId == id)
 //            };
 
-            var componentTypeInDb = _unitOfWork.ComponentTypes.Get(id);
+            var componentTypeInDb = _unitOfWork.ComponentTypes.GetComponentTypeWithComponents(id);
 
             var viewModel = new ComponentViewModel()
             {

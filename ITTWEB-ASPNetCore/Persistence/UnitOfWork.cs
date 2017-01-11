@@ -1,4 +1,5 @@
 ﻿using ITTWEB_ASPNetCore.Core;
+using ITTWEB_ASPNetCore.Core.Domain;
 using ITTWEB_ASPNetCore.Core.Repositories;
 using ITTWEB_ASPNetCore.Persistence.Repositories;
 
@@ -13,6 +14,8 @@ namespace ITTWEB_ASPNetCore.Persistence
             _context = context;
             Categories = new CategoryRepository(_context);
             ComponentTypes = new ComponentTypeRepository(_context);
+            Components = new ComponentRepository(_context);
+            CategoryComponentTypes = new CategoryComponentTypeRepository(_context);
         }
 
 
