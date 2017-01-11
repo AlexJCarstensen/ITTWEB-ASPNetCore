@@ -92,21 +92,20 @@ namespace ITTWEB_ASPNetCore.Controllers
         }
 
         //Edit
-        public async Task<IActionResult> EditComponentType(int componentTypeId, int categoryId)
+        public IActionResult EditComponentType(int componentTypeId, int categoryId)
         {
             //TODO Make Async!!
             //var category = CategoryMock.GetCategories().SingleOrDefault(c => c.CategoryId == categoryId);
             // var componentType = ComponentTypeMock.GetComponentTypes().SingleOrDefault(c => c.ComponentTypeId == componentTypeId);
 
-            var componentType =  Task.Run(() =>_unitOfWork.ComponentTypes.SingleOrDefault(c => c.ComponentTypeId == componentTypeId));
-            var category = Task.Run(() =>_unitOfWork.Categories.SingleOrDefault(c => c.CategoryId == categoryId));
+            var componentType = _unitOfWork.ComponentTypes.SingleOrDefault(c => c.ComponentTypeId == componentTypeId);
+            var category = _unitOfWork.Categories.SingleOrDefault(c => c.CategoryId == categoryId);
 
-
-            await Task.WhenAll(componentType, category);
+            
             var viewModel = new EditComponentTypeViewModel()
             {
-                Category = category.Result,
-                ComponentType = componentType.Result
+                Category = category,
+                ComponentType = componentType
             };
 
             return View(viewModel);
