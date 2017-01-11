@@ -35,7 +35,7 @@ namespace ITTWEB_ASPNetCore
             }
             else
             {
-                builder.AddUserSecrets();
+             //   builder.AddUserSecrets();
 
             }
             
@@ -53,11 +53,11 @@ namespace ITTWEB_ASPNetCore
             // Add framework services.
 //            services.AddDbContext<ApplicationDbContext>(options =>
 //                    options.UseSqlServer(Configuration["ConnectionString"]));
-            services.AddDbContext<EmbeddedStockContext>(options =>
-                    options.UseSqlServer(Configuration["ConnectionString"]));
+           // services.AddDbContext<EmbeddedStockContext>(options =>
+             //       options.UseSqlServer(Configuration["ConnectionString"]));
 
-//            services.AddDbContext<EmbeddedStockContext>(options =>
-//                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+          services.AddDbContext<EmbeddedStockContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<EmbeddedStockContext>()

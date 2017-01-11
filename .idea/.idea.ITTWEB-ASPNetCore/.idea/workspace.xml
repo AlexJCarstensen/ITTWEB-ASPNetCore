@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="258d0473-7983-4867-b0d0-93e5673b63aa" name="Default" comment="added to homecontroller, moved viewmodels and created one. created view for categories">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ITTWEB-ASPNetCore/.appsettings.json.swp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/dataSources/7300e72e-a71b-4201-a2bf-3f78d790b3c5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/dataSources/7300e72e-a71b-4201-a2bf-3f78d790b3c5/storage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ITTWEB-ASPNetCore/appsettings.json.save" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/.name" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ITTWEB-ASPNetCore/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/CategoryController.cs" afterPath="$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/CategoryController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/ComponentController.cs" afterPath="$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/ComponentController.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ITTWEB-ASPNetCore/Startup.cs" afterPath="$PROJECT_DIR$/ITTWEB-ASPNetCore/Startup.cs" />
     </list>
     <ignored path="ITTWEB-ASPNetCore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoryController.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CategoryController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/CategoryController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            <state relative-caret-position="408">
+              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
               <folding>
                 <marker date="1484142484985" expanded="true" signature="6:195" ph="..." />
                 <marker date="1484142484985" expanded="true" signature="236:2172" ph="{...}" />
@@ -172,20 +159,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComponentTypeViewModel.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/ViewModels/ComponentTypeViewModels/ComponentTypeViewModel.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1481190094566" expanded="true" signature="6:152" ph="..." />
-                <marker date="1481190094566" expanded="true" signature="216:490" ph="{...}" />
-                <marker date="1481190094566" expanded="true" signature="258:488" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -216,8 +189,8 @@
       <file leaf-file-name="EmbeddedStockContext.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="66" lean-forward="false" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1481190094562" expanded="true" signature="6:173" ph="..." />
                 <marker date="1481190094562" expanded="true" signature="214:1146" ph="{...}" />
@@ -230,24 +203,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UnitOfWork.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/UnitOfWork.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+              <folding>
+                <marker date="1484147613373" expanded="true" signature="6:159" ph="..." />
+                <marker date="1484147613373" expanded="true" signature="200:1148" ph="{...}" />
+                <marker date="1484147613373" expanded="true" signature="244:1146" ph="{...}" />
+                <marker date="1484147613373" expanded="true" signature="363:686" ph="{...}" />
+                <marker date="1484147613373" expanded="true" signature="994:1046" ph="{...}" />
+                <marker date="1484147613373" expanded="true" signature="1077:1140" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ComponentController.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/ComponentController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1484142596552" expanded="true" signature="6:195" ph="..." />
-                <marker date="1484142596552" expanded="true" signature="304:3102" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="420:478" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="551:1087" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="562:765" ph="/* var viewModel = new ComponentViewModel ... */" />
-                <marker date="1484142596552" expanded="true" signature="905:1039" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="1148:1403" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="1298:1355" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="1478:2646" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="1587:1861" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="1878:2486" ph="{...}" />
-                <marker date="1484142596552" expanded="true" signature="2749:3096" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="6:195" ph="..." />
+                <marker date="1484147613369" expanded="true" signature="304:3129" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="420:478" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="551:1114" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="562:765" ph="/* var viewModel = new ComponentViewModel ... */" />
+                <marker date="1484147613369" expanded="true" signature="932:1066" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="1175:1430" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="1325:1382" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="1505:2673" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="1614:1888" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="1905:2513" ph="{...}" />
+                <marker date="1484147613369" expanded="true" signature="2776:3123" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -313,6 +303,7 @@
         <option value="$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/CategoryController.cs" />
         <option value="$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/ComponentController.cs" />
         <option value="$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/ComponentTypeController.cs" />
+        <option value="$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/UnitOfWork.cs" />
       </list>
     </option>
   </component>
@@ -565,7 +556,7 @@
       <workItem from="1481541663945" duration="15552000" />
       <workItem from="1481573677590" duration="8680000" />
       <workItem from="1484141423867" duration="2480000" />
-      <workItem from="1484144295847" duration="1882000" />
+      <workItem from="1484144295847" duration="3330000" />
     </task>
     <task id="LOCAL-00001" summary="added to homecontroller, moved viewmodels and created one. created view for categories">
       <created>1480579440920</created>
@@ -585,7 +576,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54259000" />
+    <option name="totallyTimeSpent" value="55707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,28 +591,28 @@
     <frame x="65" y="24" width="1855" height="952" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.187062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39979014" sideWeight="0.50189704" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15663956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33295324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.187062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15663956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39794755" sideWeight="0.498103" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33295324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39794755" sideWeight="0.498103" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -710,13 +701,6 @@
     <entry file="file://$USER_HOME$/ITTWEB-ASPNetCore/Views/Category/Categories.cshtml" />
     <entry file="file://$USER_HOME$/ITTWEB-ASPNetCore/Controllers/CategoryController.cs" />
     <entry file="file://$USER_HOME$/ITTWEB-ASPNetCore/Startup.cs" />
-    <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/UnitOfWork.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/Repositories/Repository.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -892,18 +876,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1484142596552" expanded="true" signature="6:195" ph="..." />
-            <marker date="1484142596552" expanded="true" signature="304:3102" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="420:478" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="551:1087" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="562:765" ph="/* var viewModel = new ComponentViewModel ... */" />
-            <marker date="1484142596552" expanded="true" signature="905:1039" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="1148:1403" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="1298:1355" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="1478:2646" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="1587:1861" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="1878:2486" ph="{...}" />
-            <marker date="1484142596552" expanded="true" signature="2749:3096" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="6:195" ph="..." />
+            <marker date="1484147613369" expanded="true" signature="304:3129" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="420:478" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="551:1114" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="562:765" ph="/* var viewModel = new ComponentViewModel ... */" />
+            <marker date="1484147613369" expanded="true" signature="932:1066" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="1175:1430" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="1325:1382" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="1505:2673" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="1614:1888" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="1905:2513" ph="{...}" />
+            <marker date="1484147613369" expanded="true" signature="2776:3123" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -957,21 +941,6 @@
             <marker date="1484141535190" expanded="true" signature="3438:3730" ph="{...}" />
             <marker date="1484141535190" expanded="true" signature="3628:3711" ph="{...}" />
             <marker date="1484141535190" expanded="true" signature="3985:4156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="66" lean-forward="false" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-          <folding>
-            <marker date="1481190094562" expanded="true" signature="6:173" ph="..." />
-            <marker date="1481190094562" expanded="true" signature="214:1146" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="291:1144" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="409:430" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="814:1137" ph="{...}" />
-            <marker date="1481190094562" expanded="true" signature="881:1127" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
           </folding>
         </state>
       </provider>
@@ -1030,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Controllers/CategoryController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="408">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding>
             <marker date="1484142484985" expanded="true" signature="6:195" ph="..." />
             <marker date="1484142484985" expanded="true" signature="236:2172" ph="{...}" />
@@ -1044,6 +1013,36 @@
             <marker date="1484142484985" expanded="true" signature="1107:1410" ph="{...}" />
             <marker date="1484142484985" expanded="true" signature="1571:1786" ph="{...}" />
             <marker date="1484142484985" expanded="true" signature="1904:2163" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/EmbeddedStockContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481190094562" expanded="true" signature="6:173" ph="..." />
+            <marker date="1481190094562" expanded="true" signature="214:1146" ph="{...}" />
+            <marker date="1481190094562" expanded="true" signature="291:1144" ph="{...}" />
+            <marker date="1481190094562" expanded="true" signature="409:430" ph="{...}" />
+            <marker date="1481190094562" expanded="true" signature="814:1137" ph="{...}" />
+            <marker date="1481190094562" expanded="true" signature="881:1127" ph="/* Customize the ASP.NET Identity model and override the defaults if needed. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITTWEB-ASPNetCore/Persistence/UnitOfWork.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <marker date="1484147613373" expanded="true" signature="6:159" ph="..." />
+            <marker date="1484147613373" expanded="true" signature="200:1148" ph="{...}" />
+            <marker date="1484147613373" expanded="true" signature="244:1146" ph="{...}" />
+            <marker date="1484147613373" expanded="true" signature="363:686" ph="{...}" />
+            <marker date="1484147613373" expanded="true" signature="994:1046" ph="{...}" />
+            <marker date="1484147613373" expanded="true" signature="1077:1140" ph="{...}" />
           </folding>
         </state>
       </provider>
