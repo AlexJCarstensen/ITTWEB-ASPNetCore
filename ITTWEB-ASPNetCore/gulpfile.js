@@ -5,6 +5,7 @@ var gulp = require("gulp"),
     rimraf = require("rimraf"),
     concat = require("gulp-concat"),
     cssmin = require("gulp-cssmin"),
+    sass = require("gulp-sass"),
     uglify = require("gulp-uglify");
 
 var webroot = "./wwwroot/";
@@ -43,3 +44,10 @@ gulp.task("min:css", function () {
 });
 
 gulp.task("min", ["min:js", "min:css"]);
+
+
+gulp.task("sass", function() {
+	return gulp.src(webroot + 'scss/main.scss')
+	.pipe(sass())
+	.pipe(gulp.dest(webroot + '/css'));
+});
