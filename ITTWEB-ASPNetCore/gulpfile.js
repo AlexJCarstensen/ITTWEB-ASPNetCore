@@ -16,7 +16,9 @@ var paths = {
     css: webroot + "css/**/*.css",
     minCss: webroot + "css/**/*.min.css",
     concatJsDest: webroot + "js/site.min.js",
-    concatCssDest: webroot + "css/site.min.css"
+    concatCssDest: webroot + "css/site.min.css",
+    scss: webroot + "sass/**/site.scss",
+    scssDest: webroot + "css/"
 };
 
 gulp.task("clean:js", function (cb) {
@@ -46,8 +48,8 @@ gulp.task("min:css", function () {
 gulp.task("min", ["min:js", "min:css"]);
 
 
-gulp.task("sass", function() {
-	return gulp.src(webroot + 'scss/main.scss')
-	.pipe(sass())
-	.pipe(gulp.dest(webroot + '/css'));
+gulp.task('compile:sass', function () {
+   gulp.src(paths.scss)
+       .pipe(sass())
+       .pipe(gulp.dest(paths.scssDest));
 });
