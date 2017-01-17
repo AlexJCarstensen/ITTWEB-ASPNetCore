@@ -53,3 +53,7 @@ gulp.task('compile:sass', function () {
        .pipe(sass())
        .pipe(gulp.dest(paths.scssDest));
 });
+
+gulp.task('watch:sass', function () {
+    gulp.watch(paths.scss, ['compile:sass']);
+});
